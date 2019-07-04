@@ -1,0 +1,211 @@
+    body,h1,h2,h3,h4,h5,h6,div,p,dl,dt,dd,ol,ul,li,form,table,th,td,a,img,span,strong,var,em,input,textarea,select,option{margin: 0; padding: 0;}
+html,body{font-family:"微软雅黑","宋体",Arail,Tabhoma; font-size: 16px; text-align: left;}
+ul,ol{list-style: none;}
+img{border: 0;}
+input,select,textarea{outline:0;}
+textarea{resize:none; overflow: auto;}
+table{border-collapse: collapse; border-spacing: 0;}
+th,strong,var,em,b,i{font-weight: normal; font-style: normal;}
+a,u{text-decoration: none;}
+a {
+    color: #3e3e3e;
+    text-decoration: none;
+}
+/*____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*1刘海平start*/
+.scroll-header {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 2px 2px rgba(0,0,0,.08);
+}
+.header {
+    height: 63px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.navbar {
+    margin: 0 auto;
+    width: 840px;
+    height: 63px;
+    overflow: hidden;
+}
+/*logo*/
+.scroll-header .logo {
+    float: left;
+    margin-top: 16.1px;
+    width: 118.3px;
+    height: 30.8px;
+    background: url(../images/b7580ccd90ab1015_338x88.png) no-repeat;
+    background-size: 100% 100%;
+}
+.logo_img {
+    display: none;
+}
+/*首页*/
+.anchor {
+    height: 100%;
+    font-size: 0;
+    float: right;
+    max-width: 1440px;
+}
+.scroll-header .anchor a.active {
+    color: #e31436;
+}
+.scroll-header .anchor a {
+    color: #333;
+}
+.anchor a {
+    display: inline-block;
+    height: 100%;
+    line-height: 63px;
+    color: #fff;
+    font-size: 16.8px;
+    padding: 0 16.8px;
+}
+.scroll-header .anchor a a {
+    text-decoration: none;
+}
+/*1刘海平end*/
+ /*————————————————————————————————————————————————————————————————————————————————————————————————————————== */
+/*1关于贝店start*/
+.about-beidian, .intro-company {
+    padding-top: 63px;
+    width: 100%;
+    height: 364px;
+}
+.title {
+    font-size: 19.6px;
+    margin-top: 84px;
+    width: 100%;
+    text-align: center;
+    color: #e31436;
+}
+.line {
+    background-color: #e31436;
+    width: 51px;
+    height: 3px;
+    margin: 0 auto;
+    margin-top: 32px;
+}
+.about-beidian .desc, .intro-company .desc {
+    margin: 56px auto 0;
+    width: 679px;
+    font-size: 11.2px;
+    line-height: 22.4px;
+    letter-spacing: 1px;
+    color: #000;
+    text-align: center;
+}
+/*1关于贝店end*/
+/*————————————————————————————————————————————————————————————————————————————————————————————————————————== */
+/*2集团介绍start*/
+.about-beidian, .intro-company {
+    padding-top: 1px;
+    width: 100%;
+    height: 364px;
+}
+.little-gray {
+    background-color: #f5f7fa;
+}
+/*2集团介绍end*/
+/*————————————————————————————————————————————————————————————————————————————————————————————————————————== */
+/*3贝店优势start*/
+.advantage {
+    width: 100%;
+}
+.advantage .advantage-content {
+    margin: 84px auto 0;
+    width: 660.1px;
+}
+/*01*/
+.advantage .advantage-content .content:first-child {
+    height: 198.8px;
+}
+.advantage .advantage-content .content .instructions {
+    width: 371.7px;
+    position: absolute;
+    left: 0;
+    top: 29%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.advantage .advantage-content .content .instructions .i-title {
+    font-size: 21px;
+    color: #333;
+}
+.advantage .advantage-content .content .instructions .i-desc {
+    padding-top: 22.4px;
+    font-size: 11.2px;
+    line-height: 22.4px;
+    letter-spacing: 1px;
+    color: #333;
+}
+.advantage .advantage-content .content .img {
+    display: block;
+    width: 261.1px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.advantage .advantage-content .content.in-left .img {
+    left: 0;
+}
+/*02*/
+.advantage .advantage-content .content {
+    position: relative;
+    width: 100%;
+    height: 144.2px;
+    padding-bottom: 95.2px;
+}
+.advantage .advantage-content .content.in-left .instructions {
+    right: 0;
+    left: unset;
+}
+/*3贝店优势end*/
+
+/*————————————————————————————————————————————————————————————————————————————————————————————————————————== */
+/*4荣誉奖项start*/
+.award {
+    padding-top: 63px;
+    width: 100%;
+    overflow: hidden;
+}
+.award .desc {
+    margin: 56px auto 0;
+    width: 679px;
+    font-size: 11.2px;
+    line-height: 22.4px;
+    letter-spacing: 1px;
+    color: #000;
+    text-align: center;
+}
+/*4荣誉奖项end*/
+
+/*————————————————————————————————————————————————————————————————————————————————————————————————————————== */
+ /*5底部start*/
+ .footer {
+    height: 80px;
+    overflow: hidden;
+}
+.black {
+    background-color: #000;
+}
+.footer p:first-child {
+    margin-top: 8px;
+}
+
+.footer p {
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    text-align: center;
+    color: #ddd;
+}
+.footer p:nth-child(2) {
+    margin-top: -16px;
+}
+
+ /*5底部end*/

@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>简单实用的App样式单页全屏滚动布局jQuery插件</title>
+	<link rel="stylesheet" href="../css/4bbAPP.css">
+	<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="../jquery-ui-1.12.1.custom/jquery-ui.css">
+
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	<script src ="../jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+	<script src="../js/1sy.js"></script>
+	<script src="../js/4bbAPP.js"></script>
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+	<!-- <link rel="stylesheet" type="text/css" href="../css/normalize.css" /> -->
+	<!-- <link rel="stylesheet" type="text/css" href="../css/jq22-demo.css"> -->
+	<style>
+		*{margin:0; padding:0;}
+
+		/*
+			set overflow-y property to prevent scroll bar mess up the whole layout
+		*/
+		body{margin:0; padding:0; overflow-y: hidden; color:#fff;}
+		li{list-style-type:none;}
+
+
+		/* styled just for clear visual division of each areas */
+		.op-section{background-color:#1abc9c;}
+		.second{background-color:#3598db;}
+		.third{background-color:#34495e;}
+		.fourth{background-color:#2ecc71;}
+		.fifth{background-color:#8e44ad;}
+		.last{background-color:#f39c12;}
+
+		#view{
+			position: relative;
+			margin-top:143px;
+		}
+
+		#radioWrap{
+			width:20px;
+			height:180px;
+			position:absolute;
+			right:5%;
+			top:68%;
+			margin-top: -90px;
+			z-index: 222;
+		}
+
+		#radio{width:100%; height:100%; overflow: hidden;}
+
+		#radio li{
+			width:20px;
+			height:20px;
+			background-color: rgba(255,255,255, 0.5);
+			text-indent: -10000px;
+			border-radius: 50%;
+			margin-top: 12px;
+			cursor:pointer;}
+		#radio li:first-child{margin-top:0;}
+
+		/*
+			set position to absolute(essential).
+			use margin to adjust gaps between LIs because ApplikeOnePage.js uses .outerHeight(true) method
+			to measure the interval gap to which each radio buttons are placed.
+		*/
+		#radioOn{
+			width:20px;
+			height:20px;
+			margin-bottom:12px;
+			position: absolute;
+			top:0; left:0;
+			background-color: #fff;
+			border-radius: 50%;}
+	</style>
+	<!--[if IE]>
+		<script src="http://libs.baidu.com/html5shiv/3.7/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<!-- 刘海平start -->
+	<div class="lap">
+		<div class="sub-nav-view">
+			<div class="wrapper1">
+				<ul>
+					<!-- logo -->
+					<li class="logo">
+						<a id="logo-a" href=""></a>
+					</li>
+					<!-- 童装 -->
+					<li>
+						<a class="dress" href="">童装</a>
+					</li>
+					<!-- 母婴 -->
+					<li class="dress">
+						<a class="dress" href="">母婴</a>
+					</li>
+					<!-- 居家 -->
+					<li class="home">
+						<a class="dress" href="">居家</a>
+					</li>
+					<!-- 美食 -->
+					<li class="food">
+						<a class="dress" href="">美食</a>
+					</li>
+					<!-- 女装 -->
+					<li>
+						<a class="dress" href="">女装</a>
+					</li>
+					<!-- 鞋包 -->
+					<li>
+						<a class="dress" href="">鞋包</a>
+					</li>
+					<!-- 美妆 -->
+					<li>
+						<a class="dress" href="">美妆</a>
+					</li>
+					<!-- 奶粉 -->
+					<li>
+						<a class="dress" href="">奶粉</a>
+					</li>
+					<!-- 纸尿布 -->
+					<li>
+						<a class="dress" href="">纸尿布</a>
+					</li>
+					<!-- 全球购 -->
+					<li id="oversea">
+						<a href="">
+							<img style="vertical-align: -3px;" src="../images/1.t9.png" alt="">
+						全球购
+						</a>
+					</li>
+					<!-- 限量购 -->
+					<li id="tuan">
+						<a href="">
+							<img style="vertical-align: -3px;" src="../images/1.t10.png" alt="">
+						限量购
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- 刘海平end -->
+	<!-- 顶部上的内容start -->
+	<div class="top-nav">
+		<div class="wrapper">
+			<ul  style="right:9%;">
+				<!-- 登录前显示start -->
+				<li class="view-l">
+				您好，
+					<a class="view-a1" href="./8dl.html">请登录</a>
+                    <a class="view-a2" href="./8.1zc.html">免费注册</a>
+				</li>
+				<li class="seg"></li>
+				<!-- 登录前显示END -->
+				<li>
+					<a href="">商家入驻</a>
+				</li>
+				<li class="seg"></li>
+				<!-- 贝贝商家中心start -->
+				<li class="small" id="button">
+					<div class="dropdown">
+						<span class="dropdown-default">
+							<a id="effsct" style="position: relative;padding:0 0 0 7px;margin-bottom:5px;" href="./8dl.html">贝贝商家中心</a>
+							<i class="glyphicon glyphicon-menu-down
+							"></i>
+						</span>
+						<ul class="dropdown-list">
+							<li>
+								<a id="effsct" class="dropdown-list" href="./8dl.html">贝店商家中心</a>
+							</li>
+						</ul>
+						<ul class="dropdown-list">
+							<li>
+								<a id="effsct" class="dropdown-list" href="./8dl.html">供应商中心</a>
+							</li>
+						</ul>
+
+
+					</div>
+				</li>
+				<!-- 贝贝商家中心end -->
+				<li class="seg"></li>
+				<!-- 帮助中心start -->
+				<li class="small1">
+					<div class="dropdown1">
+						<span class="dropdown-default1">
+							<i class="glyphicon glyphicon-question-sign iconfont-pink1"></i>
+							<a href="./10.1bzzx.html">帮助中心</a>
+							<i class="glyphicon glyphicon-menu-down"></i>
+						</span>
+						<ul class="dropdown-list1">
+							<i class="glyphicon glyphicon-headphones iconfont
+							"></i>
+							<a href="./10kfzx.html">联系客服</a>
+						</ul>
+					</div>
+				</li>
+				<!-- 帮助中心end -->
+				<li class="seg"></li>
+				<!-- 关注start -->
+				<li class="small2">
+					<div class="dropdown2">
+						<span id="gz" class="dropdown-default2" >
+						关注
+							<i class="glyphicon glyphicon-menu-down"></i>
+						</span>
+						<div class="dropdown-block block-follow" style="display:none">
+							<dl class="wechat">
+								<dd>微信号:beibeiclub</dd>
+								<dt title="微信扫一扫">
+									<img src="../images/1.t6.png" style="width:90px;height:90px;" alt="">
+								</dt>
+								<dd>订阅贝贝官方微信</dd>
+							</dl>
+							<dl class="social" >
+								<dd>
+									<a href="" title="关注新浪微博">
+										<img src="../images/1.t8.png" alt="关注贝贝新浪空间">
+									</a>
+								</dd>
+								<dd>
+									<a href="" title="关注贝贝QQ空间">
+										<img src="../images/1.t7.png" alt="关注贝贝QQ空间">
+									</a>
+								</dd>
+							</dl>
+						</div>
+					</div>
+				</li>
+				<!-- 关注end -->
+			</ul>
+		</div>
+	</div>
+	<!-- 顶部上的内容end -->
+	<!-- 顶部start -->
+	<div id="head">
+		<div class="wrapper">
+			<img style="width:250px;height:50px" class="min-logo" src="../images/1.t1.png" alt="">
+			<a class="min-logo-a" href=""></a>
+		</div>
+		<div class="min-logo-slogan">
+			<a href=""></a>
+		</div>
+		<!-- 我的购物车start -->
+		<div class="nav-cart">
+			<a class="top-cart" href="" style="text-decoration: none;right:10.1%;">
+				<div class="top-cart-icon">
+					<i class="glyphicon glyphicon-shopping-cart
+					"></i>
+				</div>
+				<span>
+				我的购物车
+				<i style="font-size: 13px;    margin-left: 4px;" class="glyphicon glyphicon-chevron-down"></i>
+				</span>
+			</a>
+			<div class="gwc">
+				<div class="k">
+					<ul class="k1">
+						<li>
+							<span>赶快去挑选商品吧！</span>
+							<span class="shopping">
+								<i></i>
+							</span>
+						</li>
+					</ul>
+					<div class="k2">
+						<div class="wg">
+						小计
+							<span>¥0.00</span>
+						</div>
+						<div>
+							<a href="">
+								<i class="glyphicon glyphicon-shopping-cart
+								"></i>
+								去购物车结算
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 我的购物车end -->
+		<!-- 网页目录start -->
+		<div id="min-nav">
+			<div class="wrapper">
+				<a class="nav-tiem" href="./1sy.html" target="_self">首页</a>
+				<a class="nav-tiem" href="./2qqg.html" target="_self">全球购</a>
+				<a class="nav-tiem" href="./3xlg(1).html" target="_self">限量购</a>
+				<a class="nav-tiem" style="background-color:#f34660;" href="">贝贝APP</a>
+				<a class="nav-tiem" href="./5bd.html"  target="_blank">贝店</a>
+				<a class="nav-tiem" href="./6bd.html"  target="_blank">贝贷</a>
+				<a class="nav-tiem" id="nav-item" href="./7sjrz.html"  target="_blank">商家入驻
+					<i></i>
+				</a>
+				<!-- 搜索栏 -->
+				<!-- 分类搜索start -->
+				<div class="m-bn" style="right:10.6%;">
+					<div id="button" class="j-m">
+						<span class="btn-cat">
+							在售分类
+							<i class="glyphicon glyphicon-menu-down"></i>
+						</span>
+						<!-- 分类区块 start 有隐藏的-->
+						<div id="p" class="clearfix">
+							<ul class="fl1">
+								<li>热销分类</li>
+								<li>儿童服饰</li>
+								<li>婴儿装</li>
+								<li>婴童鞋</li>
+								<li>奶粉辅食</li>
+								<li>纸尿裤</li>
+								<li>哺育喂养</li>
+								<li>洗护清洁</li>
+								<li>睡眠出行</li>
+								<li>玩具文体</li>
+								<li>孕妈专区</li>
+								<li>流行服饰</li>
+								<li>鞋包配饰</li>
+								<li>居家百货</li>
+								<li>美妆个户</li>
+							</ul>
+							<!-- style="display:none;" -->
+							<div class="bn-con" >
+								<ul>
+									<li class="rightcon0">
+										<a href="">
+											<img src="../images/47777251304120_150x150.png!60x60.jpg" alt="">
+											<label for="">纸尿裤</label>
+										</a>
+									</li>
+									<li class="rightcon0">
+										<a href="">
+											<img src="../images/65064681196826_120x120.jpg!60x60.jpg" alt="">
+											<label for="">奶瓶</label>
+										</a>
+									</li>
+									<li class="rightcon0">
+										<a href="">
+											<img src="../images/52214243214120_150x150.jpg!60x60.jpg" alt="">
+											<label for="">益智早教</label>
+										</a>
+									</li>
+									<li class="rightcon0" style="border-right:0px;">
+										<a href="">
+											<img src="../images/47799721994120_150x150.jpg!60x60.jpg" alt="">
+											<label for="">奶粉</label>
+										</a>
+									</li>
+									<li class="rightcon0">
+										<a href="">
+											<img src="../images/61534086624120_150x150.png!60x60.jpg" alt="">
+											<label for="">套装</label>
+										</a>
+									</li>
+									<li class="rightcon0">
+										<a href="">
+											<img src="../images/61539581244120_150x150.png!60x60.jpg" alt="">
+											<label for="">哈衣爬服</label>
+										</a>
+									</li>
+									<li class="rightcon0" style="border-right:0px;">
+										<a href="">
+											<img src="../images/61544811414120_150x150.jpg!60x60.jpg" alt="">
+											<label for="">爆款童鞋</label>
+										</a>
+									</li>
+									<li class="rightcon0" style="border-bottom:0px;">
+										<a href="">
+											<img src="../images/04541470574120_150x150.png!60x60.jpg" alt="">
+											<label for="">鞋包配饰</label>
+										</a>
+									</li>
+									<li class="rightcon0" style="border-bottom:0px;">
+										<a href="">
+											<img src="../images/55301456264120_150x150.png!60x60.jpg" alt="">
+											<label for="">春装上新</label>
+										</a>
+									</li>
+									<li class="rightcon0" style="border-bottom:0px;">
+										<a href="">
+											<img src="../images/35669652256826_120x120.jpg!60x60.jpg" alt="">
+											<label for="">床品</label>
+										</a>
+									</li>
+									<li class="rightcon0" style="border-bottom:0px;">
+										<a href="">
+											<img src="../images/85158569796826_120x120.jpg!60x60.jpg" alt="">
+											<label for="">护肤套装</label>
+										</a>
+									</li>
+									<!-- <li class="rightcon0">
+										<a href="">
+											<img src="../images/" alt="">
+											<label for="">纸尿裤</label>
+										</a>
+									</li>
+									<li class="rightcon0">
+										<a href="">
+											<img src="../images/" alt="">
+											<label for="">纸尿裤</label>
+										</a>
+									</li>
+									<li class="rightcon0">
+										<a href="">
+											<img src="../images/" alt="">
+											<label for="">纸尿裤</label>
+										</a>
+									</li>
+									<li class="rightcon0">
+										<a href="">
+											<img src="../images/" alt="">
+											<label for="">纸尿裤</label>
+										</a>
+									</li>
+									<li class="rightcon0">
+										<a href="">
+											<img src="../images/" alt="">
+											<label for="">纸尿裤</label>
+										</a>
+									</li>
+									<li class="rightcon0">
+										<a href="">
+											<img src="../images/" alt="">
+											<label for="">纸尿裤</label>
+										</a>
+									</li>
+									<li class="rightcon0">
+										<a href="">
+											<img src="../images/" alt="">
+											<label for="">纸尿裤</label>
+										</a>
+									</li> -->
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- 分类区块end -->
+						<!-- search/item/query的方法中 kerword字段 -->
+						<!-- <div class="m-bn-spirit">
+
+							<input class="m-bn-search" placeholder="搜索商品或品牌" type="text">
+							<div class="m-bn-content" style="height：0px;"></div>
+						</div> -->
+						<!-- q -->
+					<!-- search/item/query的方法中 kerword字段 -->
+
+					<div class="col-lg-6">
+						<div class="input-group">
+							<input style="height:28px;" type="text" placeholder="搜索商品或品牌" class="form-control">
+							<div class="m-bn-content" style="height：0px;"></div>
+							<span style="height:28px;" class="input-group-btn">
+								<button  style="height:28px;" class="btn btn-default" type="button">
+									<i class="glyphicon glyphicon-search"></i>
+								</button>
+							</span>
+						</div>
+					</div><!-- /.col-lg-6 -->
+				</div>
+			</div>
+		</div>
+		<!-- 网页目录end -->
+	</div>
+	<!-- 顶部end -->
+
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+	<div id="view">
+		<div id="frame">
+			<section class="section-wrap">
+		            <!-- 1 -->
+				<div class="op-section section section-1">
+					<div class="title active " style="top:-11%">
+					    <div class="page J_page" id="page-1" style="height: 578px;">
+					        <div class="m-wrapper">
+
+					            <div class="J_oneFixed m-pos-rel left m-top">
+					                <div class="scene1-2 app-icon app-b-balloon scene J_scene12" style="opacity: 1;"></div>
+					                <div class="scene1-1 app-icon i1-cloud scene J_scene11" style="opacity: 1; left: 36%;" data-move-x="500px"></div>
+					                <div class="scene1-3 app-xb scene J_scene13" style="opacity: 1;"></div>
+					                <div class="scene1-4 app-icon app-s-balloon scene J_scene14" style="opacity: 1;"></div>
+					                <div class="bg1 bg"></div>
+					            </div>
+					            <!-- 手机1start -->
+					            <div class="J_appPhone1 m-fixed-phone1 app-phone1 " style="display:block;">
+					            	<em class="app-phone-con app-phone-one"></em>
+					            </div>
+					            <!-- 手机1end -->
+					        </div>
+					        <div class="m-fixed">
+					            <div class="J_words m-words one-words" style="background-position: 0px 0px;"></div>
+					            <div class="m-qrcode">
+					                <a ams="" rid="16" class="download-qr" href="javascript:;" style=";display:block;" data-style="display:block;" target="_self" ams-done="true">
+					                <img src="../images/65373168382527_153x153.png" style="zoom: 1;">
+					                </a>
+					                <a href="http://dl.beibei.com/beibei.signed.apk" class="btn-download android btn-download1"></a>
+					                <a href="https://itunes.apple.com/cn/app/id863998476" class="btn-download ios btn-download1"></a>
+					            </div>
+					        </div>
+					    </div>
+					</div>
+				</div>
+				<!-- 2 -->
+				<div class="op-section second section section-2">
+					<div class="title">
+					    <div class="page J_page" id="page-2" style="height: 578px;">
+					        <div class="m-wrapper">
+					            <div class="J_twoFixed m-pos-rel left m-top">
+					                <div class="scene2-1 app-icon scene J_scene21" style="opacity: 1; "></div>
+					                <div class="scene2-2 app-icon scene J_scene22" style="opacity: 1;"></div>
+					                <div class="scene2-3 app-icon scene J_scene23" style="opacity: 0;left:-5%" data-move-x="500px"></div>
+					                <div class="bg2 bg"></div>
+					            </div>
+					            <!-- 手机2start -->
+					            <div class="J_appPhone m-fixed-phone2 app-phone2 shake2" style="display:block;">
+					            	<em class="app-phone-con app-phone-two"></em>
+					            </div>
+					            <!-- 手机2end -->
+					        </div>
+					        <div class="m-fixed">
+					            <div class="J_words m-words one-words" style="background-position: 0px -136px;"></div>
+					            <div class="m-qrcode">
+					                <a ams="" rid="16" class="download-qr" href="javascript:;" style=";display:block;" data-style="display:block;" target="_self" ams-done="true">
+					                <img src="../images/65373168382527_153x153.png" style="zoom: 1;">
+					                </a>
+					                <a href="http://dl.beibei.com/beibei.signed.apk" class="btn-download android btn-download2"></a>
+					                <a href="https://itunes.apple.com/cn/app/id863998476" class="btn-download ios btn-download2"></a>
+					            </div>
+					        </div>
+					    </div>
+
+					</div>
+
+				</div>
+				<!-- 3 -->
+				<div class="op-section third section section-3">
+					<div class="title">
+				    	<div class="page J_page" id="page-3" style="height: 578px;">
+					        <div class="m-wrapper">
+					            <div class="J_threeFixed m-pos-rel left m-top ">
+					                <div class="scene3-1 app-icon scene J_scene31" style="opacity: 1;"></div>
+					                <div class="scene3-2 app-icon scene J_scene32" style="opacity: 1;"></div>
+					                <div class="scene3-3 app-icon scene J_scene33" style="opacity: 0; left:-5%" data-move-x="500px"></div>
+					                <div class="bg3 bg"></div>
+					            </div>
+					            <!-- 手机3start -->
+					            <div class="J_appPhone3 m-fixed-phone3 app-phone3 " style="display:block;">
+					            	<em class="app-phone-con app-phone-three"></em>
+					            </div>
+					            <!-- 手机3end -->
+					        </div>
+					        <div class="m-fixed">
+					            <div class="J_words m-words one-words" style="background-position: 0px -272px;"></div>
+					            <div class="m-qrcode">
+					                <a ams="" rid="16" class="download-qr" href="javascript:;" style=";display:block;" data-style="display:block;" target="_self" ams-done="true">
+					                <img src="../images/65373168382527_153x153.png" style="zoom: 1;">
+					                </a>
+					                <a href="http://dl.beibei.com/beibei.signed.apk" class="btn-download android btn-download3"></a>
+					                <a href="https://itunes.apple.com/cn/app/id863998476" class="btn-download ios btn-download3"></a>
+					            </div>
+					        </div>
+				    	</div>
+					</div>
+				</div>
+				<!-- 4 -->
+				<div class="op-section fourth section section-4">
+					<div class="title">
+						 <!-- 4 -->
+					    <div class="page J_page" id="page-4" style="height: 578px;">
+					        <div class="m-wrapper">
+					            <div class="J_threeFixed m-pos-rel left m-top ">
+					                <div class="scene4-1 app-icon scene J_scene41"></div>
+					                <div class="scene4-2 app-icon scene J_scene42"></div>
+					                <div class="scene4-3 app-icon scene J_scene43"></div>
+					                <div class="bg4"></div>
+					            </div>
+					            <!-- 手机4start -->
+					            <div class="J_appPhone4 m-fixed-phone4 app-phone4 " style="display:block;">
+					            	<em class="app-phone-con app-phone-four"></em>
+					            </div>
+					            <!-- 手机4end -->
+					        </div>
+					        <div class="m-fixed">
+					            <div class="J_words m-words one-words" style="background-position: 0px -408px;"></div>
+					            <div class="m-qrcode">
+					                <a ams="" rid="16" class="download-qr" href="javascript:;" style=";display:block;" data-style="display:block;" target="_self" ams-done="true">
+					                <img src="../images/65373168382527_153x153.png" style="zoom: 1;">
+					                </a>
+					                <a href="http://dl.beibei.com/beibei.signed.apk" class="btn-download android btn-download4"></a>
+					                <a href="https://itunes.apple.com/cn/app/id863998476" class="btn-download ios btn-download4"></a>
+					            </div>
+					        </div>
+					    </div>
+					    <div class="page-foot fl J_fixIE J_mpage" style="width:100%; height: 45px;margin-top: 1%;"></div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+	<div id="radioWrap">
+		<ul id="radio">
+			<li>section0</li>
+			<li>section1</li>
+			<li>section2</li>
+			<li>section3</li>
+			<!-- <li>section4</li>
+			<li>section5</li> -->
+		</ul>
+		<span id="radioOn"></span>
+	</div>
+
+	 <script src="../js/jquery-1.11.0.min.js"></script>
+
+	<script src="../js/onepage.js"></script>
+
+    <script src="../js/jquery.smoove.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			startOnePage({
+				frame: "#view",
+				container: "#frame",
+				sections: ".op-section",
+				radio: "#radio",
+				radioOn: "#radioOn",
+				speed: 500,
+				easing: "swing"
+			});
+
+		});
+	</script>
+</body>
+</html>

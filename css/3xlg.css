@@ -1,0 +1,772 @@
+    body,h1,h2,h3,h4,h5,h6,div,p,dl,dt,dd,ol,ul,li,form,table,th,td,a,img,span,strong,var,em,input,textarea,select,option{margin: 0; padding: 0;}
+html,body{font-family:"微软雅黑","宋体",Arail,Tabhoma; font-size: 16px; text-align: left;}
+ul,ol{list-style: none;}
+img{border: 0;}
+input,select,textarea{outline:0;}
+textarea{resize:none; overflow: auto;}
+table{border-collapse: collapse; border-spacing: 0;}
+th,strong,var,em,b,i{font-weight: normal; font-style: normal;}
+a,u{text-decoration: none;}
+a {
+    color: #3e3e3e;
+    text-decoration: none;
+}
+
+/*倒计时*/
+body{
+            font-family: Tahoma;
+            font-size: 14px;
+            padding: 0 0 100px;
+        }
+
+        /* Customization Style of SyoTimer */
+        .timer{
+            text-align: center;
+            margin-top: -4px ;
+            margin-left:5%;
+            padding: 0 0 10px;
+
+
+            /*border-bottom: 2px solid #80a3ca;*/
+        }
+        .timer .table-cell{
+            display: inline-block;
+            margin-left:5px;
+
+            width: 79px;
+            background: url(./images/timer.png) no-repeat 0 0;
+        }
+        #periodic_timer_days.timer .table-cell.hour{
+            display: inline-block;
+            margin-left:90px;
+
+            width: 79px;
+            background: url(./images/timer.png) no-repeat 0 0;
+        }
+        #periodic_timer_days.timer .table-cell.minute{
+            display: inline-block;
+            margin-left:-45px;
+
+            width: 79px;
+            background: url(./images/timer.png) no-repeat 0 0;
+        }
+         #periodic_timer_days.timer .table-cell.second{
+            display: inline-block;
+            margin-left:-11px;
+
+            width:43px;
+            background: url(./images/timer.png) no-repeat 0 0;
+        }
+        .timer .table-cell .tab-val{
+            background: #ff647c;
+            font-size: 35px;
+            color: #fff;
+            width:43px;
+            height: 38px;
+            line-height: 43px;
+
+            margin-top: 20%;
+        }
+        .timer .table-cell .tab-val1{
+            background: #ff647c;
+            font-size: 35px;
+            color: #fff;
+            width:43;
+            height: 38px;
+            line-height: 43px;
+
+           margin-top: 20%;
+        }
+        .timer .table-cell .tab-metr{
+            font-family: Arial;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+
+        #simple_timer.timer .table-cell.day,
+        #periodic_timer_days.timer .table-cell.hour{
+            width: 120px;
+            background-image: url(./images/timer_long.png);
+        }
+/*____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+
+
+/*中间部分start*/
+
+.event-container1{
+	width:100%;
+	text-align:center;
+}
+.bgf9f9f9 {
+	width:1080px;
+    background: #f9f9f9;
+    margin-left:10%;
+}
+/*时间轴start*/
+.m-time-line {
+    width: 100%;
+    overflow: hidden;
+    height: 76px;
+    background: url(../images/bg_line.png) center center no-repeat;
+    margin-bottom: 20px;
+    position: relative;
+}
+.pos-re {
+    position: relative;
+}
+.m-time-line ul {
+    width: 100%;
+    height: 76px;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+}
+/*疯抢中*/
+.J_firstTimeDot{
+	width:690px;
+}
+element.style {
+    margin-left: 20px;
+}
+.m-time-line li {
+    float: left;
+    height: 76px;
+    cursor: pointer;
+}
+element.style {
+    display: none;
+}
+.m-time-line li.now .status1 {
+    background-position: -89px -65px;
+}
+.m-time-line li .status1 {
+    background-position: -8px -65px;
+    margin: 8px;
+    margin-right: 165px;
+    width: 60px;
+    height: 60px;
+}
+.tuan-icon {
+    background: url(../images/i_map.png) no-repeat;
+}
+.m-time-line li .status1 .time {
+    padding: 12px 0;
+    color: #fff;
+    text-align: center;
+}
+.fs-word {
+    line-height: 22px;
+    height: 18px;
+}
+.fs14 {
+    font-size: 14px;
+    margin-top: -2px;
+}
+.m-time-line li .status2 {
+    display: none;
+    height: 76px;
+}
+.m-time-line li .status2 .shape {
+    max-width: 701px;
+    overflow: hidden;
+}
+element.style {
+    width: 213px;
+}
+
+.shape .shape-left {
+    width: 76px;
+    height: 76px;
+    background-position: -1px -246px;
+}
+.pos-re {
+    position: relative;
+}
+.fl {
+    float: left;
+}
+.shape-left .pic9 {
+    background-position: -8px -144px;
+}
+
+.shape-left .pic-time {
+    width: 62px;
+    height: 62px;
+    left: 7px;
+    top: 7px;
+    z-index: 2;
+}
+.pos-ab {
+    position: absolute;
+}
+.shape-left .fs {
+    color: #fff;
+    height: 30px;
+    overflow: hidden;
+    left: 80px;
+    top: 11px;
+    position: absolute;
+}
+.shape-hide {
+    display: none;
+}
+.fs17 {
+    font-size: 17px;
+}
+element.style {
+    display: block;
+}
+.shape-left .fs23 {
+    top: 31px;
+    height: 40px;
+}
+.shape-hide {
+    display: none;
+}
+.fs23 {
+    font-size: 23px;
+}
+element.style {
+    width: 320px;
+}
+
+.shape-con {
+    background: url(../images/i_repeatx.png) repeat-x;
+    height: 76px;
+}
+.pos-re {
+    position: relative;
+}
+.fl {
+    float: left;
+}
+.shape-con label {
+    font-weight: 700;
+    top: 23px;
+    left: -30px;
+    color: #666;
+    font-size: 20px;
+    width: 128px;
+    overflow: hidden;
+    text-align: right;
+}
+.shape-hide {
+    display: none;
+}
+.pos-ab {
+    position: absolute;
+}
+/*倒计时start*/
+.shape-con .shape-countdown {
+    margin: 16px 0 0 110px;
+}
+.shape-countdown .pic {
+    background-position: 0 0;
+    width: 208px;
+    height: 43px;
+    line-height: 43px;
+}
+.pos-re {
+    position: relative;
+}
+/*倒计时end*/
+
+element.style {
+}
+.shape .shape-right {
+    width: 35px;
+    height: 76px;
+    background-position: -179px -60px;
+    margin-right: 122px;
+}
+
+.pos-re {
+    position: relative;
+}
+.fl {
+    float: left;
+}
+.shape .shape-right .fix-line {
+    z-index: 3;
+    width: 100px;
+    height: 10px;
+    background: url(../images/fix_line.png) repeat-x;
+    top: 33px;
+    left: 31px;
+}
+.pos-ab {
+    position: absolute;
+}
+.clearfix:after, .wrapper:after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+/*疯抢中end*/
+
+/*预告15start*/
+.fs14 {
+    font-size: 14px;
+    margin-top: -2px;
+}
+.m-time-line li .status2 {
+    display: none;
+    height: 76px;
+}
+.m-time-line li .status2 .shape {
+    max-width: 701px;
+    overflow: hidden;
+}
+.will .shape .shape-left {
+    background-position: -1px -322px;
+}
+
+.shape .shape-left {
+    width: 76px;
+    height: 76px;
+    background-position: -1px -246px;
+}
+.pos-re {
+    position: relative;
+}
+.fl {
+    float: left;
+}
+.shape-left .pic15 {
+    background-position: -88px -144px;
+}
+.shape-left .pic-time {
+    width: 62px;
+    height: 62px;
+    left: 7px;
+    top: 7px;
+    z-index: 2;
+}
+.pos-ab {
+    position: absolute;
+}
+.shape-hide {
+    display: none;
+}
+.fs17 {
+    font-size: 17px;
+}
+.shape-left .fs23 {
+    top: 31px;
+    height: 40px;
+}
+.shape-hide {
+    display: none;
+}
+.fs23 {
+    font-size: 23px;
+}
+.shape-con {
+    background: url(../images/i_repeatx.png) repeat-x;
+    height: 76px;
+}
+.shape-con label {
+    font-weight: 700;
+    top: 23px;
+    left: -30px;
+    color: #666;
+    font-size: 20px;
+    width: 128px;
+    overflow: hidden;
+    text-align: right;
+}
+.shape-hide {
+    display: none;
+}
+.pos-ab {
+    position: absolute;
+}
+.shape .shape-right {
+    width: 35px;
+    height: 76px;
+    background-position: -179px -60px;
+    margin-right: 122px;
+}
+/*预告15end*/
+
+/*预告20start*/
+.m-time-line li {
+    float: left;
+    height: 76px;
+    cursor: pointer;
+}
+.m-time-line li.last .status1 {
+    margin-right: 0;
+}
+.m-time-line li.will .time {
+    color: #48bc03;
+}
+.fs14 {
+    font-size: 14px;
+    margin-top: -2px;
+}
+.m-time-line li .status2 {
+    display: none;
+    height: 76px;
+}
+.m-time-line li .status2 .shape {
+    max-width: 701px;
+    overflow: hidden;
+}
+.will .shape .shape-left {
+    background-position: -1px -322px;
+}
+.shape .shape-left {
+    width: 76px;
+    height: 76px;
+    background-position: -1px -246px;
+}
+.pos-re {
+    position: relative;
+}
+.shape-left .pic21 {
+    background-position: -165px -144px;
+}
+
+.shape-left .pic-time {
+    width: 62px;
+    height: 62px;
+    left: 7px;
+    top: 7px;
+    z-index: 2;
+}
+.pos-ab {
+    position: absolute;
+}
+.shape-left .fs {
+    color: #fff;
+    height: 30px;
+    overflow: hidden;
+    left: 80px;
+    top: 11px;
+    position: absolute;
+}
+.shape-hide {
+    display: none;
+}
+.shape-left .fs23 {
+    top: 31px;
+    height: 40px;
+}
+.shape-hide {
+    display: none;
+}
+.shape-con {
+    background: url(../images/i_repeatx.png) repeat-x;
+    height: 76px;
+}
+.pos-re {
+    position: relative;
+}
+.fl {
+    float: left;
+}
+.shape-con label {
+    font-weight: 700;
+    top: 23px;
+    left: -30px;
+    color: #666;
+    font-size: 20px;
+    width: 128px;
+    overflow: hidden;
+    text-align: right;
+}
+.shape-hide {
+    display: none;
+}
+.shape-con .shape-countdown {
+    margin: 16px 0 0 110px;
+}
+.shape-hide {
+    display: none;
+}
+.shape-countdown .pic {
+    background-position: 0 0;
+    width: 208px;
+    height: 43px;
+    line-height: 43px;
+}
+.pos-re {
+    position: relative;
+}
+.m-time-line li.last .shape .shape-right {
+    margin-right: 0;
+}
+.shape .shape-right {
+    width: 35px;
+    height: 76px;
+    background-position: -179px -60px;
+    margin-right: 122px;
+}
+/*预告20end*/
+.m-line-move {
+    width: 100%;
+    height: 0;
+    border-bottom: 2px solid #ff4965;
+}
+
+.pos-re {
+    position: relative;
+}
+.m-line-move .i-move {
+    position: absolute;
+    top: -12px;
+    left: 52px;
+    width: 0;
+    height: 0;
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent transparent #FF4965;
+}
+/*时间轴end*/
+
+/*商品列表start*/
+ #tuan-lists{
+	width:1080px;
+	height:100%;
+}
+/*浮动导航和筛选start*/
+#tuan-nav-wrapper {
+	width:1080px;
+    line-height: 45px;
+    background: #fff;
+    position: relative;
+    margin-left: 0px;
+    left: 0px;
+}
+#tuan-nav-wrapper .tuan-nav {
+    list-style: none;
+    height: 49px;
+    padding: 10px 0 10px 14px;
+    border: 1px solid #ececec;
+    border-top: 0;
+}
+.tuan-nav li {
+    float: left;
+    height: 22px;
+    line-height: 22px;
+    margin-right: 18px;
+    *display: inline;
+}
+
+element.style {
+}
+.tuan-nav li a.current {
+    background: #ff4965;
+    color: #fff;
+}
+.tuan-nav li a {
+    display: block;
+    padding: 0 10px;
+    color: #3e3e3e;
+    text-decoration: none;
+}
+.tuan-nav-filter {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: 294px;
+    background: #f9f9f9;
+    border-left: #ececec;
+    width: 245px;
+    height: 48px;
+    padding: 10px 0;
+    overflow: hidden;
+}
+.tuan-nav-filter ul {
+    position: relative;
+    height: 22px;
+    list-style: none;
+}
+.tuan-nav-filter li.first {
+    border-right: 1px solid #ececec;
+}
+
+.tuan-nav-filter li {
+    float: left;
+    position: relative;
+    color: #ff4965;
+    height: 22px;
+    line-height: 22px;
+    padding: 0 24px;
+    font-size: 14px;
+}
+.tuan-nav-filter li.first a {
+    color: #46bb00;
+}
+.tuan-nav-filter li i.i-by {
+    background-position: -11px -221px;
+}
+
+.tuan-nav-filter li i {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.tuan-icon {
+    background: url(../images/i_map.png) no-repeat;
+}
+/*浮动导航和筛选end*/
+/*商品列表end*/
+
+/*列表start*/
+
+.tuan-main-cont {
+    width: 1100px;
+    margin-bottom: 2%;
+}
+.tuan-main-cont ul {
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
+.tuan-main-cont li:hover{
+	border:1px solid #ff4965;
+}
+.tuan-main-cont li {
+    float: left;
+    overflow: hidden;
+    background: #fff;
+    width: 253px;
+    height: 320px;
+    border: 1px solid #ececec;
+    margin: 20px 22px 0 0;
+    transition: border .3s;
+    -webkit-transition: border .3s;
+    -moz-transition: border .3s;
+    -o-transition: border .3s;
+    -ms-transition: border .3s;
+}
+.tuan-main-cont li a{
+	color: #3e3e3e;
+    text-decoration: none;
+}
+.tuan-main-cont .img-cont {
+    position: relative;
+    overflow: hidden;
+}
+.tuan-main-cont .img-cont img {
+    width: 253px;
+    height: 253px;
+}
+
+.lazy {
+    background: url(//b0.hucdn.com/img/common/loading.gif) no-repeat center center;
+}
+.tuan-main-cont .detail {
+    position: relative;
+    padding: 0 8px;
+    width: 244px;
+    height: 66px;
+    overflow: hidden;
+}
+.tuan-main-cont .detail .title {
+    position: absolute;
+    top: 7px;
+    color: #666;
+    height: 18px;
+    width: 174px;
+    line-height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.tuan-main-cont .detail .price {
+    padding-top: 23px;
+}
+.tuan-main-cont .detail .now-price {
+    font-size: 20px;
+    color: #fb4863;
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: -37%;
+}
+.tuan-main-cont .detail .ori-price {
+    position: relative;
+    color: #999;
+}
+.tuan-main-cont .detail .ori-price .span-price {
+    text-decoration: line-through;
+}
+.tuan-main-cont .detail .ori-price {
+    position: relative;
+    color: #999;
+}
+.tuan-main-cont .other-info.hasProduct {
+    border: 1px solid #ff4965;
+}
+.tuan-main-cont .other-info {
+    position: absolute;
+    right: 2px;
+    top: 8px;
+    width: 60px;
+    height: 47px;
+    background: #fff;
+}
+.tuan-main-cont .other-info .status {
+    position: relative;
+    width: 60px;
+    height: 18px;
+    line-height: 18px;
+}
+.tuan-main-cont .other-info .statusBg {
+    background: #FFD1D9;
+    height: 18px;
+}
+.tuan-main-cont .other-info .statusVal {
+    position: absolute;
+    color: #ff4965;
+    left: 20px;
+    top: 0;
+    text-align: center;
+}
+.tuan-main-cont .other-info.hasProduct .btn3 {
+    background: #ff4965;
+}
+.tuan-main-cont .other-info .btn3 {
+    width: 60px;
+    height: 29px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+.tuan-main-cont .other-info .btn3 {
+    width: 59px;
+    height: 29px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+/*列表end*/
+/*点击加载更多start*/
+.load-more {
+	position: absolute;
+    width: 1080px;
+    height: 60px;
+    font-size: 14px;
+    color: #3d3d3d;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+    margin-top: 220%;
+    background-color: #fff;
+    /* cursor: pointer; */
+}
+/*点击加载更多end*/
+/*中间部分end*/
+

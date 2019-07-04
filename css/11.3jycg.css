@@ -1,0 +1,196 @@
+    body,h1,h2,h3,h4,h5,h6,div,p,dl,dt,dd,ol,ul,li,form,table,th,td,a,img,span,strong,var,em,input,textarea,select,option{margin: 0; padding: 0;}
+html,body{font-family:"微软雅黑","宋体",Arail,Tabhoma; font-size: 16px; text-align: left;}
+ul,ol{list-style: none;}
+img{border: 0;}
+input,select,textarea{outline:0;}
+textarea{resize:none; overflow: auto;}
+table{border-collapse: collapse; border-spacing: 0;}
+th,strong,var,em,b,i{font-weight: normal; font-style: normal;}
+a,u{text-decoration: none;}
+/*——————————————————————————————————————————————————————————————————————————————++++++++++++++++++++++++++++*/
+/*登录前显示start*/
+.top-nav .wrapper ul li .striking-link {
+    color: #ff5482;
+}
+.top-nav ul li .lv1 {
+    background-position: 0 0;
+}
+.top-nav ul li .lv-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background: url(../images/i_icon_s.png) no-repeat;
+    text-decoration: none;
+}
+/*——————————————————————————————————————+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*中间部分start*/
+#container11 {
+    width: 100%;
+    z-index: 11;
+}
+#container11 .wrapper11 {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    display:block;
+}
+#container11 .mt-20 {
+    margin-top: 20px;
+}
+.box-shadow {
+    box-shadow: 0 1px 2px #d1d1d1;
+}
+.white-bg {
+    background: #fefefe;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+/*我的购物车标题start*/
+.cart-process {
+    position: relative;
+    height: 70px;
+    background: #fafafa;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #eee;
+    margin: 0 0 10px 0;
+}
+.cart-process h1 {
+    font-size:24px;
+    margin: 0 0 0 30px;
+    line-height: 70px;
+    color: #a7a7a7;
+    text-shadow: 0 -1px 0 #fff;
+    font-weight:1000;
+}
+.cart-process.process-step1 i {
+    background-position: 0 -367px;
+}
+.cart-process i {
+    position: absolute;
+    right: 30px;
+    top: 0;
+    background: url(../images/cart_merge.png) no-repeat 500px 500px;
+    width: 340px;
+    height: 70px;
+    display: inline-block;
+}
+/*我的购物车标题end */
+/*——————————————————————————————————————+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*将贝贝分享到妈妈圈start*/
+.bdshare {
+    display: block;
+    padding-left: 695px;
+}
+.bdshare-button-style0-16 a, .bdshare-button-style0-16 .bds_more {
+    float: left;
+    font-size: 12px;
+    line-height: 16px;
+    height: 16px;
+    cursor: pointer;
+    margin: 6px 6px 6px 0;
+}
+.bdshare-button-style0-16 a{
+    float: left;
+    font-size: 12px;
+    padding-left: 17px;
+    line-height: 16px;
+    height: 16px;
+    background-image: url(../images/icons_0_16.png?v=91362611.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin: 6px 6px 6px 0;
+    text-decoration: none;
+    opacity: 1;
+}
+.bdshare-button-style0-16 a:hover{
+    opacity: 0.7;
+}
+/*微信*/
+.bdshare-button-style0-16 .bds_weixin {
+    background-position: 0 -1612px;
+}
+/*分享*/
+.bdshare-button-style0-16 .bds_qzone {
+    background-position: 0 -52px;
+}
+/*新浪微博*/
+.bdshare-button-style0-16 .bds_tsina {
+    background-position: 0 -104px;
+}
+/*qq*/
+.bdshare-button-style0-16 .bds_sqq {
+    background-position: 0 -2652px;
+}
+/*将贝贝分享到妈妈圈end*/
+/*——————————————————————————————————————+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*交易成功start*/
+.pay-wait {
+    padding: 80px 0px 50px 200px;
+}
+#loading {
+    position: relative;
+}
+.f-16 {
+    font-size: 16px;
+}
+
+.green, a.green {
+    color: #4ea205;
+}
+.explain {
+    margin: 10px 0 10px 65px;
+}
+.c-999{
+    color: #999;
+}
+.explain .blue {
+    margin: 0 16px 0 0;
+    color: #2a9ad2;
+    text-decoration: none;
+}
+.explain .c-999 {
+    color: #999;
+    text-decoration:none;
+}
+/*交易成功end*/
+/*——————————————————————————————————————+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*二维码start*/
+.prom {
+    width:1080px;
+    height:220px;
+    margin: 30px 60px;
+    padding: 30px 60px;
+    background: #F6F6F6;
+}
+/*左边*/
+.prom .left {
+    float: left;
+    width: 372px;
+    border-right: 1px solid #ccc;
+    /*padding: 50px 0 0 150px;*/
+    background: url(../images/wx_prom.png) no-repeat 0 0;
+    height: 158px;
+    font-size: 13px;
+    color: #777;
+}
+b, strong {
+    font-weight: 700;
+}
+/*右边*/
+.prom .right {
+    display: block;
+    float: right;
+    width: 372px;
+    /*padding: 50px 0 0 135px;*/
+    background: url(../images/qrcode.png) no-repeat 0 0;
+    height: 158px;
+    font-size: 13px;
+    color: #777;
+}
+/*二维码end*/
+/*——————————————————————————————————————+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+ /*中间部分end*/
+/*——————————————————————————————————————+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+

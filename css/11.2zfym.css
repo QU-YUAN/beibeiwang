@@ -1,0 +1,603 @@
+    body,h1,h2,h3,h4,h5,h6,div,p,dl,dt,dd,ol,ul,li,form,table,th,td,a,img,span,strong,var,em,input,textarea,select,option{margin: 0; padding: 0;}
+html,body{font-family:"微软雅黑","宋体",Arail,Tabhoma; font-size: 16px; text-align: left;}
+ul,ol{list-style: none;}
+img{border: 0;}
+input,select,textarea{outline:0;}
+textarea{resize:none; overflow: auto;}
+table{border-collapse: collapse; border-spacing: 0;}
+th,strong,var,em,b,i{font-weight: normal; font-style: normal;}
+a,u{text-decoration: none;}
+/*——————————————————————————————————————————————————————————————————————————————++++++++++++++++++++++++++++*/
+/*顶部start*/
+.topbar {
+    width: 100%;
+    height: 26px;
+    background: url(../images/OzLou0mHd.png) repeat-x 0 0;
+}
+.topbar .topbar-wrap {
+    background: url(../images/OzLou0mHd.png) repeat-x 0 0;
+    width: 950px;
+    margin: 0 auto;
+}
+.topbar .topbar-wrap .topbar-link-last {
+    padding-right: 0;
+}
+.topbar .topbar-wrap a, .topbar .topbar-wrap span {
+	font-size:12px;
+    float: right;
+    color: #fff;
+    padding: 4px 15px;
+    background: url(../images/OzUPukVET.png) no-repeat 0 7px;
+}
+.topbar .topbar-wrap .topbar-link-first {
+    padding-left: 0;
+    background: 0 0;
+    font-size:12px;
+}
+/*顶部end*/
+/*——————————————————————————————————————+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*支付宝logo header start*/
+#header{
+	width:100%;
+	height:60px;
+	background-color:#fff;
+	border-bottom:1px solid #d9d9d9;
+	margin-top:0px;
+}
+.header-container {
+    width: 950px;
+    margin: 0 auto;
+}
+#header .header-title {
+    width: 250px;
+    height: 60px;
+    float: left;
+}
+/*logo*/
+.alipay-logo {
+    display: block;
+    width: 114px;
+    position: relative;
+    left: 0;
+    top: 10px;
+    float: left;
+    height: 40px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image: url(../images/T1HHFgXXVeXXXXXXXX.png);
+}
+#header .logo-title {
+    font-size: 16px;
+    font-weight: normal;
+    font-family: "Microsoft YaHei",微软雅黑,"宋体";
+    border-left: 1px solid #676d70;
+    color: #676d70;
+    height: 20px;
+    float: left;
+    margin-top: 15px;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+/*支付宝logo header end*/
+/*——————————————————————————————————————+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*中间部分start*/
+#container11z {
+    width: 950px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+/*支付成功*/
+#container11z .order-timeout-notice {
+    margin-top: 30px;
+     display: none;
+}
+
+.mi-notice-titleonly {
+    border: 0;
+}
+.mi-notice {
+    font-size: 14px;
+    border: 1px solid #e1e1ca;
+    background-color: #fff;
+}
+#container .order-timeout-notice {
+    margin-top: 30px;
+     /*display: none;*/
+}
+
+.mi-notice-titleonly {
+    border: 0;
+}
+.mi-notice {
+    font-size: 14px;
+    background-color: #fff;
+}
+.mi-notice-success .mi-notice-title {
+    background-color: #edffcc;
+}
+.mi-notice-titleonly .mi-notice-title {
+    margin: 0;
+}
+.mi-notice-title {
+    min-height: 34px;
+    _height: 34px;
+    padding: 14px 43px 21px 88px;
+    border: 1px solid #e1e1ca;
+    margin: -1px;
+    position: relative;
+}
+.mi-notice-title .iconfont {
+    font-size: 38px;
+    line-height: 38px;
+    float: left;
+    margin: 4px 0 0 -51px;
+    *display: inline;
+    color: #3C3;
+}
+.mi-notice-title h3 {
+    color: #3C3C3C;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 0px 0 0;
+}
+html body .ft-orange {
+    color: #F60;
+}
+/*交易失败*/
+.mi-notice-error .mi-notice-title {
+    background-color: #fceee8;
+    border-color: #f6c8b5;
+}
+/*页面主体start*/
+/*#container .order-timeout-notice {
+    margin-top: 30px;
+    display: none;
+}
+.mi-notice-success .mi-notice-title {
+    background-color: #edffcc;
+}
+
+.mi-notice-titleonly .mi-notice-title {
+    margin: 0;
+}
+.mi-notice-title {
+    min-height: 34px;
+    _height: 34px;
+    padding: 25px 43px 21px 88px;
+    border: 1px solid #e1e1ca;
+    margin: -1px;
+    position: relative;
+}
+.mi-notice-title .iconfont {
+    font-size: 38px;
+    line-height: 38px;
+    float: left;
+    margin: -4px 0 0 -51px;
+    *display: inline;
+}
+.mi-notice-success .iconfont {
+    color: #3C3;
+}
+.mi-notice-title h3 {
+    color: #3C3C3C;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 4px 0 0;
+    padding-top: 5px\9;
+    _padding-top: 4px;
+}
+html body .ft-orange {
+    color: #F60;
+}*/
+
+/*正在使用交易start*/
+.order-area {
+    position: relative;
+    z-index: 10;
+}
+#order {
+    position: relative;
+    margin-top: 15px;
+    *zoom: 1;
+    *z-index: 101;
+}
+
+.order {
+    z-index: 2;
+}
+/*隐藏部分*/
+.fn-hide {
+    display: none;
+}
+input, select, textarea {
+    font-size: 100%;
+}
+/*正在使用交易*/
+#order.order-bow .orderDetail-base {
+    border-bottom: 3px solid #b3b3b3;
+    background:#eff0f1;
+    color:#000;
+    height:89px;
+}
+.orderDetail-base{
+	padding:16px 0px 22px 23px;
+	position:relative;
+}
+.orderDetail-base .commodity-message-row {
+    float: left;
+    margin-left:-45%;
+}
+.order-extand-explain .create-time {
+    margin-left: 15px;
+}
+/*贝贝网-订单号*/
+.commodity-message-row {
+    height: 22px;
+    overflow: hidden;
+    margin-top:31px;
+    /*float:left;*/
+    /*margin-left:0px;*/
+}
+.commodity-message-row .first {
+    font-weight: 700;
+    font-size: 14px;
+    float: left;
+}
+.commodity-message-row .second {
+    margin-left: 20px;
+    float: left;
+    margin-top: 1px;
+}
+.payAmount-area {
+    bottom: 36px;
+}
+.payAmount-area {
+    position: absolute;
+    right: 23px;
+    text-align: right;
+    z-index: 1;
+}
+.payAmount-area .amount-font-22 {
+    font-size: 22px;
+    line-height: 22px;
+    color: #f60;
+}
+.order-ext-trigger {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    height: 22px;
+    padding: 2px 8px 1px;
+    font-weight: 700;
+    border-top: 0;
+    background: #b3b3b3;
+    z-index: 100;
+    color: #fff;
+}
+
+/*_____________________________++++++++++++++++++++++++++++++++++++*/
+/*操作区start*/
+.cashier-center-container {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    width: 950px;
+    min-height: 460px;
+    background-color: #fff;
+    border-bottom: 3px solid #b3b3b3;
+}
+.cashiser-switch-wrapper {
+    width: 1800px;
+}
+/*扫码支付页面start*/
+.fn-left {
+    float: left;
+}
+
+.cashier-center-view {
+    position: relative;
+    width: 803px;
+}
+/*提示区*/
+.fn-hide {
+    display: none;
+}
+/*扫码区*/
+.qrcode-area {
+    margin: 0 auto;
+    position: relative;
+}
+.qrcode-independence, .qrcode-integration {
+    width: 300px;
+    margin: 0 auto;
+}
+.qrcode-integration .qrcode-header {
+    display: block;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    margin-top: 75px;
+    margin-bottom: 16px;
+}
+.ft-center {
+    text-align: center;
+}
+.qrcode-header-money {
+    font-size: 26px;
+    font-weight: 700;
+    color: #f60;
+}
+.qrcode-integration .qrcode-img-area {
+    width: 168px;
+    height: 168px;
+    text-align: center;
+}
+.qrcode-integration .qrcode-img-area {
+    width: 220px;
+    margin: 0 auto;
+    position: relative;
+    height: 185px;
+}
+.qrcode-img-area .qrcode-busy-icon {
+    padding-top: 15px;
+}
+.qrcode-area .qrpay-crash-icon {
+    font-size: 38px;
+    color: #f90;
+}
+.qrcode-img-area .qrcode-busy-text {
+    margin-top: 20px;
+}
+
+.qrcode-area .ft-16 {
+    font-size: 16px;
+}
+.qrcode-img-area .mi-button {
+    margin-top: 40px;
+}
+
+.mi-button-lwhite {
+    background-position: 0 -462px;
+}
+a.mi-button-lwhite .mi-button-text {
+    padding: 8px 39px 4px 36px;
+}
+
+a.mi-button-lblue .mi-button-text, a.mi-button-lwhite .mi-button-text, a.mi-button-lorange .mi-button-text {
+    padding: 8px 19px 4px 16px;
+    height: 22px;
+}
+.mi-button-lwhite .mi-button-text {
+    background-position: right -462px;
+    color: #4d4d4d;
+}
+
+/*——————————————————————————————————————————————————————————————————*/
+.qrcode-integration .qrcode-img-wrapper {
+    position: relative;
+    width: 168px;
+    height: auto;
+    min-height: 168px;
+    margin: 0 auto;
+    padding: 6px;
+    border: 1px solid #d3d3d3;
+    -webkit-box-shadow: 1px 1px 1px #ccc;
+    box-shadow: 1px 1px 1px #ccc;
+}
+.qrcode-integration .qrcode-img-area {
+    width: 168px;
+    height: 168px;
+    text-align: center;
+}
+.qrcode-integration .qrcode-img-area {
+    width: 220px;
+    margin: 0 auto;
+    position: relative;
+    height: 185px;
+}
+.qrcode-integration .qrcode-loading {
+    top: 70px;
+    left: 60px;
+}
+.qrcode-integration .qrcode-loading {
+    position: absolute;
+    top: 36%;
+    left: 38%;
+}
+.ui-loading {
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-image: url(../images/M9UQl3TuH.gif);
+    text-align: center;
+    line-height: 50px;
+    font-size: 11px;
+    color: #777;
+}
+
+/*——————————————————————————————————————————————————*/
+.qrcode-img-explain {
+    padding: 10px 0 6px;
+}
+.qrcode-img-explain img {
+    margin-left: 20px;
+    margin-top: -35px;
+}
+.qrcode-img-explain div {
+    margin-left: 39%;
+    margin-top:-24%;
+    font-size:12px;
+}
+
+/*????????????????????___________________________________________*/
+.qrcode-foot {
+    height: 65px;
+    padding: 10px 78px;
+    display: none;
+    font-size:12px;
+}
+.qrcode-explain {
+    margin: 0;
+    font-size: 14px;
+}
+.qrcode-downloadApp{
+    font-size: 12px;
+    color: #a6a6a6;
+    text-decoration: underline;
+}
+
+/*>>>>>>>>>>>>>>>>>>>_________________________________________*/
+.qrcode-notice {
+    width: 230px;
+    margin: 0 auto;
+}
+.mi-notice-title {
+    min-height: 34px;
+    _height: 34px;
+    padding: 25px 43px 21px 88px;
+    border: 1px solid #e1e1ca;
+    margin: -1px;
+    position: relative;
+}
+.qrcode-notice .qrcode-notice-title {
+    padding: 10px 10px 11px 63px;
+}
+.qrcode-notice .qrcode-notice-title {
+    padding: 10px 3px 11px 63px;
+    text-align: left;
+    border-radius: 3px;
+}
+.mi-notice-success .mi-notice-title {
+    background-color: #edffcc;
+}
+.mi-notice-success .iconfont {
+    color: #3C3;
+}
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>_________________________________________*/
+/*指引区*/
+
+/*扫码支付页面end*/
+.qrguide-area {
+    position: absolute;
+    top: 62px;
+    left: 505px;
+    width: 204px;
+    height: 183px;
+    cursor: pointer;
+}
+.qrguide-area .qrguide-area-img {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/*》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》*/
+
+/*点击切换区域*/
+.view-switch.qrcode-show {
+    border-left: 1px solid #d9d9d9;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.view-switch {
+    width: 146px;
+    height: 400px;
+    padding-top: 126px;
+    background-color: #e6e6e6;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+.switch-tip {
+    text-align: center;
+}
+.switch-tip-icon-wrapper {
+    position: relative;
+}
+.switch-tip-icon-wrapper:before {
+    content: '';
+    position: absolute;
+    left: 40px;
+    top: 14px;
+    z-index: 11;
+    width: 55px;
+    height:34px;
+    background-color: #fff;
+}
+.switch-tip-icon {
+    position: relative;
+    z-index: 10;
+    display: block;
+    margin-top: 4px;
+    font-size: 84px;
+    color: #a6a6a6;
+    cursor: pointer;
+}
+/*》》》》》》》》》》》》*/
+.switch-qrcode-tip .switch-tip-icon-img {
+    left: 43px;
+    top: 21px;
+}
+.switch-tip-icon-img {
+    position: absolute;
+    left: 58px;
+    top: 35px;
+    z-index: 11;
+}
+/*<登录账户付款*/
+.switch-tip-btn {
+    display: block;
+    width: 106px;
+    height: 36px;
+    margin: 6px auto 0;
+    border: 1px solid #0fa4db;
+    background-color: #00aeef;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+}
+.switch-qrcode-tip  .switch-tip-btn {
+	color: #fff;
+    text-decoration: none;
+}
+/*操作区end*/
+/*页面主体end*/
+/*中间部分end*/
+/*——————————————————————————————————————+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*底部start*/
+/*底部1*/
+#footer {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    zoom: 1;
+}
+.copyright, .copyright a, .copyright a:hover {
+    color: #808080;
+}
+#footer #ServerNum {
+    color: #eff0f1;
+}
+/*——————————————————————————————————————+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*底部2*/
+#partner {
+    margin-top: 0;
+    padding-top: 0;
+    background-color: #eff0f1;
+}
+#partner {
+    margin-top: 10px;
+    padding: 0px 0 16px;
+    text-align: center;
+}
+/*底部end*/

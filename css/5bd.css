@@ -1,0 +1,481 @@
+    body,h1,h2,h3,h4,h5,h6,div,p,dl,dt,dd,ol,ul,li,form,table,th,td,a,img,span,strong,var,em,input,textarea,select,option{margin: 0; padding: 0;}
+html,body{font-family:"微软雅黑","宋体",Arail,Tabhoma; font-size: 16px; text-align: left;}
+ul,ol{list-style: none;}
+img{border: 0;}
+input,select,textarea{outline:0;}
+textarea{resize:none; overflow: auto;}
+table{border-collapse: collapse; border-spacing: 0;}
+th,strong,var,em,b,i{font-weight: normal; font-style: normal;}
+a,u{text-decoration: none;}
+a {
+    color: #3e3e3e;
+    text-decoration: none;
+}
+/*____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*1刘海平start*/
+.header1 {
+    height: 63px;
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0%;
+    left: 0;
+    z-index:1;
+}
+.header1 .anchor1 a {
+    display: inline-block;
+    height: 100%;
+    line-height: 63px;
+    color: #000;
+    font-size: 16px;
+    padding: 0 8px;
+    /*margin-left:5%;*/
+}
+.header1 .anchor1 a.active {
+    color: #e31436;
+    margin-left:27%;
+}
+.header1 .logo1 {
+    float: left;
+    margin-top: 16px;
+    width: 118.3px;
+    height: 30.8px;
+    background: url(../images/b7580ccd90ab1015_338x88.png) no-repeat;
+    background-size: 100% 100%;
+}
+/*++++++++++++++++++++++++++++++++++_______________________________________________*/
+.header {
+    height: 63px;
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:2;
+}
+.navbar {
+    margin: 0 auto;
+    width: 840px;
+    height: 63px;
+    overflow: hidden;
+}
+/*logo*/
+.logo {
+    float: left;
+    width: 140px;
+    height: 63px;
+    background: url(../images/b143892b72e70ac4_400x180.png) no-repeat;
+    background-size: 100% 100%;
+}
+.logo_img {
+    display: none;
+}
+/*首页*/
+.anchor {
+    height: 100%;
+    font-size: 0;
+    float: right;
+}
+.header .anchor a.active {
+    color: #e31436;
+    margin-left: -10%;
+    margin-right:1px;
+}
+.header .anchor a {
+    display: inline-block;
+    height: 100%;
+    line-height: 63px;
+    color: #fff;
+    font-size: 16px;
+    padding: 0 8px;
+}
+.header.anchor a {
+    text-decoration: none;
+
+}
+/*1刘海平end*/
+ /*————————————————————————————————————————————————————————————————————————————————————————————————————————== */
+/*1带你买遍全球好货start*/
+.banner {
+    margin: 0 auto;
+    width: 100%;
+    height: 803.6px;
+    background-image: url(../images/3a866ec09db2e1bf_3840x2000.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.dsnp {
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+}
+.banner .an {
+    bottom: 158.9px;
+    max-width: 1440px;
+}
+.banner .download-btn {
+    position: absolute;
+    right: 26%;
+    display: inline-block;
+    width: 175.7px;
+    height: 51.8px;
+    max-width: 1440px;
+}
+.banner .ios {
+    bottom: 228.9px;
+    max-width: 1440px;
+}
+.banner .download-btn {
+    position: absolute;
+    right: 26%;
+    display: inline-block;
+    width: 175.7px;
+    height: 51.8px;
+    max-width: 1440px;
+}
+/*1带你买遍全球好货end*/
+ /*————————————————————————————————————————————————————————————————————————————————————————————————————————== */
+ /*2贝店简介start */
+ .introduction {
+    width: 100%;
+    height: 315px;
+    padding-top: 1px;
+
+}
+.white {
+    background-color: #fff;z-index: 3;
+}
+/*贝店简介*/
+.title {
+    font-size: 19.6px;
+    margin-top: 84px;
+    width: 100%;
+    text-align: center;
+    color: #e31436;
+}
+.line {
+    background-color: #e31436;
+    width: 51px;
+    height: 3px;
+    margin: 0 auto;
+    margin-top: 32px;
+}
+.introduction .desc {
+    padding-top: 42px;
+    margin: auto;
+    width: 644px;
+    font-size: 11.2px;
+    line-height: 22.4px;
+    color: #333;
+    text-align: center;
+}
+ /*2贝店简介end */
+ /*————————————————————————————————————————————————————————————————————————————————————————————————————————== */
+ /*3贝店优势start */
+ .advantage {
+    width: 100%;
+    height: 595px;
+    background-color: #ffffff;
+    padding-top: 1px;
+}
+.advantage .advantage-show {
+    margin: 49px auto 0;
+    width: 540.4px;
+}
+.advantage .advantage-show .single-advantage {
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 49px;
+}
+.advantage .advantage-show .single-advantage .advantage-img {
+    width: 106.4px;
+    height: 106.4px;
+}
+.advantage .advantage-show .single-advantage .advantage-desc {
+    padding-top: 14px;
+    font-size: 11.2px;
+    color: #333;
+}
+.advantage .advantage-show .single-advantage:nth-child(3n-1) {
+    padding: 0 105.8px;
+}
+ /*3贝店优势end */
+ /*————————————————————————————————————————————————————————————————————————————————————————————————————————== */
+ /*4贝店官方宣传start */
+ .video-block {
+    background-size: cover;
+    position: relative;
+    padding-top: 1px;
+    height: 564.9px;
+    background-image: url(../images/be12a32c6b04f9f3_3840x1614.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.video-block .w-title {
+    color: #fff;
+}
+.video-block .w-title .w-line {
+    background-color: #fff;
+}
+.line {
+    background-color: #e31436;
+    width: 51px;
+    height: 3px;
+    margin: 0 auto;
+    margin-top: 32px;
+}
+.video-block .video-box {
+    padding-top: 56px;
+    width: 862.4px;
+    height: 486.5px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 4.2px 14px rgba(30,8,11,.1);
+}
+.video-block .video-box .video {
+    width: 100%;
+    height: 486.5px;
+    position: relative;
+}
+.video-block .video-box .video .poster {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.video-block .video-box .video .video-btn {
+    position: absolute;
+    width: 112px;
+    height: 112px;
+    top: 191.1px;
+    left: 375.2px;
+}
+ /*4贝店官方宣传end */
+ /*————————————————————————————————————————————————————————————————————————————————————————————————————————== */
+ /*5贝店投资背景start */
+ .white {
+    background-color: #fff;
+}
+section {
+    width: 100%;
+}
+.beidian-bg .title {
+    margin-top: 177.1px;
+}
+.beidian-bg .bg-desc {
+    margin: 56px auto 0;
+    text-align: center;
+    width: 539px;
+    font-size: 11.2px;
+    line-height: 14px;
+    color: #313131;
+}
+.beidian-bg .investment {
+    position: relative;
+    width: 656.6px;
+    height: 665px;
+    background-image: url(../images/8e6c9f1b54d52bfc_1876x1900.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+    margin: 0 auto;
+}
+.beidian-bg .investment .show-investment {
+    position: absolute;
+    width: 315px;
+    height: 122.5px;
+    left: 299.6px;
+    top: 23.8px;
+}
+.beidian-bg .investment .show-investment:first-child .in-title {
+    padding-top: 44.8px;
+}
+.beidian-bg .investment .show-investment .in-desc {
+    font-size: 11.2px;
+    letter-spacing: 3px;
+    color: #666;
+}
+.beidian-bg .investment .show-investment:nth-child(2) {
+    top: 182px;
+}
+.beidian-bg .investment .show-investment:nth-child(3) {
+    top:314px;
+}
+.beidian-bg .investment .show-investment:nth-child(4) {
+    top: 437px;
+}
+.beidian-bg .investment .show-investment:nth-child(5) {
+    top: 557px;
+}
+ /*5贝店投资背景end */
+ /*————————————————————————————————————————————————————————————————————————————————————————————————————————== */
+ /*6贝店合作品牌start */
+ .cooperation-brand {
+    width: 100%;
+    height: 595px;
+    padding-top: 1px;
+}
+.little-gray {
+    background-color: #f5f7fa;
+}
+.cooperation-brand .cooperater, .hot-block {
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.cooperation-brand .cooperater {
+    width: 763px;
+    height: 343.7px;
+    background-image: url(../images/2b779f6f9a8a9ecb_2181x982.jpg);
+    background-size: contain;
+    margin: 42px auto;
+}
+ /*6贝店合作品牌end */
+ /*————————————————————————————————————————————————————————————————————————————————————————————————————————== */
+ /*7贝店爆款start */
+ .hot-block {
+    width: 100%;
+    height: 595px;
+    background-image: url(../images/54b6e5843bf5adc8_3840x1700.jpg);
+    background-size: cover;
+    margin: 0 auto;
+    position: relative;
+    margin-top: -2px;
+}
+.cooperation-brand .cooperater, .hot-block {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    max-width: 1440px;
+}
+.hot-block .w-title {
+    color: #fff;
+    position: absolute;
+    margin-top:54px;
+}
+.hot-block .w-title .w-line {
+    background-color: #fff;
+}
+.hot-block .hot-modal {
+    padding-top: 191.1px;
+    margin: 0 auto;
+    height: 283.5px;
+    width: 784px;
+    text-align: center;
+}
+.hot-block .hot-modal .hot-product {
+    display: inline-block;
+    padding: 0 7.4px;
+}
+.hot-block .hot-modal .hot-product .hot-img {
+    width: 177.1px;
+}
+
+ /*7贝店爆款end */
+ /*————————————————————————————————————————————————————————————————————————————————————————————————————————== */
+ /*8加入贝店start */
+.join-beidian {
+    width: 100%;
+    height: 490px;
+    background-color: #fff;
+    padding-top: 1px;
+}
+.join-beidian .desc-show {
+    width: 683.2px;
+    margin: 56.7px auto 0;
+}
+.join-beidian .desc-show .desc-li {
+    display: inline-block;
+    width: 119px;
+    padding-right: 47.3px;
+    text-align: center;
+}
+.join-beidian .desc-show .desc-li .desc-icon {
+    width: 109.2px;
+    height: 121.1px;
+}
+.join-beidian .desc-show .desc-li .desc-title {
+    padding: 28px 0 10.5px;
+    font-size: 16.8px;
+    font-weight: 900;
+    color: #333;
+    text-align: center;
+    width: 100%;
+}
+.join-beidian .desc-show .desc-li .desc-detail {
+    font-size: 11.2px;
+    letter-spacing: 1px;
+    color: #666;
+    text-align: center;
+    width: 100%;
+}
+ /*8加入贝店end */
+ /*————————————————————————————————————————————————————————————————————————————————————————————————————————== */
+/*9自由省钱分享赚钱start*/
+ .final-show {
+    width: 100%;
+    height: 560px;
+    background-image: url(../images/14546c00cc9088c5_3840x1600.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    margin: 0 auto;
+    position: relative;
+}
+.dsnp {
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+}
+.final-show .an {
+    bottom: 126px;
+    max-width: 1440px;
+}
+.final-show .download-btn {
+    position: absolute;
+    left: 37%;
+    display: inline-block;
+    width: 170.8px;
+    height: 52.5px;
+    max-width: 1440px;
+}
+.final-show .ios {
+    bottom: 196px;
+    max-width: 1440px;
+}
+.final-show .download-btn {
+    position: absolute;
+    left: 37%;
+    display: inline-block;
+    width: 170.8px;
+    height: 52.5px;
+    max-width: 1440px;
+}
+/*9自由省钱分享赚钱end*/
+/*————————————————————————————————————————————————————————————————————————————————————————————————————————== */
+ /*10底部start*/
+ .footer {
+    height: 80px;
+    overflow: hidden;
+}
+.black {
+    background-color: #000;
+}
+.footer p:first-child {
+    margin-top: 8px;
+}
+
+.footer p {
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    text-align: center;
+    color: #ddd;
+}
+.footer p:nth-child(2) {
+    margin-top: -16px;
+}
+
+ /*10底部end*/

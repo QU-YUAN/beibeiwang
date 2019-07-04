@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>13我的交易</title>
+	<link rel="icon" href="../images/apple_icon.png">
+	<!-- <link rel="stylesheet" type="text/css" media="all" href="../css/db.css"> -->
+    <!-- <script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script> -->
+
+
+    <link rel="stylesheet" href="../css/13wdjy.css">
+    <link rel="stylesheet" href="../css/db.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../jquery-ui-1.12.1.custom/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../css/htmleaf-demo.css"> -->
+
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/top.js"></script>
+    <script src="../js/jquery-1.11.0.min.js"></script>
+    <script src="../js/megamenu.js" type="text/javascript"></script>
+    <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="../js/1sy.js"></script>
+</head>
+<body style="background: #eee;">
+	<!-- 顶部上的内容start -->
+   <div class="top-nav">
+
+	    <div class="wrapper">
+	        <ul c-rid="01047" style="right:-5%;">
+	            <!-- 登录前显示 START -->
+	            <li class="view-LoginStatus" data-status="0">
+		            <!-- <a class="lv-icon lv1" c-bname="通顶菜单-用户等级图标" clog="" c-emit="click" c-et="event" c-etl="" href="http://i.beibei.com/member/grade.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> -->
+		            <a class="striking-link" c-bname="通顶菜单-用户名" clog="" c-emit="click" c-et="event" c-etl="" href="http://i.beibei.com">1731***9580</a> &nbsp;
+		            <a c-bname="通顶菜单-退出" clog="" c-emit="click" c-et="event" c-etl="" href="./8dl.html" rel="nofollow">[退出]</a>
+	            </li>
+	            <li class="seg"></li>
+	            <li><a c-bname="通顶菜单-消息" clog="" c-emit="click" c-et="event" c-etl="" href="./13wdjy.html">消息</a></li>
+	            <li class="seg"></li>
+	            <li><a c-bname="通顶菜单-我的订单" clog="" c-emit="click" c-et="event" c-etl="" href="./13wdjy.html">我的订单</a></li>
+	            <li class="seg"></li>
+	            <li><a c-bname="通顶菜单-我的贝贝" clog="" c-emit="click" c-et="event" c-etl="" href="./13wdjy.html">我的贝贝</a></li>
+	            <li class="seg"></li>
+	            <!-- 登录前显示 END -->
+	            <li>
+	            	<a c-bname="商家入驻" clog="" c-emit="click" c-et="event" c-etl="" href="./7sjrz.html" clog-get="true">
+	                商家入驻
+	            	</a>
+	            </li>
+	            <li class="seg"></li>
+	            <li class="small">
+	                <div class="dropdown">
+	                    <span class="dropdown-default">
+	                        <a c-bname="商家中心" clog="" c-emit="click" c-et="event" c-etl="" href="./8dl.html" clog-get="true">贝贝商家中心</a>
+	                        <i class="glyphicon glyphicon-menu-down"></i>
+	                    </span>
+	                    <ul class="dropdown-list" style="border-bottom: none; padding-bottom: 0px; left: -8%; display: none;">
+	                        <li>
+	                            <a c-bname="商家中心" clog="" c-emit="click" c-et="event" c-etl="" href="./8dl.html">贝店商家中心</a>
+	                        </li>
+	                    </ul>
+	                    <ul class="dropdown-list" style="left: -8%; display: none;">
+	                        <li style="padding-top: 0;">
+	                            <a c-bname="商家中心" clog="" c-emit="click" c-et="event" c-etl="" href="./8dl.html">供应商中心</a>
+	                        </li>
+	                    </ul>
+	                </div>
+	            </li>
+
+	            <li class="seg"></li>
+	            <li class="small1">
+	                <div class="dropdown1">
+	                    <span class="dropdown-default">
+	                        <i class="glyphicon glyphicon-question-sign iconfont-pink1"></i>
+	                        <a c-bname="帮助中心" clog="" c-emit="click" c-et="event" c-etl="" href="./10.1bzzx.html" clog-get="true">帮助中心</a>
+	                        <i class="glyphicon glyphicon-menu-down" "=""></i>
+	                    </span>
+	                    <ul class="dropdown-list1" style="margin-left: 2%; padding: 0px 0px 3px 4px; display: none;">
+	                        <li>
+	                            <i class="glyphicon glyphicon-headphones iconfont
+                            		"></i>
+	                            <a target="_blank" c-bname="联系客服" clog="" c-emit="click" c-et="event" c-etl="" href="./10kfzx.html">联系客服</a>
+	                        </li>
+	                    </ul>
+	                </div>
+	            </li>
+	            <li class="seg"></li>
+	            <li class="small2">
+	                <div class="dropdown2">
+	                    <span class="dropdown-default">
+	                    关注
+	                        <i class="glyphicon glyphicon-menu-down" "=""></i>
+	                    </span>
+	                    <div class="dropdown-block block-follow">
+	                        <dl class="wechat">
+	                            <dd>微信号：beibeiclub</dd>
+	                            <dt title="微信扫一扫"><img src="http://b0.hucdn.com/img/common/beibeiclub_90.png" alt="" width="90" height="90"></dt>
+	                            <dd>订阅贝贝官方微信</dd>
+	                        </dl>
+	                        <dl class="social">
+	                            <dd><a target="_blank" c-bname="关注新浪微博" clog="" c-emit="click" c-et="event" c-etl="" href="http://weibo.com/p/1006063963155532/home?from=page_100606&amp;mod=TAB#place" title="关注贝贝新浪微博"><img src="http://b0.hucdn.com/img/common/weibo_45x45.png" alt="关注贝贝新浪微博" width="45" height="45"></a></dd>
+	                            <dd><a target="_blank" c-bname="关注QQ空间" clog="" c-emit="click" c-et="event" c-etl="" href="http://user.qzone.qq.com/2643291899?ptsig=xhap*Fevow5d8Z6q4BQELbvQeVmB17*Jlr6GDifDLTE" title="关注贝贝QQ空间"><img src="http://b0.hucdn.com/img/common/qzone_45x45.png" alt="关注贝贝QQ空间" width="45" height="45"></a></dd>
+	                        </dl>
+	                    </div>
+	                </div>
+	            </li>
+	        </ul>
+	    </div>
+	</div>
+	<!-- 顶部上的内容end -->
+	<!-- ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————++++++++++++++++++++++ -->
+	<!-- 顶部start -->
+	<div id="head">
+		<div class="wrapper">
+			<img style="width:250px;height:50px" class="min-logo" src="../images/1.t1.png" alt="">
+			<a class="min-logo-a" href=""></a>
+		</div>
+		<div class="min-logo-slogan">
+			<a href=""></a>
+		</div>
+		<!-- 我的购物车start -->
+		<div class="nav-cart">
+			<a class="top-cart" href="" style="text-decoration: none;right:10.1%;">
+				<div class="top-cart-icon">
+					<i class="glyphicon glyphicon-shopping-cart
+					"></i>
+				</div>
+				<span>
+				我的购物车
+				<i style="font-size: 13px;    margin-left: 4px;" class="glyphicon glyphicon-chevron-down"></i>
+				</span>
+			</a>
+			<div class="gwc">
+				<div class="k">
+					<ul class="k1">
+						<li>
+							<span>赶快去挑选商品吧！</span>
+							<span class="shopping">
+								<i></i>
+							</span>
+						</li>
+					</ul>
+					<div class="k2">
+						<div class="wg">
+						小计
+							<span>¥0.00</span>
+						</div>
+						<div>
+							<a href="">
+								<i class="glyphicon glyphicon-shopping-cart
+								"></i>
+								去购物车结算
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 我的购物车end -->
+		<!-- 网页目录start -->
+		<div id="min-nav">
+			<div class="wrapper">
+				<a class="nav-tiem" href="" target="_self">首页</a>
+				<a class="nav-tiem" href="./2qqg.html"  target="_self">全球购</a>
+				<a class="nav-tiem" href="./3.xlg(1).html"  target="_self">限量购</a>
+				<a class="nav-tiem" href="./4bbAPP(1).html" target="_self">贝贝APP</a>
+				<a class="nav-tiem" href="./5bd.html" target="_blank">贝店</a>
+				<a class="nav-tiem" href="./6bd.html" target="_blank">贝贷</a>
+				<a class="nav-tiem" id="nav-item" href="./7sjrz.html" target="_blank">商家入驻
+					<i></i>
+				</a>
+				<!-- 搜索栏 -->
+				<!-- 分类搜索start -->
+				<div class="m-bn" style="right:10.6%;">
+					<div id="button" class="j-m">
+						<span class="btn-cat">
+							在售分类
+							<i class="glyphicon glyphicon-menu-down"></i>
+						</span>
+						<!-- 分类区块 start 有隐藏的-->
+						<div id="p" class="clearfix">
+							<ul class="fl1">
+								<li>热销分类</li>
+								<li>儿童服饰</li>
+								<li>婴儿装</li>
+								<li>婴童鞋</li>
+								<li>奶粉辅食</li>
+								<li>纸尿裤</li>
+								<li>哺育喂养</li>
+								<li>洗护清洁</li>
+								<li>睡眠出行</li>
+								<li>玩具文体</li>
+								<li>孕妈专区</li>
+								<li>流行服饰</li>
+								<li>鞋包配饰</li>
+								<li>居家百货</li>
+								<li>美妆个户</li>
+							</ul>
+							<!-- style="display:none;" -->
+							<div class="bn-con" >
+								<ul>
+									<li class="rightcon0">
+										<a href="">
+											<img src="../images/47777251304120_150x150.png!60x60.jpg" alt="">
+											<label for="">纸尿裤</label>
+										</a>
+									</li>
+									<li class="rightcon0">
+										<a href="">
+											<img src="../images/65064681196826_120x120.jpg!60x60.jpg" alt="">
+											<label for="">奶瓶</label>
+										</a>
+									</li>
+									<li class="rightcon0">
+										<a href="">
+											<img src="../images/52214243214120_150x150.jpg!60x60.jpg" alt="">
+											<label for="">益智早教</label>
+										</a>
+									</li>
+									<li class="rightcon0" style="border-right:0px;">
+										<a href="">
+											<img src="../images/47799721994120_150x150.jpg!60x60.jpg" alt="">
+											<label for="">奶粉</label>
+										</a>
+									</li>
+									<li class="rightcon0">
+										<a href="">
+											<img src="../images/61534086624120_150x150.png!60x60.jpg" alt="">
+											<label for="">套装</label>
+										</a>
+									</li>
+									<li class="rightcon0">
+										<a href="">
+											<img src="../images/61539581244120_150x150.png!60x60.jpg" alt="">
+											<label for="">哈衣爬服</label>
+										</a>
+									</li>
+									<li class="rightcon0" style="border-right:0px;">
+										<a href="">
+											<img src="../images/61544811414120_150x150.jpg!60x60.jpg" alt="">
+											<label for="">爆款童鞋</label>
+										</a>
+									</li>
+									<li class="rightcon0" style="border-bottom:0px;">
+										<a href="">
+											<img src="../images/04541470574120_150x150.png!60x60.jpg" alt="">
+											<label for="">鞋包配饰</label>
+										</a>
+									</li>
+									<li class="rightcon0" style="border-bottom:0px;">
+										<a href="">
+											<img src="../images/55301456264120_150x150.png!60x60.jpg" alt="">
+											<label for="">春装上新</label>
+										</a>
+									</li>
+									<li class="rightcon0" style="border-bottom:0px;">
+										<a href="">
+											<img src="../images/35669652256826_120x120.jpg!60x60.jpg" alt="">
+											<label for="">床品</label>
+										</a>
+									</li>
+									<li class="rightcon0" style="border-bottom:0px;">
+										<a href="">
+											<img src="../images/85158569796826_120x120.jpg!60x60.jpg" alt="">
+											<label for="">护肤套装</label>
+										</a>
+									</li>
+									<!-- <li class="rightcon0">
+										<a href="">
+											<img src="../images/" alt="">
+											<label for="">纸尿裤</label>
+										</a>
+									</li>
+									<li class="rightcon0">
+										<a href="">
+											<img src="../images/" alt="">
+											<label for="">纸尿裤</label>
+										</a>
+									</li>
+									<li class="rightcon0">
+										<a href="">
+											<img src="../images/" alt="">
+											<label for="">纸尿裤</label>
+										</a>
+									</li>
+									<li class="rightcon0">
+										<a href="">
+											<img src="../images/" alt="">
+											<label for="">纸尿裤</label>
+										</a>
+									</li>
+									<li class="rightcon0">
+										<a href="">
+											<img src="../images/" alt="">
+											<label for="">纸尿裤</label>
+										</a>
+									</li>
+									<li class="rightcon0">
+										<a href="">
+											<img src="../images/" alt="">
+											<label for="">纸尿裤</label>
+										</a>
+									</li>
+									<li class="rightcon0">
+										<a href="">
+											<img src="../images/" alt="">
+											<label for="">纸尿裤</label>
+										</a>
+									</li> -->
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- 分类区块end -->
+						<!-- search/item/query的方法中 kerword字段 -->
+						<!-- <div class="m-bn-spirit">
+
+							<input class="m-bn-search" placeholder="搜索商品或品牌" type="text">
+							<div class="m-bn-content" style="height：0px;"></div>
+						</div> -->
+						<!-- q -->
+					<!-- search/item/query的方法中 kerword字段 -->
+					<!-- 搜索框 -->
+					<div class="col-lg-6">
+						<div class="input-group">
+							<input style="height:28px;" type="text" placeholder="搜索商品或品牌" class="form-control">
+							<div class="m-bn-content" style="height：0px;"></div>
+							<span style="height:28px;" class="input-group-btn">
+								<button  style="height:28px;" class="btn btn-default" type="button">
+									<i class="glyphicon glyphicon-search"></i>
+								</button>
+							</span>
+						</div>
+					</div><!-- /.col-lg-6 -->
+				</div>
+			</div>
+		</div>
+		<!-- 网页目录end -->
+	</div>
+	<!-- 顶部end -->
+	<!-- 中间部分start -->
+	<div id="container13">
+        <div id="content" class="pure-g backoffice-wrapper wrapper">
+            <div class="bo-side pure-u-1-5">
+                <h5 class="no-border-top">我的交易</h5>
+                <ul>
+                    <li data-pageid="pageBackofficeTradeOrderLists" class="current"><a href="http://i.beibei.com/trade/order/lists.html"><i class="glyphicon glyphicon-th-list iconfont"></i>我的订单</a>
+                    </li>
+                    <li data-pageid="pageBackofficeAccountCoupon"><a href="http://i.beibei.com/account/coupon.html"><i class="glyphicon glyphicon-usd iconfont"></i>我的现金券<i class="" id="coupon-cnt" data-url="http://i.beibei.com/account/coupon_count.html"></i></a>
+                    </li>
+                    <li data-pageid="pageBackofficeFavoriteBrandselling pageBackofficeFavoriteFavoritebrand pageBackofficeFavoriteProductselling"><a href="http://i.beibei.com/favorite/brand_selling.html"><i class="glyphicon glyphicon-heart iconfont"></i>我的收藏</a></li>
+                    <li data-pageid="pageBackofficeTradeRefundRecord"><a href="http://i.beibei.com/trade/refund/record.html"><i class="glyphicon glyphicon-retweet iconfont"></i>我的售后</a></li>
+                    <li data-pageid="pageBackofficeAccountShell"><a href="http://i.beibei.com/account/shell.html"><i class="glyphicon glyphicon-ice-lolly iconfont shell-icon"></i>我的贝壳</a></li>
+                    <li data-pageid="pageBackofficeC2cOrderIndex"><a href="http://i.beibei.com/c2c/order.html"><i class="glyphicon glyphicon-calender iconfont iconfont"></i>小店订单</a>
+                    </li>
+                </ul>
+                <h5>我的账号</h5>
+                <ul>
+                    <li data-pageid="pageBackofficeAccountProfile"><a href="http://my.beibei.com/account/profile.html"><i class="glyphicon glyphicon-user iconfont"></i>基本信息</a></li>
+                    <li data-pageid="pageBackofficeAccountDeliveryaddress"><a href="http://my.beibei.com/account/delivery_address.html"><i class="glyphicon glyphicon-bed iconfont"></i>我的收货地址</a></li>
+                    <li data-pageid="pageBackofficeSecurityIndex pageBackofficeSecurityPhonechangeverify pageBackofficeSecurityPhonechanging"><a href="http://my.beibei.com/security/index.html"><i class="glyphicon glyphicon-bell iconfont"></i>安全中心</a></li>
+                    <li data-pageid="pageBackofficeAccountWithdraw pageBackofficeAccountSecuritynotice pageBackofficeAccountWithdrawapply pageBackofficeAccountBindalipay"><a href="http://i.beibei.com/account/withdraw.html"><i class="glyphicon glyphiconbitcoin iconfont"></i>我的提现</a></li>
+                    <!--
+                    <li data-pageid="pageBackofficeAccountBankcard pageBackofficeAccountSecuritynotice pageBackofficeAccountWithdrawapply pageBackofficeAccountBindalipay"><a href="http://i.beibei.com/account/bankcard.html"><i class="iconfont">&#xf0032;</i>实名认证</a></li>
+                    -->
+                    <li data-pageid="pageBackofficeSecurityPasswdreset"><a href="http://my.beibei.com/security/passwd_reset.html"><i class="glyphicon glyphicon-lock iconfont"></i>修改密码</a></li>
+                    <li data-pageid="pageBackofficeAccountBinding"><a href="http://my.beibei.com/account/binding.html"><i class="glyphicon glyphicon-euro iconfont"></i>账号绑定</a></li>
+                    <li data-pageid="pageBackofficeEducationAdminIndex"><a href="http://edu.beibei.com/admin_index.html"><i class="glyphicon glyphicon-euro iconfont"></i>早教主播后台</a></li>
+                </ul>
+
+                <h5>消息中心</h5>
+                <ul>
+                    <li data-pageid="pageBackofficeMessageIndex"><a href="http://i.beibei.com/message/index.html"><i class="glyphicon glyphicon-envelope iconfont"></i>我的消息<i class="" id="message-cnt" data-url="http://i.beibei.com/message/unread_message_count.html"></i></a></li>
+                </ul>
+            </div>
+            <div class="bo-main pure-u-4-5">
+		    	<ul class="order-nav-list">
+		            <li class="active">
+		                <a href="http://i.beibei.com/trade/order/lists.html">
+		                                全部                </a>
+		            </li>
+		                                <li class="">
+		                <a href="http://i.beibei.com/trade/order/unpaid.html">
+		                                待付款                </a>
+		            </li>
+		                                <li class="">
+		                <a href="http://i.beibei.com/trade/order/unshipped.html">
+		                                待发货                </a>
+		            </li>
+		                                <li class="">
+		                <a href="http://i.beibei.com/trade/order/shipped.html">
+		                                待收货                </a>
+		            </li>
+		                                <li class="">
+		                <a href="http://i.beibei.com/trade/order/uncomment.html">
+		                                待评价                </a>
+		            </li>
+		                                <li class="last">
+		                <a href="http://i.beibei.com/trade/order/unshell.html">
+		                                待返现                </a>
+		            </li>
+		        </ul>
+
+				<div class="order-list pure-form">
+				    <ul class="ol-head clearfix12">
+				        <li class="ol-h-item-info">商品</li>
+				        <li class="ol-h-item-price">单价 <span class="c-aaa f-12">(元)</span></li>
+				        <li class="ol-h-number">数量</li>
+				        <li class="ol-h-aftersale">维权</li>
+				        <li class="ol-h-subtotal">总计 <span class="c-aaa f-12">(元)</span></li>
+				        <li class="ol-h-status">订单状态</li>
+				        <li class="ol-h-ops">操作</li>
+				    </ul>
+				    <div class="trade-entry">
+				        <div class="order-entry">
+				            <div class="order-head">
+				                <span>订单编号：536041348351396351</span>
+				                <span class="span1">下单时间：2018-12-26 11:29 </span>
+				            </div>
+				            <table class="pure-table">
+				                <tbody>
+				                    <tr class="order-item">
+				                        <td class="ol-b-item-info clearfix12">
+				                            <a class="image" style="position: relative;" href="http://you.beibei.com/detail/31683759.html#sid=20" target="_blank">
+				                                <img src="../images/59340911302954_736x736.jpg!60x60.jpg">
+				                            </a>
+				                            <a class="title c-666" target="_blank" href="http://you.beibei.com/detail/31683759.html#sid=20">【25件盒装】璞韵 头绳发圈韩国小清新简约个性马尾百搭发绳发饰扎头发
+				                            </a>
+				                            <span class="sku">颜色：D8080 2#气质咖啡色12件套&nbsp;&nbsp;&nbsp;</span>
+				                        </td>
+				                        <td class="ol-b-item-price">
+				                            <p>11.90</p>
+
+				                            <p class="strike">59.90</p>
+				                        </td>
+				                        <td class="ol-b-number">
+				                            1                                    </td>
+				                        <td class="ol-b-aftersale">
+				                        </td>
+				                        <td class="ol-b-subtotal" rowspan="1">
+				                            <p class="price">11.90</p>
+				                        </td>
+				                        <td class="ol-b-status c-999" rowspan="1">
+				                            <div>已关闭</div>
+				                            <div><a target="_blank" href="http://i.beibei.com/trade/order/detail.html?id=536041348351396351">订单详情</a>
+				                            </div>
+				                        <td class="ol-b-ops" rowspan="1" style="width: 130px">                </td>
+				                    </tr>
+				                </tbody>
+				        	</table>
+				        </div>
+				        <div class="trade-footer">
+				            <span class="tips">
+				            </span>
+				            <span class="summary">
+				                 实付款：<span class="price">¥ 11.90</span>
+				            </span>
+				            <span class="ops">
+				            </span>
+				        </div>
+				    </div>
+				    <div class="trade-entry">
+				        <div class="order-entry">
+				            <div class="order-head">
+				                <span class="span2">订单编号：536038160506696351</span>
+				                <span class="span3">下单时间：2018-12-26 10:36 </span>
+				            </div>
+				            <table class="pure-table">
+				                <tbody>
+				                    <tr class="order-item">
+				                        <td class="ol-b-item-info clearfix12">
+				                            <a class="image" style="position: relative;" href="http://you.beibei.com/detail/31690111.html#sid=17" target="_blank">
+				                            <img src="../images/53686757852368_800x800.jpg!60x60.jpg">
+				                            </a>
+				                            <a class="title c-666" target="_blank" href="http://you.beibei.com/detail/31690111.html#sid=17">【24款气质头饰】头绳韩国小清新发绳森女系成人简约发圈头饰扎头发橡皮筋发饰套装
+				                            </a>
+				                            <span class="sku">颜色：D148-可爱韩粉系8件套&nbsp;&nbsp;&nbsp;</span>
+				                        </td>
+				                        <td class="ol-b-item-price">
+				                            <p>7.90</p>
+
+				                            <p class="strike">35.00</p>
+				                        </td>
+				                        <td class="ol-b-number">
+				                            1                                    </td>
+				                        <td class="ol-b-aftersale">
+				                        </td>
+				                        <td class="ol-b-subtotal" rowspan="1">
+				                            <p class="price">7.90</p>
+				                                                                    </td>
+				                        <td class="ol-b-status c-999" rowspan="1">
+				                            <div>已关闭</div>
+				                            <div><a target="_blank" href="http://i.beibei.com/trade/order/detail.html?id=536038160506696351">订单详情</a></div>
+				                        </td>
+				                        <td class="ol-b-ops" rowspan="1" style="width: 130px"></td>
+				                    </tr>
+				                </tbody>
+				            </table>
+				        </div>
+				        <div class="trade-footer">
+				            <span class="tips">
+				            订单已关闭 <a href="javascript:" ba-ins="click~deleteOrder" data-url="http://i.beibei.com/trade/action/delete/aoeivepx_">删除订单</a>
+				            </span>
+				            <span class="summary">
+				                实付款：<span class="price">¥ 7.90</span>
+				            </span>
+				            <span class="ops">
+				            </span>
+				        </div>
+				    </div>
+				    <div class="trade-entry">
+				        <div class="order-entry">
+				            <div class="order-head">
+				                <span class="span4">订单编号：534445072170346351</span>
+				                <span class="span5">下单时间：2018-12-10 12:31 </span>
+				            </div>
+				            <table class="pure-table">
+				                <tbody>
+				                    <tr class="order-item">
+				                        <td class="ol-b-item-info clearfix12">
+				                            <a class="image" style="position: relative;" href="http://you.beibei.com/detail/31275716.html#sid=15,7384" target="_blank">
+				                            	<img src="http://b1.hucdn.com/upload/item/1711/13/40605349430916_800x800.jpg!60x60.jpg">
+				                        	</a>
+				                            <a class="title c-666" target="_blank" href="http://you.beibei.com/detail/31275716.html#sid=15,7384">【4双装 露脚踝神器】抖音同款加绒雪地袜毛袜子男士女士中筒袜加厚保暖短袜秋冬款黑</a>
+				                            <span class="sku">颜色：黑2肤2&nbsp;&nbsp;&nbsp;尺码：均码&nbsp;&nbsp;&nbsp;</span>
+				                        </td>
+				                        <td class="ol-b-item-price">
+				                            <p>15.90</p>
+				                            <p class="strike">86.00</p>
+				                        </td>
+				                        <td class="ol-b-number">
+				                            1                                    </td>
+				                        <td class="ol-b-aftersale">
+				                        </td>
+				                        <td class="ol-b-subtotal" rowspan="1">
+				                            <p class="price">15.90</p>
+				                        </td>
+				                        <td class="ol-b-status c-999" rowspan="1">
+				                            <div>已关闭</div>
+				                            <div><a target="_blank" href="http://i.beibei.com/trade/order/detail.html?id=534445072170346351">订单详情</a>
+				                            </div>
+				                        </td>
+				                        <td class="ol-b-ops" rowspan="1" style="width: 130px">
+				                        </td>
+				                        </tr>
+				                    </tbody>
+				                </table>
+				            </div>
+				            <div class="trade-footer">
+				                <span class="tips">
+				                </span>
+				                <span class="summary">
+				                 实付款：<span class="price">¥ 15.90</span>
+				                </span>
+				                <span class="ops">
+				                </span>
+				            </div>
+				        </div>
+				        <div class="pagination"></div>
+
+				    <div>
+
+				</div>
+
+
+
+
+				<!-- 模板 -->
+				<div class="isTemplate" style="display:none">
+				    <div template="payInfoBox" template-display="block" style="display:none">
+				        <h2 class="pay-box-title">请您在新打开的页面上完成付款</h2>
+
+				        <div class="pay-box-countdown">请在<span class="view-PayInfoCountdown">30分00秒</span>内完成付款，否则订单将自动关闭</div>
+				        <div class="pay-box-note">
+				            <p>付款完成前请不要关闭此窗口</p>
+
+				            <p>完成付款后请根据您的情况点击下面的按钮</p>
+				        </div>
+				        <div class="pay-box-btnbar">
+				            <a href="javascript:;" class="pink-btn view-PayDoneBtn">已完成付款</a>
+				            <a href="http://www.beibei.com/support/help/online_payment_2.html" target="_blank" class="grey-btn">支付遇到问题</a>
+				        </div>
+				        <div class="pay-box-help">
+				            <p>没看到付款窗口? <a class="view-RePayBtn" href="javascript:;">重新付款</a></p>
+				        </div>
+				    </div>
+				</div>
+				<div template="orderCancelBox" template-display="block" style="display:none">
+				    <div class="view-OrderCancelBox ui-form-wrap">
+				        <fieldset>
+				            <div class="ui-form-title ui-form-item">请选择取消原因：<span class="red view-ShowNotice">亲，请先选择取消原因吧！</span></div>
+				            <div class="ui-form-item ui-form-reason">
+				                <div><label class="ui-label"><input type="radio" name="reason" value="1"> 买错了</label></div>
+				                <div><label class="ui-label"><input type="radio" name="reason" value="2"> 不想买了</label></div>
+				                <div><label class="ui-label"><input type="radio" name="reason" value="3"> 信息填写错误，重新下单</label></div>
+				                <div><label class="ui-label"><input type="radio" name="reason" value="4"> 重复购买</label></div>
+				                <div><label class="ui-label"><input type="radio" name="reason" value="6"> 其他原因</label></div>
+				            </div>
+				            <div class="ui-form-item" style="height: 70px;">
+				                <p class="ui-form-explain">支付完成后，全球购订单30分钟内可以取消，其他订单2小时内可取消， 订单取消后， 订单金额将立即返回到您的贝贝余额。</p>
+				            </div>
+
+				            <div class="ui-form-item ui-form-footer">
+				                <input type="submit" class="ui-button ui-button-mred view-SureCancelBtn" value="确定取消">
+				                <input type="submit" class="ui-button view-ContinueBuy" value="继续购买">
+				            </div>
+				        </fieldset>
+				    </div>
+				</div>
+
+				<div template="orderRefundBox" template-display="block" style="display:none">
+				    <div class="view-OrderRefundBox ui-form-wrap">
+				        <fieldset>
+				            <div class="ui-form-title ui-form-item">请选择申请退款原因：<span class="red view-ShowNotice">亲，请先选择申请退款原因吧！</span></div>
+				            <div class="ui-form-item ui-form-reason">
+				                <div><label class="ui-label"><input type="radio" name="reason" value="1"> 买错了</label></div>
+				                <div><label class="ui-label"><input type="radio" name="reason" value="2"> 不想买了</label></div>
+				                <div><label class="ui-label"><input type="radio" name="reason" value="3"> 信息填写错误，重新下单</label></div>
+				                <div><label class="ui-label"><input type="radio" name="reason" value="4"> 重复购买</label></div>
+				                <div><label class="ui-label"><input type="radio" name="reason" value="6"> 其他原因</label></div>
+				            </div>
+				            <div class="ui-form-item" style="height: 70px;">
+				                <p class="ui-form-explain">退款申请提交后，商家会在6小时内确认商品是否寄出或同意退款。若商品已寄出仍需退款请走售后申请流程</p>
+				            </div>
+
+				            <div class="ui-form-item ui-form-footer">
+				                <input type="submit" class="ui-button ui-button-mred view-SureRefundBtn" value="确定申请">
+				                <input type="submit" class="ui-button view-ContinueBuy" value="继续购买">
+				            </div>
+				        </fieldset>
+				    </div>
+				</div>
+			</div>
+			<!-- <script type="text/javascript">
+			    pageData.from = '';
+			    pageData.resources = [10, 20];
+			    pageData.amsRid = [27, 29];
+			</script> -->
+		</div>
+	</div>
+	<!-- __________________________++++++++++++++++++++++++++++++++++++++++++++++++++>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+	<div class="minato-single mt-20" c-rid="05002" style="display: block;">
+        <h3>为您推荐</h3>
+            <ul class="minato-items clearfix12">
+                <li style="display: inline-block; " clog="" c-emit="show;click[a]" c-et="item" c-etl="600010978-3588325" clog-get="true">
+                    <a href="http://www.beibei.com/detail/600010978-3588325.html" class="view-RecordInfo" iid="22496151" pagetype="BBCart" target="_blank">
+                        <img src="../images/85808763037985_800x800.jpg!160x160.jpg" alt="台乐防水女士棉拖鞋女冬季室内防滑简约全包跟厚底加绒舒适柔软可爱保暖月子毛毛鞋情侣男士棉拖鞋男冬天女式成人居家家居毛绒">
+                        <p class="minato-items-name" op-value="title">台乐防水女士棉拖鞋女冬季室内防滑简约全包跟厚底加绒舒适柔软可爱保暖月子毛毛鞋情侣男士棉拖鞋男冬天女式成人居家家居毛绒</p>
+                        <p class="minato-items-price">
+                            <strong>
+                                <em>¥</em>
+                                <span op-value="price">19.99</span>
+                            </strong>
+                            <b>¥<span op-value="originPrice">68.00</span></b>
+                        </p>
+                    </a>
+                </li>
+                <li style="display: inline-block; " clog="" c-emit="show;click[a]" c-et="item" c-etl="106865335-7818453" clog-get="true">
+                    <a href="http://you.beibei.com/detail/106865335-7818453.html" class="view-RecordInfo" iid="31870493" pagetype="BBCart" target="_blank">
+                        <img src="../images/42033328667633_800x800.jpg!160x160.jpg" alt="4双秋冬款加厚加绒袜子女士短袜中筒保暖袜加绒地板袜地毯袜雪地袜">
+                        <p class="minato-items-name" op-value="title">4双秋冬款加厚加绒袜子女士短袜中筒保暖袜加绒地板袜地毯袜雪地袜</p>
+                        <p class="minato-items-price">
+                            <strong>
+                                <em>¥</em>
+                                <span op-value="price">16.90</span>
+                            </strong>
+                            <b>¥<span op-value="originPrice">188.00</span></b>
+                        </p>
+                    </a>
+                </li>
+                <li style="display: inline-block; " clog="" c-emit="show;click[a]" c-et="item" c-etl="106861383-4450206" clog-get="true">
+                    <a href="http://you.beibei.com/detail/106861383-4450206.html" class="view-RecordInfo" iid="31862489" pagetype="BBCart" target="_blank">
+                        <img src="../images/67751931850916_800x800.jpg!160x160.jpg" alt="【4双装】【加绒保暖】袜子女秋冬季韩版加厚地板袜成人中筒袜短袜雪地袜袜子">
+                        <p class="minato-items-name" op-value="title">【4双装】【加绒保暖】袜子女秋冬季韩版加厚地板袜成人中筒袜短袜雪地袜袜子</p>
+                        <p class="minato-items-price">
+                            <strong>
+                                <em>¥</em>
+                                <span op-value="price">9.90</span>
+                            </strong>
+                            <b>¥<span op-value="originPrice">39.90</span></b>
+                        </p>
+                    </a>
+                </li>
+                <li style="display: inline-block; " clog="" c-emit="show;click[a]" c-et="item" c-etl="600050368-8947010" clog-get="true">
+                    <a href="http://www.beibei.com/detail/600050368-8947010.html" class="view-RecordInfo" iid="31492743" pagetype="BBCart" target="_blank">
+                        <img src="../images/28822016666721_800x800.jpg!160x160.jpg" alt="5双秋冬款加厚加绒袜子女士短袜中筒保暖袜加绒地板袜地毯袜雪地袜">
+                        <p class="minato-items-name" op-value="title">5双秋冬款加厚加绒袜子女士短袜中筒保暖袜加绒地板袜地毯袜雪地袜</p>
+                        <p class="minato-items-price">
+                            <strong>
+                                <em>¥</em>
+                                <span op-value="price">15.00</span>
+                            </strong>
+                            <b>¥<span op-value="originPrice">20.00</span></b>
+                        </p>
+                    </a>
+                </li>
+                <li style="display: inline-block; border: 0;" clog="" c-emit="show;click[a]" c-et="item" c-etl="600057166-8823700" clog-get="true">
+                    <a href="http://www.beibei.com/detail/600057166-8823700.html" class="view-RecordInfo" iid="31306957" pagetype="BBCart" target="_blank">
+                        <img src="../images/12475384626819_800x800.jpg!160x160.jpg" alt="山芋腔4双光腿漏露脚踝脖神器袜子女肉色中筒冬季加绒短袜雪地棉袜">
+                        <p class="minato-items-name" op-value="title">山芋腔4双光腿漏露脚踝脖神器袜子女肉色中筒冬季加绒短袜雪地棉袜</p>
+                        <p class="minato-items-price">
+                            <strong>
+                                <em>¥</em>
+                                <span op-value="price">29.90</span>
+                            </strong>
+                            <b>¥<span op-value="originPrice">99.00</span></b>
+                        </p>
+                    </a>
+                </li>
+
+            </ul>
+    </div>
+
+	<!-- 中间部分end -->
+	<!-- ___________________________________________>>>>>>>>>>>>>>>>>>>>>>>>>>>>++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+	<!-- 底部start  -->
+	<div style="width:1349px;">
+		<!-- 邮编地址start -->
+		<div id="footer" style="margin-top:0px;">
+			<div class="footer-nav">
+				<a href="">首页</a>|
+				<a href="">关于贝贝</a>|
+				<a href="">商家入驻</a>|
+				<a href="">正品保证</a>|
+				<a href="">人才招聘</a>|
+				<a href="">联系我们</a>|
+				<a href="">帮助中心</a>|
+				<a href="">友情链接</a>|
+				<a href="">手机客户端</a>|
+				<a href="">客服在线</a>|
+				<a href="">贝贝公益</a>|
+				<a href="">品质健康</a>|
+				<a href="">育儿社区</a>
+			</div>
+			<div class="footer-content">
+				<div class="wrapper">
+					<p>浙ICP备14025287号 |
+                    食品流通许可证：SP3301041510054925 |
+                    出版物经营许可证：新出发零字第00086号</p>
+					<p class="mt-8">
+					© 2014-2018
+						<acolor="" style="" href="">杭州贝购科技有限公司 </a>
+					All Rights Reserved. 客服热线：0571-10107788
+					</p>
+					<div class="mt-20">
+						<a href="">
+							<img style="width:90px;height:32px;" src="../images/upload_37b07600c833c0678cfe99a29ab00f1f_127x47 (1).png" alt="">
+						</a>
+						<a href="">
+							<img src="../images/cxwz (1).png" alt="">
+						</a>
+						<a href="">
+							<img src="../images/hzgs (1).png" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 邮编地址end -->
+	</div>
+	<!-- 底部end -->
+
+	<!-- 定位方框2start -->
+	<div class="side-panel" style="bottom: 110px;">
+	    <div title="购物车" id="sidebar-cart" class="side-panel-item g" style="position: relative;">
+	        <div class="view-SideBarCartTriggerBtn side-panel-item-wrap"></div>
+	        <!-- 隐藏内容start -->
+	        <div class="view-SideBarCart side-panel-item-cart" >
+	        	<div style="background: #fff; border: 1px solid rgb(255, 84, 130); width: 350px; text-align: left; color: rgb(0, 0, 0); z-index: 29; cursor: default; position: relative;">
+	        		<div style="padding: 2px 15px; border-bottom: 1px solid rgb(227, 227, 227); background: rgb(255, 249, 251); font-size: 13px; text-align: center; color: rgb(255, 84, 130);">
+	        			<i class="glyphicon glyphicon-shopping-cart
+						"></i> 购物车是空的
+	        		</div>
+	        		<ul style="background: rgb(255, 255, 255); overflow-y: hidden;opacity: 0;"     >
+	        			<li class="empty-cart" style="font-size: 16px;color: rgb(153, 145, 140);padding: 80px 0px;text-align: center;position: relative;overflow: hidden;list-style: none;cursor: pointer;border-bottom: none;">
+	        				<span class="note">赶快挑选商品吧！</span>
+	        				<span class="shopping" style="width: 100%; display: block; transition: all 0.2s ease 0s; position: absolute; left: -100%; top: 80px;"><i class="iconfont"></i> 去专场逛逛</span>
+	        			</li>
+	        		</ul>
+	        		<div style="height: 47px;border-top: 1px solid rgb(227, 227, 227);background: rgb(255, 249, 251);">
+	        			<div wg-view="footerTotal" style="font-size: 13px; color: rgb(102, 102, 102); padding: 10px 15px; position: absolute;">小计：
+	        				<span  style="color: rgb(229, 51, 99); font-size: 18px;">¥0.00</span>
+	        			</div>
+	        			<div wg-view="footerBtnBar">
+	        				<a href="" style="    background: rgb(255, 84, 130);padding: 4px 12px;font-size: 13px;color: rgb(255, 255, 255);border-radius: 4px;border-width: 1px 1px 2px;border-style: solid;border-color: rgb(255, 60, 112) rgb(255, 60, 112) rgb(229, 51, 99);border-image: initial;float: right;margin-right: 15px;margin-top: 6px;height: 35px;width: auto;line-height: 30px;">
+	        					<i class="glyphicon glyphicon-shopping-cart"></i>去购物车结算
+	        				</a>
+	        			</div>
+	        		</div>
+	        		<div wg-view="footerBg"></div>
+	        	</div>
+	        </div>
+			<!-- 隐藏内容end -->
+	       	<i class="glyphicon glyphicon-shopping-cart"></i>
+	       	<span class="notify">
+		       	<em class="cart-num">0</em>
+	       	</span>
+	    </div>
+	    <div title="手机APP" class="side-panel-item view-SidePhoneApp side-panel-App">
+	    	<!-- 手机APP隐藏内容start -->
+	        <div class="side-panel-phone">
+	            <p>下载手机APP</p>
+	            <p>随时随地看上新</p>
+	            <img src="../images/40450807220001_158x158 (1).jpg">
+	        </div>
+	        <!-- 手机APP隐藏内容end -->
+	        <i  class="glyphicon glyphicon-phone"></i>
+	    </div>
+	    <a style="z-index: 10000" href="./10.kfzx.html" title="客服在线" ba-ins="click~kf" id="kefu"  class="side-panel-item " target="_blank">
+	    	<i id="fe" class="glyphicon glyphicon-headphones
+			"></i>
+			<!-- 客服隐藏内容start -->
+	    	<span id="tip-txt1">客服在线</span>
+	    	<!-- 客服隐藏内容end -->
+	    </a>
+	    <div onClick="gotoTop();return false;" title="回到顶部" ba-ins="click~backToTop" id="elevator" class="side-panel-item ">
+	    	<i id="di" class="glyphicon glyphicon-chevron-up "></i>
+	    	<span id="tip-txt2" >回到顶部</span>
+	    </div>
+	</div>
+
+	<!-- 定位方框2end -->
+</div>
+</body>
+</html>

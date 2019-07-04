@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>11.2支付页面</title>
+	<link rel="icon" href="../images/apple_icon.png">
+	<link rel="stylesheet" href="../css/11.2zfym.css">
+	<link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../jquery-ui-1.12.1.custom/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../css/htmleaf-demo.css"> -->
+
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/top.js"></script>
+    <script src="../js/jquery-1.11.0.min.js"></script>
+    <script src="../js/megamenu.js" type="text/javascript"></script>
+    <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="../js/1sy.js"></script>
+</head>
+<body style="background:#eff0f1;">
+	<!-- 顶部上start -->
+	<div class="topbar">
+	    <div class="topbar-wrap fn-clear">
+	        <a href="https://help.alipay.com/lab/help_detail.htm?help_id=258086" class="topbar-link-last" target="_blank" seed="goToHelp">常见问题</a>
+			<span class="topbar-link-first">你好，欢迎使用支付宝付款！</span>
+	    </div>
+	</div>
+	<!-- 顶部上end -->
+	<!-- ——————————————————————————————————————————————————————————————————++++++++++++++++++++ -->
+	<!-- 顶部start -->
+	<div id="header">
+	    <div class="header-container fn-clear">
+	        <div class="header-title">
+	            <div class="alipay-logo"></div>
+	            <span class="logo-title">我的收银台</span>
+	        </div>
+	    </div>
+	</div>
+	<!-- 顶部end -->
+	<!-- ——————————————————————————————————————————————————————————————————++++++++++++++++++++ -->
+	<div id="container11z">
+		<div class="mi-notice mi-notice-success mi-notice-titleonly order-timeout-notice" id="J_orderPaySuccessNotice">
+		    <div class="mi-notice-cnt">
+		        <div class="mi-notice-title">
+		            <i class="glyphicon glyphicon-ok-sign iconfont" title="支付成功"></i>
+
+		            <h3>支付成功，<span class="ft-orange" id="J_countDownSecond">3</span> 秒后自动返回商户。</h3>
+		        </div>
+		    </div>
+		</div>
+
+		<div class="mi-notice mi-notice-error mi-notice-titleonly order-timeout-notice" id="J_orderDeadlineNotice">
+		    <div class="mi-notice-cnt">
+		        <div class="mi-notice-title">
+		            <i class="glyphicon glyphicon-remove-sign iconfont" title="交易超时"></i>
+
+		            <h3>抱歉，您的交易因超时已失败。</h3>
+
+		            <p class="mi-notice-explain-other">
+		                您订单的最晚付款时间为： <span id="J_orderDeadline"></span>，目前已过期，交易关闭。
+		            </p>
+		        </div>
+		    </div>
+		</div>
+
+		<!-- FD:106:alipay/tracker/um.vm:START -->
+
+		<!-- <style type="text/css">
+		.umidWrapper{display:block; height:1px;}
+		</style> -->
+		<span style="display:inline;width:1px;height:1px;overflow:hidden">
+
+		<!-- <script type="text/javascript">
+			var cimg = new Image(1,1);
+			cimg.onload = function() {
+			    cimg.onload = null;
+			};
+			cimg.src = "https://ynuf.alipay.com/service/clear.png?xt=P66154d6f19cd3aabcc46ac3fa07ca85d&xa=";
+			</script>
+
+			<script type="text/javascript" src="https://assets.alicdn.com/g/security/umscript/3.0.11/um.js" charset="utf-8"></script>
+
+			<script type="text/javascript">
+			um.init({
+			    enabled: 1, ratio: 1, timeout: 3000,
+			    token: 'P66154d6f19cd3aabcc46ac3fa07ca85d', timestamp: '04832911515851435340647C',
+			    serviceUrl: 'https://ynuf.alipay.com/service/um.json',
+			  appName:''
+			});
+
+		</script> -->
+		</span>
+		<!-- FD:106:alipay/tracker/um.vm:END -->
+
+		<!-- 页面主体 -->
+		<div id="content" class="fn-clear">
+			<div id="J_order" class="order-area" data-module="excashier/login/2015.08.01/orderDetail">
+		        <div id="order" data-role="order" class="order order-bow">
+		            <form data-module="excashier/login/2015.08.01/checkTimeout" action="https://excashier.alipay.com:443/standard/timeOutErrorPage.htm" method="post" id="J_timeoutForm" class="fn-hide">
+		                <input type="hidden" name="_form_token" value="e0727ffe3e6c65d9426026c16f8ab4d54796a5fa56e14dc9873105580b34b06eRZ12">
+		                <input name="orderId" type="hidden" value="3a82a90ba3b84d2ba77010afde0a0eb6.40" id="orderId">
+		                <input name="orderTimeoutRequestInterval" type="hidden" value="" id="J_orderTimeoutRequestInterval">
+		                <input name="timeoutCheckUrl" type="hidden" value="https://excashier.alipay.com:443/standard/payOrderClosedCountDown.json">
+		                <input name="timeoutMillseconds" type="hidden" value="1799514" id="J_timeoutMillseconds">
+		                <input name="timeoutUrl" type="hidden" value="https://excashier.alipay.com:443/standard/timeOutPage.htm?payOrderId=3a82a90ba3b84d2ba77010afde0a0eb6.40" id="J_timeoutUrl">
+		                <input type="submit" value="" seed="J_timeoutForm-btn" smartracker="on">
+		            </form>
+		            <div class="orderDetail-base" data-role="J_orderDetailBase">
+		                <div class="order-extand-explain fn-clear">
+			            	<span class="fn-left explain-trigger-area order-type-navigator" style="cursor: auto" data-role="J_orderTypeQuestion">
+			            		<span>正在使用即时到账交易</span>
+			    				<span data-role="J_questionIcon" seed="order-type-detail" style="cursor: pointer;color: #08c;">[?]</span>
+			            	</span>
+			                <span class="fn-left create-time" id="teDelay">
+			                	<span>交易将在<span id="teOrderDelayText">26分钟</span>后关闭，请及时付款！</span>
+			            	</span>
+			            </div>
+		                <div class="commodity-message-row">
+		            		<span class="first long-content">
+				                贝贝网-订单号536038160506696351
+				            </span>
+		                    <span class="second short-content">
+		                         收款方：杭州贝购科技有限公司
+		                    </span>
+		                </div>
+		                <span class="payAmount-area" id="J_basePriceArea">
+		                    <strong class=" amount-font-22 ">7.90</strong> 元
+		        		</span>
+		            </div>
+
+					<div class="ui-tip ui-question-tip fn-hide" seed="question-tip" data-role="J_orderTypeTip">
+					    <div class="ui-dialog-container">
+					        <div class="ui-dialog-head-text">
+					            <span>付款后资金直接进入对方账户</span>
+					        </div>
+
+					        <ul class="ui-dialog-content">
+					            <li>
+					                若发生退款需联系收款方协商，如付款给陌生人，请谨慎操作。
+					            </li>
+					        </ul>
+					    </div>
+					    <div class="ui-icon-dialog-arrow">
+					        ↓
+					    </div>
+					</div>
+
+
+					<div class="ui-tip ui-question-tip fn-hide" data-role="J_exchangeTip">
+					    <div class="ui-dialog-container" style="width: 280px;">
+					        <ul class="ui-dialog-content">
+					            <li>
+					                1、支付宝不收取任何货币兑换手续费。
+					            </li>
+					            <li>
+					                2、最终支付金额为人民币金额，非外币金额。
+					            </li>
+								        </ul>
+					    </div>
+					    <div class="ui-icon-dialog-arrow">
+					        ↓
+					    </div>
+					</div>
+
+		            <a id="J_OrderExtTrigger" class="order-ext-trigger" href="./11.3jycg.html" seed="order-detail-more" data-role="J_oderDetailMore" style="color:#fff;text-decoration:none;">
+		                订单详情
+		            </a>
+
+		            <div class="ui-detail fn-hide" data-role="J_orderDetailCnt" id="J-orderDetail" style="display: none;">
+		                <div class="ajax-Account od-more-cnt fn-clear">
+		                    <div class="first  long-content">贝贝网-订单号536038160506696351</div>
+		                    <ul class="order-detail-container">
+		                        <li class="order-item">
+		                            <table>
+										<tbody>
+		            						<tr>
+									            <th class="sub-th">收款方：</th>
+									            <td>
+			                                    	杭州贝购科技有限公司
+			                                    </td>
+		    								</tr>
+					                        <tr>
+									            <th class="sub-th">订单号：</th>
+									            <td>1536038162974126351</td>
+									        </tr>
+					                        <tr>
+									            <th class="sub-th">商品名称：</th>
+									            <td>
+									                贝贝网-订单号536038160506696351
+									            </td>
+									        </tr>
+					                        <tr>
+									            <th class="sub-th">商品描述：</th>
+									            <td>支付共1笔订单</td>
+									        </tr>
+					                        <tr>
+									            <th class="sub-th">交易金额：</th>
+									            <td>7.90</td>
+									        </tr>
+		                        		</tbody>
+									</table>
+		                        </li>
+		                    </ul>
+		                </div>
+				        <span class="payAmount-area payAmount-area-expand">
+				                <strong class=" amount-font-22 ">7.90</strong> 元
+				        </span>
+		                <iframe src="javascript:''" class="ui-detail-iframe-fix" data-role="J_orderDetailFrameFix"></iframe>
+		            </div>
+
+		            <a id="J_OrderExtTrigger" class="order-ext-trigger fn-hide" href="#" seed="order-detail-more" data-role="J_oderDetailShrink" style="display: none;">
+		                订单详情
+		            </a>
+					<!-- </div> -->
+			        <input name="oid" type="hidden" value="3a82a90ba3b84d2ba77010afde0a0eb6.40" id="J_orderId">
+			        <input name="pid" type="hidden" value="2088411556229595" id="J_partnerId">
+			        <input name="pid" type="hidden" value="1536038162974126351" id="J_outBizID">
+			        <input name="qrContextId" type="hidden" value="201812260030580640d384ba0c5b261201" id="J_qrContextId">
+			        <input name="qrPayLoopCheckUrl" type="hidden" value="https://tradeexprod.alipay.com/fastpay/qrPayLoopCheck.json" id="J_qrPayLoopCheckUrl">
+			        <input name="qrDiscountText" type="hidden" value="" id="J_qrDiscountText">
+			        <input name="qrDiscountDesc" type="hidden" value="" id="J_qrDiscountDesc">
+
+				</div>
+			    <!-- 操作区 -->
+			    <div class="cashier-center-container">
+
+			        <div data-module="excashier/login/2016.08.01/loginPwdMemberT" id="J_loginPwdMemberTModule" class="cashiser-switch-wrapper fn-clear">
+
+			            <!-- 扫码支付页面 -->
+			            <div class="cashier-center-view view-qrcode fn-left" id="J_view_qr">
+
+					<!-- <style type="text/css">
+							.qrcode-area {
+							    margin: 0 auto;
+							    position: relative;
+							}
+
+							/* 扫码头部信息 */
+							.qrcode-integration .qrcode-header {
+							    display: block;
+							    width: auto;
+							    margin: 0;
+							    padding: 0;
+							    margin-top: 75px;
+							    margin-bottom: 16px;
+							}
+
+							.qrcode-header-money {
+							    font-size: 26px;
+							    font-weight: 700;
+							    color: #f60;
+							}
+
+							.qrcode-integration .qrcode-img-area {
+							    width: 168px;
+							    height: 168px;
+							    text-align: center;
+							}
+
+							.qrcode-img-area.qrcode-img-crash {
+							    height: 220px;
+							}
+
+							.qrcode-reward-wrapper {
+							    text-align: center;
+							}
+
+							.qrcode-reward {
+							    display: inline-block;
+							    margin: 0;
+							    padding: 2px 5px;
+							    background-color: #0188cd;
+							    border-radius: 0;
+
+							    font-size: 12px;
+							    line-height: 16px;
+							    color: #fff;
+							}
+
+							.qrcode-reward-question {
+							    font-size: 12px;
+							    margin-left: 5px;
+							    margin-right: 0;
+							}
+
+							.qrcode-integration .qrcode-loading {
+							    top: 70px;
+							    left: 60px;
+							}
+
+							.qrcode-integration .qrcode-img {
+							    top: 70px;
+							    left: 70px;
+							}
+
+							.qrcode-integration .qrcode-img-wrapper {
+							    position: relative;
+							    width: 168px;
+							    height: auto;
+							    min-height: 168px;
+							    margin: 0 auto;
+							    padding: 6px;
+
+							    border: 1px solid #d3d3d3;
+							    -webkit-box-shadow: 1px 1px 1px #ccc;
+							    box-shadow: 1px 1px 1px #ccc;
+							}
+
+							.qrcode-img-area .qrcode-busy-icon {
+							    padding-top: 15px;
+							}
+
+							.qrcode-img-area .qrcode-busy-text {
+							    margin-top: 20px;
+							}
+
+							a.mi-button-lwhite .mi-button-text {
+							    padding: 8px 39px 4px 36px;
+							}
+
+							.qrcode-img-area .mi-button {
+							    margin-top: 40px;
+							}
+
+							/* 扫码图片下方提示 */
+							.qrcode-img-explain {
+							    padding: 10px 0 6px;
+							}
+
+							.qrcode-img-explain img {
+							    margin-left: 20px;
+							    margin-top: 5px;
+							}
+
+							.qrcode-img-explain div {
+							    margin-left: 10px;
+							}
+
+
+
+
+							.qrcode-foot {
+							    text-align: center;
+							}
+
+							.qrcode-downloadApp,
+							.qrcode-downloadApp:hover,
+							.qrcode-downloadApp:active,
+							.qrcode-explain a.qrcode-downloadApp:hover {
+							    font-size: 12px;
+							    color: #a6a6a6;
+							    text-decoration: underline;
+							}
+
+							.area-split {
+							    margin-top: 156px;
+							    width: 10px;
+							    height: 300px;
+
+							    background-image: url(https://t.alipayobjects.com/images/T1PspfXixsXXXXXXXX.png);
+							    background-repeat: no-repeat;
+							}
+
+							.qrguide-area {
+							    position: absolute;
+							    top: 62px;
+							    left: 505px;
+							    width: 204px;
+							    height: 183px;
+							    cursor: pointer;
+							}
+
+							.qrguide-area .qrguide-area-img {
+							    display: block;
+							    position: absolute;
+							    bottom: 0;
+							    left: 0;
+							    z-index: -1;
+							}
+
+							.qrguide-area .qrguide-area-img.active {
+							     z-index: 10;
+							}
+
+							.qrguide-area .qrguide-area-img.background {
+							     z-index: 9;
+							}
+
+							.qrcode-notice .qrcode-notice-title {
+							    padding: 10px 10px 11px 63px;
+							}
+						</style> -->
+							<!-- 扫码区域 -->
+							<div id="hidden-input-area" class="fn-hide">
+							    <input name="qrCode" type="hidden" value="https://qr.alipay.com/upx01274aomw4ygti2ju401f" id="J_qrCode">
+							    <input name="qrImgUrl" type="hidden" value="https://mobilecodec.alipay.com/show.htm?code=upx01274aomw4ygti2ju401f" id="J_qrImgUrl">
+							    <input name="qrUseImage" type="hidden" value="false" id="J_qrUseImage">
+							    <input name="qrContextId" type="hidden" value="201812260030580640d384ba0c5b261201" id="J_qrContextId">
+							    <input name="qrRenewalURL" type="hidden" value="https://excashier.alipay.com:443/standard/renewQRCode.json?payOrderId=3a82a90ba3b84d2ba77010afde0a0eb6.40" id="J_qrRenewalURL">
+							    <input name="qrPushCheckURL" type="hidden" value="" id="J_qrPushCheckURL">
+							    <input name="qrLoopCheckURL" type="hidden" value="https://excashier.alipay.com:443/standard/queryQRStatus.json?payOrderId=3a82a90ba3b84d2ba77010afde0a0eb6.40" id="J_qrLoopCheckURL">
+							    <input name="qrPaySuccGotoURL" type="hidden" value="https://unitradeprod.alipay.com:443/acq/cashierReturn.htm?sign=K1iSL12x616U%252BlanOPpT41Xs1oZn5E5HOdWkAECQMhJFGoeVhQV%252BvkSNlNVETYU1ugR6vbo%253D&amp;outTradeNo=1536038162974126351&amp;pid=2088411556229595&amp;type=1" id="J_qrPaySuccGotoURL">
+							    <input name="qrCheckMode" type="hidden" value="LOOP" id="J_qrCheckMode">
+							    <input name="qrExpirySeconds" type="hidden" value="99" id="J_qrExpirySeconds">
+							    <input name="qrLogonId" type="hidden" value="" id="J_qrLogonId">
+							    <input name="qrBizType" type="hidden" value="UNI_PC_MERCHANT" id="J_qrBizType">
+							    <input name="resultPageStayTime" type="hidden" value="5" id="J_resultPageStayTime">
+								<input name="adName" type="hidden" value="" id="J_adName">
+							    <input name="adInfo" type="hidden" value="" id="J_adInfo">
+							</div>
+
+							<div data-role="qrPayArea" class="qrcode-integration qrcode-area" id="J_qrPayArea">
+							    <div class="qrcode-header">
+								    <div class="ft-center">扫一扫付款（元）</div>
+								    <div class="ft-center qrcode-header-money">7.90</div>
+								</div>
+							    <div data-role="qrPayCrash" class="qrcode-img-area qrcode-img-crash fn-hide">
+							        <div class="qrcode-busy-icon">
+							            <i class="iconfont qrpay-crash-icon"></i>
+							        </div>
+							        <p class="qrcode-busy-text ft-16">二维码太忙了,<br>请稍后再试</p>
+							        <a href="#" class="mi-button mi-button-lwhite" data-role="qrPayRefreshBtn" seed="NewQr_qrcodeRefreshBtn"><span class="mi-button-text">重试</span></a>
+							    </div>
+
+							    <div class="qrcode-img-wrapper" data-role="qrPayImgWrapper">
+							        <div data-role="qrPayImg" class="qrcode-img-area">
+
+							        <div style="position: relative;display: inline-block;">
+							        <canvas width="168" height="168" style="float: left;"></canvas>
+							        <img src="../images/qrcode.png" style="position: absolute;top: 14%;left: 1%;width:140px;height:140px;margin-left: -21px;margin-top: -21px"></div></div>
+
+							        <div class="qrcode-img-explain fn-clear">
+							            <img class="fn-left" src="https://t.alipayobjects.com/images/T1bdtfXfdiXXXXXXXX.png" alt="扫一扫标识" seed="qrcodeImgExplain-tImagesT1bdtfXfdiXXXXXXXX" smartracker="on">
+							            <div class="fn-left">打开手机支付宝<br>扫一扫继续付款</div>
+							        </div>
+							    </div>
+
+							    <div class="qrcode-foot" data-role="qrPayFoot" style="display: block;">
+							        <div data-role="qrPayExplain" class="qrcode-explain fn-hide" style="display: block;">
+							            <a href="https://mobile.alipay.com/index.htm" class="qrcode-downloadApp" data-boxurl="https://cmspromo.alipay.com/down/new.htm" data-role="dl-app" target="_blank" seed="NewQr_qr-pay-download">首次使用请下载手机支付宝</a>
+							        </div>
+
+							        <div data-role="qrPayScanSuccess" class="mi-notice mi-notice-success mi-notice-titleonly qrcode-notice fn-hide">
+							            <div class="mi-notice-cnt">
+							                <div class="mi-notice-title qrcode-notice-title">
+							                    <i class="iconfont qrcode-notice-iconfont" title="扫描成功"></i>
+							                    <p class="mi-notice-explain-other qrcode-notice-explain ft-break">
+							                        <span class="ft-orange fn-mr5" data-role="qrPayAccount"></span>已创建订单，请在手机支付宝上完成付款
+							                    </p>
+							                </div>
+							            </div>
+							        </div>
+							    </div>
+
+							    <!-- 优惠 TIP -->
+							    <div class="ft-center fn-hide" data-role="pr-container">
+							        <div class="qrcode-discount-privilege">
+							            <ul class="discount-list">
+							                <li class="discount-item">
+							                    <span class="action-rt">
+							                        <span class="action-rt-type">惠</span>
+							                        <span class="rt-discount" data-role="pr-name"></span>
+							                    </span>
+							                    | <em data-role="pr-explain">使用扫码支付可享受优惠</em>
+							                </li>
+							                <li class="discount-desc" data-role="pr-desc"></li>
+							            </ul>
+							        </div>
+							    </div>
+
+							</div>
+							<!--
+								<style>
+								    .ad-wrap {
+								        width: 260px;
+								    }
+
+								    .ad-title {
+								        background-color: #f5f5f5;
+								        padding: 10px;
+								        line-height: 12px;
+								        font-size: 12px;
+								        color: #1a1a1a;
+								        font-family: Heiti SC;
+								        text-align: left;
+								        font-weight: 700;
+								    }
+
+								    .ad-cnt {
+								        padding: 10px;
+								        font-size:12px;
+								        color:#1a1a1a;
+								        font-family:Heiti SC;
+								    }
+
+								    .arale-tip-1_2_2 .ui-poptip-white .ui-poptip-container {
+								        padding: 0;
+								    }
+
+								    .arale-tip-1_2_2 .ui-poptip-white .ui-poptip-arrow-2 span,
+								    .arale-tip-1_2_2 .ui-poptip-white .ui-poptip-arrow-3 span {
+								        border-left-color: #f5f5f5;
+								    }
+								</style> -->
+
+							<!-- 指引区域 -->
+							<div class="qrguide-area" id="J_qrguideArea" seed="NewQr_animationClick">
+							    <img src="../images/T13CpgXf8mXXXXXXXX.png" class="qrguide-area-img background" seed="J_qrguideArea-qrguideAreaImg" smartracker="on">
+							    <!-- <img src="../images/T1ASFgXdtnXXXXXXXX.png" class="qrguide-area-img active" seed="J_qrguideArea-qrguideAreaImgT1" smartracker="on" style="display: block;"> -->
+							</div>
+		       			 </div>
+
+
+						<!-- 点击切换区域 -->
+						<div class="view-switch qrcode-show fn-left" id="J_viewSwitcher" unselectable="on" onselectstart="return false;" seed="NewQr_viewSwitch" style="padding-right: 10px; margin-left: 1px;">
+
+						    <div class="switch-tip switch-qrcode-tip " id="J_tip_qr">
+						        <div class="switch-tip-font">&nbsp;</div>
+						        <div class="switch-tip-icon-wrapper">
+						            <i class="glyphicon glyphicon-blackboard switch-tip-icon iconfont" title="显示器"></i>
+						            <img class="switch-tip-icon-img" src="../images/T1HHFgXXVeXXXXXXXX.png" alt="支付宝图标" width="50" height="17" seed="switchTipIconWrapper-switchTipIconImg" smartracker="on">
+						        </div>
+						        <a class="switch-tip-btn" href="javascript:void(0)" seed="J_tip_qr-switchTipBtn" smartracker="on">&lt;&nbsp;登录账户付款</a>
+						    </div>
+
+						    <div class="switch-tip switch-pc-tip fn-hide" id="J_tip_pc">
+						        <div class="switch-tip-font">试试手机支付宝</div>
+						        <div class="switch-tip-icon-wrapper">
+						            <i class="switch-tip-icon iconfont" title="手机"></i>
+						            <img class="switch-tip-icon-img" src="../images/T1Z5XfXdxmXXXXXXXX.png" alt="手机支付宝图标" width="30" height="30" seed="switchTipIconWrapper-switchTipIconImgT1" smartracker="on">
+						        </div>
+						        <a class="switch-tip-btn" href="javascript:void(0)" seed="J_tip_pc-switchTipBtn" smartracker="on">扫一扫付款&nbsp;&gt;</a>
+						    </div>
+						</div>
+
+						<!-- <style type="text/css">
+							  input.sixDigitPassword {
+							    position: absolute;
+							    color: #fff;
+							    opacity: 0;
+							    width: 1px;
+							    height: 1px;
+							    font-size: 1px;
+							    left: 0;
+							    -webkit-box-sizing: content-box;
+							    box-sizing: content-box;
+							    -webkit-user-select:initial; /* 取消禁用选择页面元素 */
+							    outline: 'none';
+							    margin-left: '-9999px';
+							  }
+
+							  div.sixDigitPassword {
+							    cursor:text;
+							    background: #fff;
+							    outline: none;
+							    position: relative;
+							    padding: 8px 0;
+							    height: 14px;
+							    border: 1px solid #cccccc;
+							    border-radius: 2px;
+							  }
+
+							  div.sixDigitPassword i {
+							    float: left;
+							    display: block;
+							    padding: 4px 0;
+							    height: 7px;
+							    border-left: 1px solid #cccccc;
+							  }
+
+							  div.sixDigitPassword i.active {
+							    background-image: url("https://t.alipayobjects.com/images/rmsweb/T1nYJhXalXXXXXXXXX.gif");
+							    background-repeat: no-repeat;
+							    background-position: center center;
+							  }
+
+							  div.sixDigitPassword b {
+							    display: block;
+							    margin: 0 auto;
+							    width: 7px;
+							    height: 7px;
+							    overflow: hidden;
+							    visibility:hidden;
+							    background-image: url("https://t.alipayobjects.com/tfscom/T1sl0fXcBnXXXXXXXX.png");
+							  }
+
+							  div.sixDigitPassword span {
+							    position: absolute;
+							    display: block;
+							    left: 0px;
+							    top: -1px;
+							    height: 30px;
+							    border: 1px solid rgba(82, 168, 236, .8);
+							    border: 1px solid #00ffff\9;
+							    border-radius: 2px;
+							    visibility: hidden;
+							    -webkit-box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.75), 0 0 8px rgba(82, 168, 236, 0.6);
+							    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+							  }
+						</style>
+						<!-- -->
+						<!-- <script>
+							jQuery('[data-role="J_forexprotocol_trigger"]').on('click',function(){jQuery('.ibox-title:contains("支付宝购汇协议")').text('代理购结汇服务协议')});
+						</script> -->
+
+
+			        </div>
+			    </div>
+		    	<!-- 操作区 结束 -->
+
+			</div>
+			<!-- 页面主体 结束 -->
+		</div>
+	</div>
+	<!-- 中间部分end -->
+	<!-- ——————————————————————————————————————————————————————————————————++++++++++++++++++++ -->
+	<!-- 底部证明start -->
+	<div id="footer">
+		<div class="copyright">
+		      <a href="https://fun.alipay.com/certificate/jyxkz.htm" target="_blank" seed="copyright-link" smartracker="on">ICP证：沪B2-20150087</a>
+		</div>
+		<div class="server" id="ServerNum">
+		  excashier-30-5259 &nbsp; 0bea906215457917636582633eb128_0_1
+		</div>
+	</div>
+	<!-- 底部证明end -->
+	<!-- ——————————————————————————————————————————————————————————————————++++++++++++++++++++ -->
+	<!-- 合作机构start -->
+	<div id="partner">
+		<img alt="合作机构" src="../images/2R3cKfrKqS.png" seed="partner-iE2013032R3cKfrKqS" smartracker="on">
+	</div>
+	<!-- 合作机构end -->
+	<!-- ——————————————————————————————————————————————————————————————————++++++++++++++++++++ -->
+</body>
+</html>

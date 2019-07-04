@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>7商家入驻</title>
+	<link rel="icon" href="../images/apple_icon.png">
+	<link rel="stylesheet" href="../css/7sjrz.css">
+	<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="../jquery-ui-1.12.1.custom/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="../jquery-ui-1.12.1.custom/jquery-ui.min.css">
+
+
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	<script src ="../jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+	<script src="../js/1sy.js"></script>
+	<script src="../js/7sjrz.js"></script>
+</head>
+<body>
+	<!-- 顶部上的内容start -->
+    <div class="top-nav">
+        <div class="wrapper">
+            <ul style="right:9%;">
+                <!-- 登录前显示start -->
+                <li class="view-l">
+                您好，
+                    <a class="view-a1" href="./8dl.html">请登录</a>
+                    <a class="view-a2" href="./8.1zc.html">免费注册</a>
+                </li>
+                <li class="seg"></li>
+                <!-- 登录前显示END -->
+                <li>
+                    <a href="./7sjrz.html">商家入驻</a>
+                </li>
+                <li class="seg"></li>
+                <!-- 贝贝商家中心start -->
+                <li class="small" id="button">
+                    <div class="dropdown">
+                        <span class="dropdown-default">
+                            <a id="effsct" style="position: relative;padding:0 0 0 7px;margin-bottom:5px;" href="./8dl.html">贝贝商家中心</a>
+                            <i class="glyphicon glyphicon-menu-down
+                            "></i>
+                        </span>
+                        <ul class="dropdown-list">
+                            <li>
+                                <a id="effsct" href="./8dl.html" class="dropdown-list">贝店商家中心</a>
+                            </li>
+                        </ul>
+                        <ul class="dropdown-list">
+                            <li>
+                                <a id="effsct" class="dropdown-list" href="./8dl.html">供应商中心</a>
+                            </li>
+                        </ul>
+
+
+                    </div>
+                </li>
+                <!-- 贝贝商家中心end -->
+                <li class="seg"></li>
+                <!-- 帮助中心start -->
+                <li class="small1">
+                    <div class="dropdown1">
+                        <span class="dropdown-default1">
+                            <i class="glyphicon glyphicon-question-sign iconfont-pink1" style="color:#ff5482;"></i>
+                            <a href="./10.1bzzx.html">帮助中心</a>
+                            <i class="glyphicon glyphicon-menu-down"></i>
+                        </span>
+                        <ul class="dropdown-list1">
+                            <i class="glyphicon glyphicon-headphones iconfont
+                            "></i>
+                            <a href="./10kfzx.html">联系客服</a>
+                        </ul>
+                    </div>
+                </li>
+                <!-- 帮助中心end -->
+                <li class="seg"></li>
+                <!-- 关注start -->
+                <li class="small2">
+                    <div class="dropdown2">
+                        <span id="gz" class="dropdown-default2" >
+                        关注
+                            <i class="glyphicon glyphicon-menu-down"></i>
+                        </span>
+                        <div class="dropdown-block block-follow" style="display:none">
+                            <dl class="wechat">
+                                <dd>微信号:beibeiclub</dd>
+                                <dt title="微信扫一扫">
+                                    <img src="../images/1.t6.png" style="width:90px;height:90px;" alt="">
+                                </dt>
+                                <dd>订阅贝贝官方微信</dd>
+                            </dl>
+                            <dl class="social" >
+                                <dd>
+                                    <a href="" title="关注新浪微博">
+                                        <img src="../images/1.t8.png" alt="关注贝贝新浪空间">
+                                    </a>
+                                </dd>
+                                <dd>
+                                    <a href="" title="关注贝贝QQ空间">
+                                        <img src="../images/1.t7.png" alt="关注贝贝QQ空间">
+                                    </a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </li>
+                <!-- 关注end -->
+            </ul>
+        </div>
+    </div>
+	<!-- 顶部上的内容end -->
+	<!-- 顶部start -->
+	<div id="head">
+
+        <div class="attract-wrapper">
+	        <div class="main-logo">
+	            <a href="http://seller.beibei.com/portal.html" title="返回首页" class="w-head-logo">
+	                   	<img class="iconfont2" src="../images/logo.jpg" alt="">
+	                    商家中心
+                </a>
+                <ul class="w-head-tab clearfix J-head-tab">
+	                <li class="active"><a href="javascript:void(0)" data-tag="#attract-index">招商首页</a></li>
+	                <li click="" data-log="{&quot;json&quot;:{&quot;block_name&quot;:&quot;招商首页_入驻标准按钮点击&quot;}}"><a href="#enter-standard" data-tag="#enter-standard">入驻标准</a></li>
+	                <li click="" data-log="{&quot;json&quot;:{&quot;block_name&quot;:&quot;招商首页_业务介绍按钮点击&quot;}}"><a href="#business-introduce" data-tag="#business-introduce">业务介绍</a></li>
+	                <li click="" data-log="{&quot;json&quot;:{&quot;block_name&quot;:&quot;招商首页_收费标准及保证金按钮点击&quot;}}"><a href="charge-standard" data-tag="#charge-standard">收费标准</a></li>
+	                <li click="" data-log="{&quot;json&quot;:{&quot;block_name&quot;:&quot;招商首页_常见问题按钮点击&quot;}}"><a href="common-ques" data-tag="#common-ques">常见问题</a></li>
+	            </ul>
+	            <div click="" data-log="{&quot;json&quot;:{&quot;block_name&quot;:&quot;招商首页_入驻咨询按钮点击&quot;}}" class="w-consult sw_link" style="">
+	            	<a href="http://seller.beibei.com/notice_settled/contact.html">
+	            		<i class="glyphicon glyphicon-headphones"></i>
+	            	入驻咨询</a>
+	            </div>
+	        </div>
+	    </div>
+    </div>
+	<!-- 顶部end -->
+	<!-- ____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+	<!-- 中间部分start -->
+	<div id="container">
+		<!-- ______________________________________________________________________________________________________________________________________________________________________________________++++++++ -->
+		<!-- 01招商首页start -->
+		<div class="w-main-wrap"  class="common-box">
+	    	<div id="attract-index">
+				<!-- 1敬告start -->
+	            <div class="w-warn-wrap">
+	            	<div class="w-warn-info">
+		                <div class="w-warn-content">
+		                    敬告！贝贝集团未委托任何机构或个人代理入驻，也不会以任何形式收取非平台官方要求以外的入驻费用。请商家提高警惕，谨防任何形式的诈骗行为。如有异常收费情况，敬请举报。举报邮箱：jubao@beibei.com
+		                </div>
+	            	</div>
+	        	</div>
+	        	<!-- 1敬告end -->
+	        	<!-- 2贝贝集团招商start -->
+		        <div class="w-attract-bg-wrap">
+		            <div class="w-attract-bg">
+		                <h2 class="w-attract-title beibei">贝贝集团招商</h2>
+		                <ul class="attract-btns-wrap">
+		                    <li>
+		                        <a href="http://seller.beibei.com/apply/enterprise.html?apply_type=1" class="w-attract-btn" click="" data-log="{&quot;json&quot;:{&quot;block_name&quot;:&quot;贝贝招商页面&quot;,&quot;btn_name&quot;:&quot;贝贝国内商家&quot;}}">贝贝国内商家</a>
+		                    </li>
+		                    <li>
+		                        <a href="http://seller.beibei.com/apply/enterprise.html?apply_type=2" class="w-attract-btn" click="" data-log="{&quot;json&quot;:{&quot;block_name&quot;:&quot;招商页面&quot;,&quot;btn_name&quot;:&quot;马上入驻&quot;}}">贝贝全球购商家</a>
+		                    </li>
+		                    <li>
+		                        <a href="http://seller.beidian.com//" class="w-attract-btn" click="" data-log="{&quot;json&quot;:{&quot;block_name&quot;:&quot;贝店页面&quot;,&quot;btn_name&quot;:&quot;贝店商家&quot;}}">贝店商家</a>
+		                    </li>
+		                </ul>
+		                <ul class="attract-tips">
+		                    <li class="attract-tip"><img class="attract-tip-icon" src="../images/2e8b5da09d09adc2_74x74.png" alt="">免年费入驻</li>
+		                    <li class="attract-tip"><img class="attract-tip-icon" src="../images/35cf821948e9bb93_74x74.png" alt="">一亿用户</li>
+		                    <li class="attract-tip"><img class="attract-tip-icon" src="../images/98220e6abff9c9c8_74x74.png" alt="">家庭购物平台</li>
+		                    <li class="attract-tip"><img class="attract-tip-icon" src="../images/19f6702caa837a48_74x74.png" alt="">热门App</li>
+		                </ul>
+		            </div>
+		        </div>
+		        <!-- 2贝贝集团招商end -->
+				<!-- 3入驻流程及资费说明start -->
+		        <div class="w-step-wrap">
+		            <ul class="w-step-list">
+		                <li>
+		                    <div class="w-step-title"><span class="w-step1-icon"></span>入驻流程</div>
+		                    <div class="w-step-info">流程及标准全面讲解</div>
+		                    <a href="javascript:void(0);" class="w-step-btn J-step-click" data-type="#enter-standard" click="" data-log="{&quot;json&quot;:{&quot;block_name&quot;:&quot;招商首页_了解流程按钮点击&quot;}}">了解流程</a>
+		                </li>
+		                <li>
+		                    <div class="w-step-title"><span class="w-step1-icon"></span>资费说明</div>
+		                    <div class="w-step-info">收费保证金等全面说明</div>
+		                    <a href="javascript:void(0);" class="w-step-btn J-step-click" data-type="#charge-standard" click="" data-log="{&quot;json&quot;:{&quot;block_name&quot;:&quot;招商首页_立即查看按钮点击&quot;}}">立即查看</a>
+		                </li>
+		                <li>
+		                    <div class="w-step-title"><span class="w-step1-icon"></span>入驻帮助</div>
+		                    <div class="w-step-info">入驻问题详细解答</div>
+		                    <a href="javascript:void(0);" class="w-step-btn J-step-click" data-type="#common-ques" click="" data-log="{&quot;json&quot;:{&quot;block_name&quot;:&quot;招商首页_获得帮助按钮点击&quot;}}">获得帮助</a>
+		                </li>
+		            </ul>
+		        </div>
+		        <!-- 3入驻流程及资费说明end -->
+		        <!-- 4选择我们的理由start -->
+		        <div class="reason">
+		            <img class="reason-title" src="../images/494b1278a76d314a_552x128.png">
+		            <p class="reason-desc">超多活动玩法等你来报名</p>
+		            <ul class="reason-list">
+		                <li class="reason-item">
+		                    <img class="reason-img" src="../images/f6ff7806d40f60ff_520x360.png">
+		                    <p class="p1">2小时秒5000件</p>
+		                    <p class="p2">爆款的黄埔军校</p>
+		                </li>
+		                <li class="reason-item">
+		                    <img class="reason-img" src="../images/c990ac28c988fc6b_520x360.png">
+		                    <p class="p1">优惠专区</p>
+		                    <p class="p2">用户最喜爱的频道</p>
+		                </li>
+		                <li class="reason-item">
+		                    <img class="reason-img" src="../images/5313d5358330b8a8_520x360.png">
+		                    <p class="p1">流量王</p>
+		                    <p class="p2">200万精准流量曝光</p>
+		                </li>
+		                <li class="reason-item">
+		                    <img class="reason-img" src="../images/c894b3802e6c1e53_520x360.png">
+		                    <p class="p1"> 快速清仓</p>
+		                    <p class="p2">资金回流加速</p>
+		                </li>
+		            </ul>
+		            <a href="//seller.beibei.com/apply/enterprise.html?apply_type=1" class="entering-btn">点击入驻</a>
+		        </div>
+		        <!-- 4选择我们的理由end -->
+		        <!-- 5和他们一起加入吧！start -->
+		        <div class="join-us">
+		        	<!-- 5.1div1图片start -->
+		            <div class="join-top">
+		                <img class="join-title" src="../images/e3f98827bffced69_824x128.png">
+		                <p class="join-desc">超多品牌入驻，期待您的强势加盟</p>
+		                <ul class="top-brands">
+		                    <li class="top-brand">
+		                        <img class="brand-img" src="../images/3f860e7ba6b8e443_440x360.png">
+		                        <p class="brand-desc">累计销售额突破5000万</p>
+		                    </li>
+		                    <li class="top-brand">
+		                        <img class="brand-img" src="../images/bfa6c345857d27ac_440x360.png">
+		                        <p class="brand-desc">单日订单量达到1万单以上</p>
+		                    </li>
+		                    <li class="top-brand">
+		                        <img class="brand-img" src="../images/981d37f92389c682_440x360.png">
+		                        <p class="brand-desc">单品单日产出突破10万+</p>
+		                    </li>
+		                    <li class="top-brand">
+		                        <img class="brand-img" src="../images/48013165ef1eb3c0_440x360.png">
+		                        <p class="brand-desc">单品洗衣皂年销量207万块</p>
+		                    </li>
+		                </ul>
+		            </div>
+	                <!-- 5.1div1图片end -->
+                    <!-- 5.2div2联盟商家start -->
+		            <div class="join-bottom">
+		                <p class="join-other">还有他们也在贝贝，你还在等什么</p>
+		                <img class="brand-wall" src="../images/7439e65430264a53_2200x940.png">
+		                <a href="//seller.beibei.com/apply/enterprise.html?apply_type=1" class="entering-btn">点击入驻</a>
+		            </div>
+		            <!-- 5.2div2联盟商家end -->
+		            <!-- 5.3div3二维码联系方式start -->
+		            <div class="contact-us">
+		                <div class="app-qr">
+		                    <img src="../images/f7e5fdab0b9505d3_320x320.png" class="qr">
+		                    <p class="qr-text">扫描二维码</p>
+		                    <p class="qr-text">下载“贝贝”App</p>
+		                </div>
+		                <div class="wx-qr">
+		                    <img src="../images/756bfd83614a4034_320x320.png" class="qr">
+		                    <p class="qr-text">扫描二维码</p>
+		                    <p class="qr-text">关注“贝贝网”公众号</p>
+		                </div>
+		                <div class="us-phone">
+		                    <p class="phone-title">
+		                        联系我们
+		                    </p>
+		                    <p class="phone-text">招商联系方式： 0571-5606-0666（分机号71230)</p>
+		                    <p class="phone-text">公司名称：杭州贝购科技有限公司</p>
+		                    <p class="phone-text">公司地址：杭州市江干区普盛巷9号东谷创业中心贝贝大楼（邮编：310019)</p>
+		                </div>
+		                <img src="../images/912db807fbc2fb4c_260x204.png" class="phone-image">
+		            </div>
+		            <!-- 5.3div3二维码联系方式end -->
+		        </div>
+		        <!-- 5和他们一起加入吧！end -->
+	    	</div>
+    	<!-- 01招商首页end -->
+	    <!-- ______________________________________________________________________________________________________________________________________________________________________________________++++++++ -->
+	    <!-- 02入驻标准start -->
+	    <div id="enter-standard" class="">
+	        <div class="w-introduce-bg-wrap">
+	            <div class="w-introduce-bg">
+	            	<!-- 02.1入驻流程start -->
+	                <div class="w-enter-top">
+	                    <div class="w-enter-top-one"></div>
+	                    <div class="w-enter-top-two"></div>
+	                </div>
+	                <!-- 02.1入驻流程end -->
+	                <!-- 02.2入驻标准start -->
+	                <div class="w-enter-middle">
+	                    <div class="w-enter-top-three"></div>
+	                    <ul class="w-enter-info-list">
+	                        <div class="w-aptitude-title">招募类目</div>
+	                        <li>母婴服饰、童鞋、成人服饰、鞋包、玩具文体、母婴用品、食品生鲜、居家百货、美妆个护。</li>
+	                        <div class="w-aptitude-title">标准门槛</div>
+	                        <li>1、境内商家公司注册资金≥10万；</li>
+	                        <li>2、企业信息网上近12个月内无行政处罚记录；</li>
+	                        <li>3、必须是具有法人资格的公司或者企业；</li>
+	                    </ul>
+	                    <div class="w-aptitude">
+	                        <div class="w-aptitude-title">店铺介绍</div>
+	                        <table class="w-aptitude-table">
+	                            <thead>
+	                                <tr>
+	                                    <td width="124px">店铺类型</td>
+	                                    <td width="124px">可经营品牌数量</td>
+	                                    <td width="124px">营业执照</td>
+	                                    <td width="124px">质检报告</td>
+	                                    <td width="124px">商标注册证</td>
+	                                    <td width="124px">法人身份证</td>
+	                                    <td width="124px">授权书</td>
+	                                </tr>
+	                            </thead>
+	                            <tbody>
+	                                <tr>
+	                                    <td>旗舰店</td>
+	                                    <td class="w-text-position" style="text-align: center;">1</td>
+	                                    <td class="w-text-position" style="text-align: center;">√</td>
+	                                    <td class="w-text-position" style="text-align: center;">√</td>
+	                                    <td class="w-text-position" style="text-align: center;">√</td>
+	                                    <td class="w-text-position" style="text-align: center;">√</td>
+	                                    <td class="w-text-position" style="text-align: center;">旗舰授权</td>
+	                                </tr>
+	                                <tr>
+	                                    <td>专卖店</td>
+	                                    <td class="w-text-position" style="text-align: center;">1</td>
+	                                    <td class="w-text-position" style="text-align: center;">√</td>
+	                                    <td class="w-text-position" style="text-align: center;">√</td>
+	                                    <td class="w-text-position" style="text-align: center;">√</td>
+	                                    <td class="w-text-position" style="text-align: center;">√</td>
+	                                    <td class="w-text-position" style="text-align: center;">普通授权</td>
+	                                </tr>
+	                                <tr>
+	                                    <td>专营店</td>
+	                                    <td class="w-text-position" style="text-align: center;">2个及以上的品牌</td>
+	                                    <td class="w-text-position" style="text-align: center;">√</td>
+	                                    <td class="w-text-position" style="text-align: center;">√</td>
+	                                    <td class="w-text-position" style="text-align: center;">√</td>
+	                                    <td class="w-text-position" style="text-align: center;">√</td>
+	                                    <td class="w-text-position" style="text-align: center;">普通授权</td>
+	                                </tr>
+	                                <tr>
+	                                    <td>普通店铺</td>
+	                                    <td class="w-text-position" style="text-align: center;">无需品牌</td>
+	                                    <td class="w-text-position" style="text-align: center;">√</td>
+	                                    <td class="w-text-position" style="text-align: center;">√</td>
+	                                    <td class="w-text-position" style="text-align: center;">无需商标</td>
+	                                    <td class="w-text-position" style="text-align: center;">√</td>
+	                                    <td class="w-text-position" style="text-align: center;">无需授权</td>
+	                                </tr>
+	                            </tbody>
+	                        </table>
+	                    </div>
+	                    <div class="w-quality">
+	                        <div class="w-aptitude-title">资质详细说明</div>
+	                        <table class="w-aptitude-table">
+	                            <thead>
+	                                <tr>
+	                                    <td width="124px">序号</td>
+	                                    <td width="124px">证件名称</td>
+	                                    <td width="572px">资质要求</td>
+	                                </tr>
+	                            </thead>
+	                            <tbody>
+	                                <tr>
+	                                    <td>1</td>
+	                                    <td>商标注册证</td>
+	                                    <td class="w-text-position">
+	                                        <ul>
+	                                            <li>1、需提供有效期内的商标注册证（R标）正反面拍摄件/扫描件或商标受理通知书（TM标）。</li>
+	                                            <li>2、若办理过变更、转让、续展，请一并提供商标总局颁发对应证明（通知书）。</li>
+	                                            <li>3、商标注册证保护类别需要与质检报告质检商品类别、商家入驻经营的商品类别一致。</li>
+	                                            <li>4、请提供文字商标或者文字+图形组合商标，不支持单独提供图形商标。</li>
+	                                        </ul>
+	                                    </td>
+	                                </tr>
+	                                <tr>
+	                                    <td>2</td>
+	                                    <td>品牌授权书</td>
+	                                    <td class="w-text-position">
+	                                        <div>品牌方入驻</div>
+	                                        <ul>
+	                                            <li>1、商标注册人为公司，商标注册公司名称需与入驻公司名称一致，无需提供品牌授权书；</li>
+	                                            <li>2、商标注册人为个人，以其为法人所在的公司名义申请入驻时，视为品牌方入驻。需要提供商标权利人身份证正反面拍摄件或者扫描件、营业执照、以及授权该公司使用该商标和在贝贝开店经销该品牌商品的授权书。</li>
+	                                        </ul><br>
+
+	                                        <div>代理商入驻</div>
+	                                        <div>品牌授权书需满足以下条件：</div>
+	                                        <ul>
+	                                            <li>1、需授权在贝贝销售。</li>
+	                                            <li>2、授权书需注明授权期限、落款，同时商家的上一级授权方出具的到商家的授权书必须盖授权方鲜章，授权方为个人的需要提交授权方身份证正反面拍摄件或者扫描件、签字并按压手印。</li>
+	                                            <li>3、若商标注册人是个人，需提供商标注册人身份证正反面拍摄件或者扫描件，且需要提交商标权利人出具的授权书，商标权利人为法人的公司出具的授权书不认可。</li>
+	                                            <li>4、共有商标，如授权注明为排他许可或独占许可的，需商标共有人共同授权。</li>
+	                                            <li>5、需要确保授权链条的完整，即申请入驻公司拿到的授权能够逐级逆推回品牌方。</li>
+	                                            <li>6、TM标只能由商标申请方自行入驻，不接受授权代理商入驻。</li>
+	                                            <li>7、授权书授权章需为授权方公章，不支持合同章、销售章、财务章等业务章。</li>
+	                                            <li>8、所有为复印件的材料需要加盖入驻公司公章（鲜章）。</li>
+	                                        </ul>
+	                                    </td>
+	                                </tr>
+	                                <tr>
+	                                    <td>3</td>
+	                                    <td class="w-text-label-position">质检报告或3C认证证书</td>
+	                                    <td class="w-text-position">
+	                                        <div>质检报告：</div>
+	                                        <ul>
+	                                            <li>须提供一份由权威质检机构出具的最近2年内的质检报告（其中，一次性卫生用品、化妆品和食品要求一年内质检报告），检测报告内容须包含品牌名称、产品名称和贝贝要求的检测项<a href="http://ww1.sinaimg.cn/large/0060lm7Tgw1f95tbz7cfwj31671a4n9z.jpg" target="_blank">(查看详细说明)。</a></li>
+	                                            <li>（备注：进口商品提供一年内报关单和检验检疫证明）</li>
+	                                        </ul><br>
+	                                        <div>3C认证证书：</div>
+	                                        <ul>
+	                                            <li>经营电玩具类、弹射玩具类、童车类、安全座椅、电子产品等属于《强制性产品认证管理规定》范围的商品，必须通过3C强制认证。<a href="http://www.cnca.gov.cn/cnca/rdht/qzxcprz/rzml/images/20080701/4755.htm" target="_blank">(查看详细说明)。</a></li>
+	                                            <li>（备注：需证明入驻公司或品牌方与出具质检报告公司或3C强制认证公司的关系）</li>
+	                                        </ul>
+	                                    </td>
+	                                </tr>
+	                                <tr>
+	                                    <td>4</td>
+	                                    <td class="w-text-label-position">（全球购商家资质）报关单和检验检疫证明</td>
+	                                    <td class="w-text-position">
+	                                        <div>直采无授权</div>
+	                                        <ul>
+	                                            <li>须提交近1年的采购凭证并加盖入驻公司的公章，若采购单位非入驻公司，需补充与采购单位合作合同，采购凭证上需有对应品牌或商品SKU信息。</li>
+	                                        </ul><br>
+	                                        <div>保税仓&amp;国内发货</div>
+	                                        <ul>
+	                                            <li>1、须提交近两年内商品的出入境检验检疫合格证明或出入境检验检疫卫生证书复印件，及近1年内海关进口报关单；若报关公司非入驻公司，需提供与入驻公司的合作合同，报关单上需有对应品牌或商品SKU信息，报关单上需有报关单位报关专用章盖章。</li>
+	                                            <li>2、须提交近1年的采购凭证并加盖入驻公司的公章，若采购单位非入驻公司，需补充与采购单位合作合同，采购凭证上需有对应品牌或商品SKU信息。</li>
+	                                        </ul>
+	                                    </td>
+	                                </tr>
+	                                <tr>
+
+	                                    <td>5</td>
+	                                    <td class="w-text-label-position">个别类目要求</td>
+	                                    <td class="w-text-position">
+	                                        <div>食品</div>
+	                                        <ul>
+	                                            <li>1、若商家是生产厂商，则提交商家的《食品生产许可证》。</li>
+	                                            <li>2、若商家非生产厂商或品牌商非生产厂商（品牌系委托他人生产），则需提供以下资质:</li>
+	                                            <li>1）商家持有的《食品流通许可证》或《食品经营许可证》。</li>
+	                                            <li>2）生产厂商持有的《食品生产许可证》，提交的生产许可证生产范围需包含经营的商品。</li>
+	                                            <li>3）品牌商与生产厂商间的《委托加工协议》。</li>
+	                                            <li>3、如果品牌商为自然人，可由其法人公司与生产商进行委托加工，并同时提交法人公司的企业营业执照。</li>
+	                                            <li>4、若品牌商授权商家全权处理品牌运营事宜，则可提供商家与生产厂商间的《委托加工协议》。</li>
+	                                        </ul><br>
+
+	                                        <div>国产化妆品</div>
+	                                        <ul>
+	                                            <li>1、化妆品生产厂商《营业执照》。</li>
+	                                            <li>2、化妆品生产厂商持有的《化妆品生产许可证》。</li>
+	                                            <li>3、若为委托加工，则需提供“委托加工合同”。</li>
+	                                            <li>4、备案或批件:</li>
+	                                            <li>1）经营特殊用途化妆品：需提交特殊用途化妆品卫生许可批件复印件。</li>
+	                                            <li>2）经营非特殊用途化妆品：需提供国产非特殊用途化妆品备案凭证或网上备案凭证复印件。</li>
+	                                        </ul><br>
+	                                        <div>进口化妆品</div>
+	                                        <ul>
+	                                            <li>1、提供一年以内进口货物报关单、入境货物检验检疫证明。</li>
+	                                            <li>2、备案或批件:</li>
+	                                            <li>1）进口非特殊用途化妆品备案凭证复印件。</li>
+	                                            <li>2）特殊用途化妆品：进口特殊用途化妆品许可批件或者备案凭证复印件。</li>
+	                                            <li>3、说明特殊用途化妆品主要包括：育发类、染发类、烫发类、脱毛类、美乳类、健美类、除臭类、祛斑类（仅具物理遮盖作用除外）、防晒类化妆品）。</li>
+	                                        </ul><br>
+	                                        <div>书籍类</div>
+	                                        <ul>
+	                                            <li>1、经营非出口出版物:</li>
+	                                            <li>1）入驻公司为图书出版公司，则提供《图书出版许可证》。</li>
+	                                            <li>2）入驻公司为非出版公司，则提供入驻公司的《出版物经营许可证》或《音像制品经营许可证》。</li>
+	                                            <li>3）请提供一家及以上出版社直接授权入驻公司的授权书，以及出版社的《图书出版许可证》。</li>
+	                                            <li>2、经营进口出版物：</li>
+	                                            <li>1）需提供1年内的报关单，且提供与出版物进出口公司经销合作的证明文件。</li>
+	                                            <li>2）提供出版物进出口公司的《出版物进口经营许可证》或进口出版物备案文件。</li>
+	                                        </ul><br>
+	                                        <div>生鲜果蔬类</div>
+	                                        <ul>
+	                                            <li>初级农产品（新鲜水果新鲜蔬菜）</li>
+	                                            <li>请提供一年内提供货物来源证明或半年内质检报告；</li>
+	                                        </ul><br>
+	                                        <div>螃蟹</div>
+	                                        <ul>
+	                                            <li>若卖家经营的为活蟹产品（包括大闸蟹、青蟹等），则必须提交养殖证明复印件；</li>
+	                                        </ul><br>
+	                                        <div>生肉</div>
+	                                        <ul>
+	                                            <li>需提供《动物防疫条件合格证》、《动物检验检疫证明》，若猪肉制品卖家《生猪定点屠宰证》；</li>
+	                                        </ul>
+	                                    </td>
+	                                </tr>
+	                            </tbody>
+	                        </table>
+	                    </div>
+	                </div>
+	                <!-- 02.2入驻标准end -->
+	            </div>
+	        </div>
+	    </div>
+	    <!-- 02入驻标准end -->
+	    <!-- ______________________________________________________________________________________________________________________________________________________________________________________++++++++ -->
+	    <!-- 03业务介绍start -->
+	    <div id="business-introduce" class="">
+	        <div class="w-introduce-bg-wrap">
+	            <div class="w-introduce-bg">
+	                <div class="w-introduce-main">
+	                    <div class="w-introduce-title"></div>
+	                    <ul class="w-introduce-list clearfix beibei">
+	                        <li class="w-te-mai">
+	                            <div class="w-introduce-item-title">限时秒杀</div>
+	                            <div class="w-introduce-item-text">限时秒杀玩的就是限时限量，2个小时秒完5000件，在短时间内快速打造新品爆款，是新爆款产生的黄埔军校！</div>
+	                        </li>
+	                        <li class="w-te-mai">
+	                            <div class="w-introduce-item-title">9.9包邮</div>
+	                            <div class="w-introduce-item-text">9.9包邮玩的就是低价和性价比，为用户提供价格≤9.9元的活动商品，一直都是用户最喜欢逛的频道！</div>
+	                        </li>
+	                        <li class="w-xian-liang">
+	                            <div class="w-introduce-item-title">上首页</div>
+	                            <div class="w-introduce-item-text">上首页作为全站流量主通道，200w精准流量曝光，爆款快速出货，打造单日10w+超级爆款。</div>
+	                        </li>
+	                        <li class="w-liang-fan">
+	                            <div class="w-introduce-item-title">品牌清仓</div>
+	                            <div class="w-introduce-item-text">品牌清仓是针对用户需求，精选平台优质商品，为用户提供应季、反季的单品或者品牌专场的活动形式（单品清仓是指某一款商品的清仓活动，专场清仓是同一品牌需报名6款以上的商品所组合成专场形式的活动）；让商家快速清仓，回流资金。</div>
+	                        </li>
+	                        <li class="w-qin-cang">
+	                            <div class="w-introduce-item-title">贝店业务</div>
+	                            <div class="w-introduce-item-text">贝店精选全球货源，通过专业的供应链直采，强大的IT支撑，完善的服务培训，有力的正品保障，为用户提供优质的服务、物美价廉的商品。目前平台涵盖食品保健、母婴玩具、美妆个护、家居百货、服装服饰五大品类，专业买手和运营团队，让企业缩减渠道降低成本。</div>
+	                        </li>
+	                    </ul>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    <!-- 03业务介绍end -->
+	    <!-- ______________________________________________________________________________________________________________________________________________________________________________________++++++++ -->
+	    <!-- 04收费标准start -->
+	    <div id="charge-standard" class="">
+	        <div class="w-standard-bg-wrap">
+	            <div class="w-standard-bg">
+	                <div class="w-standard-main">
+	                    <div class="w-standard-title"></div>
+	                    <div class="w-standard-content">
+	                        <div class="w-standard-commom">
+	                            <div class="w-standard-item-title">【收费标准】</div>
+	                            <ul class="w-standard-list">
+	                                <li>1.商家在平台运营，平台将按照商品的最终成交金额与对应商品所属类目的费率收取技术服务费。自2016年5月1日0点起，平台各类目技术服务费费率标准。详见<a target="_blank" href="http://seller.beibei.com/regulation/detail/4.html">《贝贝网平台技术服务费费率一览表》</a></li>
+	                                <li>路径：贝贝商家中心-规则中心-入驻标准-收费标准-类目佣金制度</li>
+	                                <li>2.如商品发生退款，则不收取技术服务费。</li>
+	                                <li>3.贝贝有权根据市场情况及自身经营情况调整费率，但调整需提前一个月通知商家。</li>
+	                                <li>4.在商家有违规行为时，根据相关规则，平台将在原技术服务费基础上加收违约金。</li>
+	                            </ul>
+	                        </div>
+	                        <div class="w-standard-commom">
+	                            <div class="w-standard-item-title">【保证金制度】</div>
+	                            <ul class="w-standard-list">
+	                                <li>1.商家在平台运营，平台将按照商品的最终成交金额与对应商品所属类目的费率收取技术服务费。自2016年5月1日0点起，平台各类目技术服务费费率标准。详见<a target="_blank" href="http://seller.beibei.com/regulation/detail/4.html">《贝贝网平台技术服务费费率一览表》</a></li>
+	                                <li>2.如商品发生退款，则不收取技术服务费。</li>
+	                                <li>3.贝贝有权根据市场情况及自身经营情况调整费率，但调整需提前一个月通知商家。</li>
+	                                <li>4.在商家有违规行为时，根据相关规则，贝贝将在原技术服务费基础上加收违约金。</li>
+	                            </ul>
+	                        </div>
+	                        <div class="w-standard-commom">
+	                            <div class="w-standard-item-title">【款项结算】</div>
+	                            <ul class="w-standard-list">
+	                                <li>1.贝贝将按照用户实际支付的有效交易净销售额向商家支付贝贝网代收的货款。</li>
+	                                <li>2.贝贝将结合各期实际业务情况，以促销服务费的形式给予商家一定比例（不超过100%）的技术服务费抵免。</li>
+	                                <li>3.贝贝实际收取的技术服务费发票，将在每月月底统一开具。</li>
+	                            </ul>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    <!-- 04收费标准end -->
+	    <!-- ______________________________________________________________________________________________________________________________________________________________________________________++++++++ -->
+	    <!-- 05常见问题start  -->
+	    <div id="common-ques" class="">
+	        <div class="w-standard-bg-wrap">
+	            <div class="w-standard-bg">
+	                <div class="w-ques-main">
+	                    <div class="w-ques-title"></div>
+	                    <div class="w-ques-content">
+	                        <h1>一、入驻资质填写问题</h1>
+	                        <ul class="w-ques-list">
+	                            <li>
+	                                <h2>1、平台对入驻商家的条件有什么要求？</h2>
+	                                <div>商家须为具有独立法人资格的公司，因此暂不接受个体工商户、合伙企业和个人独资企业的商家入驻。</div>
+	                            </li>
+	                            <li>
+	                                <h2>2、上传的资质是否需要盖公章？</h2>
+	                                <div>上传的每一份资质如果为复印件需加盖入驻单位公章（鲜章），且与入驻公司的授权即最后一级授权需提供授权方鲜章授权，不支持复印件</div>
+	                            </li>
+	                            <li>
+	                                <h2>3、入驻时填写公司信息与营业执照内容必须保持完全一致吗？</h2>
+	                                <div>是，请确保与营业执照上的信息完全一致，比如：公司名称、 注册资金、法人、经营范围（请以数字形式填写人民币，美元按即时汇率兑换）等。</div>
+	                            </li>
+	                            <li>
+	                                <h2>4、已退出平台的商家可否使用原来入驻的帐号重新入驻？</h2>
+	                                <div>不可以，需重注册账号走入驻流程申请入驻。</div>
+	                            </li>
+	                            <li>
+	                                <h2>5、书籍初级农产品没有商标可以入驻吗?</h2>
+	                                <div>若只经营书籍或只经营初级农产品的商家可不提供商标，具体需提供哪些资料请查看入驻规则。</div>
+	                            </li>
+	                        </ul>
+	                        <h1>二、品牌资质填写问题</h1>
+	                        <ul class="w-ques-list">
+	                            <li>
+	                                <h2>1、在哪里下载品牌授权书模板？</h2>
+	                                <div><img src="../images/5eb531fe93b50472_549x113.png"></div>
+	                            </li>
+	                            <li>
+	                                <h2>2、什么是品牌完整的授权链条？</h2>
+	                                <div>
+	                                    <p>入驻公司拿到的品牌授权能够逐级倒推回品牌商（即商标注册人），</p>
+	                                    <p>例如：A为商标注册人，A授权B，B授权C，C为入驻公司，那么C入驻时需出具A-B-C之间完整的授权证明。</p>
+	                                </div>
+	                            </li>
+	                            <li>
+	                                <h2>3、如何判断某个品牌的授权类型？</h2>
+	                                <div>
+	                                    <table>
+	                                        <thead>
+	                                            <tr>
+	                                                <th>授权类型</th>
+	                                                <th>定义</th>
+	                                            </tr>
+	                                        </thead>
+	                                        <tbody>
+	                                            <tr>
+	                                                <th>自有品牌</th>
+	                                                <th>
+	                                                    <p>① 若商标注册人为公司，入驻公司名称与商标注册人一致</p>
+	                                                    <p>② 若商标注册人为个人，入驻公司的法人与商标注册人一致</p>
+	                                                </th>
+	                                            </tr>
+	                                            <tr>
+	                                                <th>旗舰授权</th>
+	                                                <th>商标注册人授权入驻公司在贝贝开旗舰店</th>
+	                                            </tr>
+	                                            <tr>
+	                                                <th>独家代理</th>
+	                                                <th>商标注册人授权入驻公司在贝贝独家销售其品牌的商品</th>
+	                                            </tr>
+	                                            <tr>
+	                                                <th>一级代理</th>
+	                                                <th>商标注册人直接授权入驻公司销售其品牌的商品</th>
+	                                            </tr>
+	                                            <tr>
+	                                                <th>二级代理</th>
+	                                                <th>商标注册人授权他人销售其品牌商品，他人再授权入驻公司销售该品牌商品</th>
+	                                            </tr>
+	                                            <tr>
+	                                                <th>三级代理</th>
+	                                                <th>以此类推</th>
+	                                            </tr>
+	                                        </tbody>
+	                                    </table>
+	                                </div>
+	                            </li>
+	                            <li>
+	                                <h2>4、如何填写品牌授权有效期？</h2>
+	                                <h3>1）商标注册证（R标）</h3>
+	                                <div>
+	                                    <p>①若为自有品牌，按照商标注册证或续展证明（若办理过续展）的有效时间填写；</p>
+	                                    <p>②若为非自有品牌，请根据授权给入驻公司的授权书上的有效时间填写；</p>
+	                                </div>
+	                                <h3>2）商标受理通知书（TM标）</h3>
+	                                <div>授权结束日期按照商标受理通知书的申请日期往后推18个月内。</div>
+	                                <h2>3）特别说明</h2>
+	                                <div>
+	                                    <p>若授权链条中的任一授权有效期超出商标注册证或授权链条上级的授权时间，则授权无效。</p>
+	                                    <p>举例，A为商标注册人，B为入驻公司，商标注册证的有效期为2015年1月2日到2025年1月1日，A授权B的授权书上授权有效期为2017年1月1日到2027年1月1日（超出商标有效期的结束时间2025年1月1日），则A授权给B的授权书无效，B商家需重新联系A提供在商标注册证有效期内的授权书。</p>
+	                                </div>
+	                            </li>
+	                            <li>
+	                                <h2>5、为什么要有正方形和长方形两套LOGO，具体尺寸要求是什么？</h2>
+	                                <h3>1）品牌正方形logo</h3>
+	                                <div>
+	                                    <p>①正方形logo标准：不强制要求白底，图片尺寸200x200，图片文件大小≤16KB，具体标准详见：<a href="http://b0.hucdn.com/party/2016/12/upload_ea9d84c58898663cef09832109a26f25_906x3580.png">《正方形logo标准》</a></p>
+	                                    <p>②主要应用场景：APP首页“今日特卖”下方参与特卖活动的品牌展示对应的方形LOGO</p>
+	                                    <img src="../images/83c75ab1a6ce7ecb_277x511.jpg">
+	                                </div>
+	                                <h2>2）长方形logo</h2>
+	                                <div>
+	                                    <p>①长方形logo标准：要求纯白底图，无边框，图片尺寸100x200，图片文件大小≤8KB。具体标准详见：<a href="http://b0.hucdn.com/img/help/bb-logo-gf.jpg">《长方形logo标准》</a></p>
+	                                    <p>②主要应用场景：&gt;搜索框下方“品牌”分类的热门品牌，展示相应品牌logo</p>
+	                                    <img src="../images/eeb37f511c71862f_290x494.png">
+	                                </div>
+	                            </li>
+	                            <li>
+	                                <h2>6、提交的质检报告具体标准是什么？</h2>
+	                                <h3>1）质检报告检测项标准</h3>
+	                                <div>
+	                                    <p>每个品牌须提供一份最近2年内的质检报告，其中，一次性卫生用品、化妆品、食品要求一年内。</p>
+	                                    <p>商家提交给贝贝的质检报告，需符合贝贝要求的质检项目。具体标准详见：<a href="http://b0.hucdn.com/party/default/upload_91f961a50109a1ffdee7f5b2783d9b4b_1519x1660.png">《质检报告检测项标准》</a></p>
+	                                </div>
+	                                <h3>2）质检报告的委托单位</h3>
+	                                <div>
+	                                    <p>质检报告的委托单位需为入驻公司；</p>
+	                                    <p>若质检报告的委托单位非入驻公司，需提供质检报告的委托单位与入驻公司的关系证明，包括但不限于双方加工协议，授权关系证明等。</p>
+	                                </div>
+	                            </li>
+	                        </ul>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    <!-- 05常见问题end -->
+
+    </div>
+     <!-- ______________________________________________________________________________________________________________________________________________________________________________________++++++++ -->
+	<!-- 中间部分end -->
+	<!-- 定位start -->
+	<div id="feedback">
+		<span id="feedbackUpsign" data-value="ByBXdVBgVG0FPlc1USYGfFI6XXsFIFJ1CGUBIVUoU2YNMAMmXjdRIANnVmMMNwV+UmYEbApiVyJSJ1x+DDEMNFNlUjlVKFMkX2dQew8+AycHMFcmUDVUIQViV3BRZAZ8UmJdLwVlUjAIawE7VTZTMw09Az1eZ1Fl"></span>
+		<span id="feedbackUploader" data-value="http://d.beibei.com/tool/uploader/seller_img.html"></span>
+		<div class="m-feedback J_feedback" style="margin-right: -591px;">
+			<img src="../images/5a606c6bc52661c1_80x98.png">
+		</div>
+		<div class="m-fb-shadow J_fb-shadow"></div>
+		<div class="b-dialog__wrapper w-order-dialog J_fb-dialog" style="display: none;">
+			<div class="b-dialog b-dialog--small b-dialog--fade">
+				<div class="b-dialog__header">
+					<span class="b-dialog__title">创建工单</span>
+					<div class="b-dialog__headerbtn">
+						<i class="b-dialog__close b-icon b-icon-close"></i>
+					</div>
+				</div>
+				<!---->
+				<div class="b-dialog__footer">
+					<span>
+						<button type="button" class="b-button b-button--primary"><!----> <!---->
+							<span>确 定</span> <!---->
+						</button>
+						<button type="button" class="b-button b-button--ghost"><!----> <!---->
+							<span>取 消</span> <!---->
+						</button>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 定位end -->
+	<!-- ____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+	<!-- 底部start  -->
+	<div>
+		<!-- 邮编地址start -->
+		<div id="footer" style="margin-top:0px;">
+			<div class="footer-nav">
+				<a href="">首页</a>|
+				<a href="">关于贝贝</a>|
+				<a href="">商家入驻</a>|
+				<a href="">正品保证</a>|
+				<a href="">人才招聘</a>|
+				<a href="">联系我们</a>|
+				<a href="">帮助中心</a>|
+				<a href="">友情链接</a>|
+				<a href="">手机客户端</a>|
+				<a href="">客服在线</a>|
+				<a href="">贝贝公益</a>|
+				<a href="">品质健康</a>|
+				<a href="">育儿社区</a>
+			</div>
+			<div class="footer-content">
+				<div class="wrapper">
+					<p>浙ICP备14025287号 |
+                    食品流通许可证：SP3301041510054925 |
+                    出版物经营许可证：新出发零字第00086号</p>
+					<p class="mt-8">
+					© 2014-2018
+						<acolor="" style="" href="">杭州贝购科技有限公司 </a>
+					All Rights Reserved. 客服热线：0571-10107788
+					</p>
+					<div class="mt-20">
+						<a href="">
+							<img src="" alt="">
+						</a>
+						<a href="">
+							<img src="" alt="">
+						</a>
+						<a href="">
+							<img src="" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 邮编地址end -->
+	</div>
+	<!-- 底部end -->
+</body>
+</html>

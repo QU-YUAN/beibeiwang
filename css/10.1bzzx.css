@@ -1,0 +1,470 @@
+    body,h1,h2,h3,h4,h5,h6,div,p,dl,dt,dd,ol,ul,li,form,table,th,td,a,img,span,strong,var,em,input,textarea,select,option{margin: 0; padding: 0;}
+html,body{font-family:"微软雅黑","宋体",Arail,Tabhoma; font-size: 16px; text-align: left;}
+ul,ol{list-style: none;}
+img{border: 0;}
+input,select,textarea{outline:0;}
+textarea{resize:none; overflow: auto;}
+table{border-collapse: collapse; border-spacing: 0;}
+th,strong,var,em,b,i{font-weight: normal; font-style: normal;}
+a,u{text-decoration: none;}
+/*中间部分start*/
+/*安全提示与自动服务start*/
+.wrapper10 {
+    margin: 0 auto;
+    position: relative;
+    width: 1002px;
+}
+/*1安全提示start*/
+.safe-tips {
+    margin-top: 20px;
+    height: 42px;
+    line-height: 42px;
+    border: 2px solid #FAEBD7;
+    background-color: #fffeea;
+    color: #555;
+}
+/*叹号*/
+.safe-tips .exclamation {
+    position: relative;
+    left: 15px;
+    top: 1px;
+    color: #ff3838;
+}
+/*安全提示：*/
+.safe-tips .safe-title {
+    display: inline-block;
+    position: relative;
+    left: 10px;
+    width: 70px;
+    height: 16px;
+    line-height: 16px;
+    border-radius: 8px;
+    color: #ff647c;
+    text-align: center;
+    font-weight: 600;
+}
+/*内容*/
+.safe-tips .safe-content {
+    display: inline-block;
+    position: relative;
+    left: 2px;
+    height: 16px;
+    line-height: 16px;
+    border-radius: 8px;
+}
+/*1安全提示end*/
+/*————————————————————————————————————————————————————+++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*2自动服务start*/
+.help-nav {
+    margin-top: 14px;
+    letter-spacing: 0;
+    height: 252px;
+    border: 1px solid #e4e4e4;
+}
+/*自动服务标题*/
+.help-nav .help-nav-title {
+    font-family: 'å¾®è½¯é›…é»‘','é»‘ä½“';
+    height: 50px;
+    line-height: 30px;
+    background: #fff;
+    padding: 16px 0 6px 0;
+}
+.help-nav .title-text-chn {
+    font-size: 18px;
+    font-weight: 600;
+    color: #555;
+    padding-left: 8px;
+    display: inline-block;
+    position: relative;
+    height: 22px;
+    line-height: 22px;
+    left: 20px;
+    border-left: 4px solid #ff3838;
+}
+.help-nav .title-text-en {
+    font-size: 16px;
+    display: inline-block;
+    position: relative;
+    height: 22px;
+    line-height: 22px;
+    left: 24px;
+    color: #999;
+}
+
+/*内容部分ul*/
+.help-nav ul {
+    height: 60px;
+    margin: 0 auto;
+    list-style: none;
+}
+.help-nav li {
+    position: relative;
+    float: left;
+    width: 25%;
+    margin: 0;
+    background: #fff;
+    -webkit-box-shadow: 1px 1px 3px #eee;
+    -moz-box-shadow: 1px 1px 3px #eee;
+    box-shadow: 1px 1px 3px #eee;
+    *margin: 0;
+    *padding: 0;
+}
+.help-nav li:hover{
+    background-color:#ffedf3
+}
+.help-nav li a {
+    display: block;
+    padding: 20px 16px;
+    -webkit-transition: background-color .2s;
+    -moz-transition: background-color .2s;
+    -o-transition: background-color .2s;
+    transition: background-color .2s;
+    color: #333;
+    text-decoration: none;
+}
+
+/*查询订单*/
+.help-nav .order-img {
+    background-image: url(../images/upload_d8412b4e0740d1272949fb474cf77669_60x60.png);
+}
+.help-nav .img-title {
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 16px;
+}
+.help-nav .content {
+    margin-left: 70px;
+}
+.help-nav .cont {
+    font-family: 'å¾®è½¯é›…é»‘','é»‘ä½“';
+    font-size: 16px;
+    font-weight: 700;
+    color: #444;
+}
+.help-nav .detail {
+    font-family: Verdana,Tahoma,Arial;
+    color: #999;
+    margin-top: 3px;
+    height: 36px;
+    font-size:12px;
+}
+.help-nav .detail {
+    display: block;
+}
+/*分隔线*/
+.help-nav .border-line {
+    position: absolute;
+    height: 40px;
+    width: 1px;
+    right: 0;
+    top: 30px;
+    border-right: 1px solid #eee;
+}
+/*物流配送*/
+.help-nav .logis-img {
+    background-image: url(../images/upload_737bcf4d77cf6b91ef1ebe797db2cfee_60x60.png);
+}
+/*账户相关*/
+.help-nav .account-img {
+    background-image: url(../images/upload_9b25af35c9da5266298143f2916f7a59_60x60.png);
+}
+/*退款退货*/
+.help-nav .return-img {
+    background-image: url(../images/upload_b4ff4c930af6402ae55027a86955ded8_60x60.png);
+}
+/*查询余额*/
+.help-nav .overage-img {
+    background-image: url(../images/upload_83ce49779cce77a62148e96b733d31e5_60x60.png);
+}
+/*申请提现*/
+.help-nav .suitcase-img {
+    background-image: url(../images/upload_4735b691a0542e71af939ce79b06b331_60x60.png);
+}
+/*查询现金券*/
+.help-nav .coupon-img {
+    background-image: url(../images/upload_653c88b0bbaffbe940673c782bb621fe_60x60.png);
+}
+/*取消订单*/
+.help-nav .cancel-img {
+    background-image: url(../images/upload_64c1333d23cb533d10b27146f67aaa9e_60x60.png);
+}
+/*2自动服务end*/
+/*安全提示与自动服务end*/
+/*————————————————————————————————————————————————————+++++++++++++++++++++++++++++++++++++++++++++++++++++++++——————+=======================================================================================*/
+/*3456热点问题、智能客服、在线人工客服、电话服务start*/
+#container10b {
+    width: 1002px;
+    /*margin-left: 2%;*/
+     margin: 0 auto;
+}
+.user-wrapper {
+    height:597px;
+    margin: 20px auto;
+    border: 1px solid #e4e4e4;
+    background-color: #fff;
+    position: relative;
+}
+
+/*卖家帮助中心start*/
+.pure-u-1-5 {
+    width: 200px;
+    display:inline-block;
+}
+/*1标题start*/
+.main-title {
+    line-height: 45px;
+    font-size: 16px;
+    background-color: #FF90B1;
+    padding-left: 20px;
+    color: #FFF;
+}
+.pure-u-1-5 .main-title a{
+    color: #FFF;
+    text-decoration: none;
+}
+.main-title .iconfont {
+    font-size: 18px;
+    padding-right: 3px;
+}
+.subNavBox{
+    width:200px;
+    border:solid 1px #e5e3da;
+    margin:0 auto;
+    border-bottom: 2px solid #fff;
+    background-color: #F1F0EE;
+}
+
+.subNav{
+    border-bottom: 2px solid #fff;
+    cursor:pointer;
+    font-weight:bold;
+    font-size:14px;
+    color:#999;
+    line-height:38px;
+    height:40px;
+    padding-left:44px;
+    background:url(../images/jiantou.png) no-repeat;  background-position:-29% 50%
+}
+
+.currentDt{
+    background-image:url(../images/jiantou1.png);
+}
+
+.navContent{
+    display: none;
+    border-bottom:solid 1px #e5e3da;
+    background:#fff;
+}
+
+.navContent li a{
+    display:block;
+    width:200px;
+    height:28px;
+    text-align:center;
+    font-size:14px;
+    line-height:28px;
+    color:#333;
+    text-decoration:none;
+}
+.navContent li a:hover{
+    color:#E9215D;
+    font-weight:700;
+}
+/*1标题end*/
+ /*————————————————————————————————》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》 ——————————————————————————————————————————*/
+
+/*2常见问题start*/
+/*2隐藏部分start*/
+/*2隐藏部分end*/
+ /*2常见问题end*/
+ /*————————————————————————————————》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》 ——————————————————————————————————————————*/
+
+/*3账户相关start*/
+/*3隐藏部分start*/
+/*3隐藏部分end*/
+/*3账户相关end*/
+/*》》》》》》》》》》》》》》》》》》》》》》》》》》》》》 ——————————————————————————————————————————*/
+
+/*4支付相关start*/
+/*4隐藏部分start*/
+/*4隐藏部分end*/
+/*4支付相关end */
+/*》》》》》》》》》》》》》》》》》》》》》》》》》》》》》 ——————————————————————————————————————————*/
+
+/*5优惠相关start*/
+/*5隐藏部分start*/
+/*5隐藏部分end*/
+/*5优惠相关end*/
+/*》》》》》》》》》》》》》》》》》》》》》》》》》》》》》 ——————————————————————————————————————————*/
+
+/*6配送相关start*/
+/*6隐藏部分start*/
+/*6隐藏部分end*/
+/*6配送相关end*/
+/*》》》》》》》》》》》》》》》》》》》》》》》》》》》》》 ——————————————————————————————————————————*/
+
+/*7全球购服务start*/
+/*7隐藏部分start*/
+/*7隐藏部分end*/
+/*7全球购服务end*/
+/*》》》》》》》》》》》》》》》》》》》》》》》》》》》》》 ——————————————————————————————————————————*/
+
+ /*8售后服务start*/
+/*8隐藏部分stat*/
+/*8隐藏部分end*/
+/*8售后服务end*/
+/*》》》》》》》》》》》》》》》》》》》》》》》》》》》》》 ——————————————————————————————————————————*/
+
+/*9安全购物须知start*/
+/*9隐藏部分start*/
+/*9隐藏部分end*/
+/*9安全购物须知end*/
+/*》》》》》》》》》》》》》》》》》》》》》》》》》》》》》 ——————————————————————————————————————————*/
+
+/*10知识产权维权start*/
+ /*10隐藏部分start*/
+/*10隐藏部分end*/
+/*10知识产权维权end*/
+ /*》》》》》》》》》》》》》》》》》》》》》》》》》》》》》 ——————————————————————————————————————————*/
+
+/*卖家帮助中心end*/
+/*_________________________________________________________________________________________________________________________________》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》》*/
+
+/*购物流程start*/
+/*1购物流程*/
+.bo-main {
+    display:inline-block;
+    padding: 20px 0;
+    position: absolute;
+    margin-left:0%;
+    margin-top:1%;
+}
+
+.pure-u-4-5 {
+    width: 800px;
+}
+.user-wrapper .bo-main h3 {
+    font-size: 18px;
+    line-height: 38px;
+    height: 38px;
+    margin: 0 30px 15px;
+    padding: 0px 15px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    font-weight:1000;
+}
+/*1购物流程*/
+ /*》》》》》》》》》》》》》》》》》》》》》》》》》》》》》 ——————————————————————————————————————————*/
+/*2注册登录start*/
+.support-wrapper .guide {
+    position: relative;
+    height: 70px;
+    margin: 20px 0;
+    padding-left: 35px;
+    list-style: none;
+}
+/*1*/
+.support-wrapper .guide li.login-reg {
+    margin-left: 0;
+}
+.support-wrapper .guide li {
+    position: relative;
+    left: 0;
+    display: inline;
+    float: left;
+    width: 150px;
+    height: 70px;
+    margin: 0 -5px;
+}
+.support-wrapper .guide a {
+    font-size: 13px;
+    line-height: 35px;
+    display: block;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    text-align: center;
+    color: #fff;
+    background: url(../images/sprite.3.png);
+    background-repeat: no-repeat;
+    background-position: -152px 0;
+    text-decoration:none;
+}
+.support-wrapper .guide a:hover{
+    background-position: 0 0;
+}
+/*i*/
+.support-wrapper .guide .iconfont {
+    font-size: 24px;
+    font-weight: 400;
+    position: relative;
+    top: 12px;
+}
+/*span*/
+.support-wrapper .guide a span {
+    font-family: '微软雅黑','黑体';
+    font-weight: 700;
+    position: relative;
+    top: -2px;
+    display: block;
+}
+
+/*+》》》》》》》》》》》》》》》》》》》》》》》*/
+/*2常见问题*/
+.support-wrapper .min-list {
+    padding-left: 35px;
+}
+.support-wrapper .min-list li {
+    float: none;
+}
+.support-wrapper .min-list h5 {
+    margin: 0;
+    margin-top: 10px;
+    color: #333;
+}
+.bo-main .min-list h5 {
+    font-size: 16px;
+    margin-bottom: .5em;
+    font-weight:1000;
+}
+.support-wrapper .min-list ul {
+    width:750px;
+    height:32px;
+    position: relative;
+    left: -15px;
+    overflow: hidden;
+}
+.bo-main .min-list ul {
+    list-style: none;
+    margin-left: 15px;
+}
+.support-wrapper .min-list ul li {
+    float: left;
+    width: auto;
+    margin-right: 10px;
+    list-style-type: none;
+}
+.bo-main .min-list ul li {
+    line-height: 32px;
+    font-size: 13px;
+}
+.bo-main .min-list ul li a {
+    display:inline-block;
+    color: #3e3e3e;
+    text-decoration: none;
+}
+.bo-main .min-list ul li a:hover{
+    color:#E9215D;
+}
+/*2注册登录end*/
+  /*》》》》》》》》》》》》》》》》》》》》》》》》》》》》》 ——————————————————————————————————————————*/
+
+   /*》》》》》》》》》》》》》》》》》》》》》》》》》》》》》 ——————————————————————————————————————————*/
+
+    /*》》》》》》》》》》》》》》》》》》》》》》》》》》》》》 ——————————————————————————————————————————*/
+/*购物流程end*/
+/*6电话服务end*/
+/*3456热点问题、智能客服、在线人工客服、电话服务end*/
+/*中间部分end

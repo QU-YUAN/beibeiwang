@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>贝贝网购物车</title>
+	<link rel="icon" href="../images/apple_icon.png">
+	<!-- <link rel="stylesheet" type="text/css" media="all" href="../css/db.css"> -->
+    <!-- <script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script> -->
+
+
+    <link rel="stylesheet" href="../css/11gwc.css">
+    <link rel="stylesheet" href="../css/db.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../jquery-ui-1.12.1.custom/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../css/htmleaf-demo.css"> -->
+
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/top.js"></script>
+    <script src="../js/jquery-1.11.0.min.js"></script>
+    <script src="../js/megamenu.js" type="text/javascript"></script>
+    <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="../js/1sy.js"></script>
+</head>
+<body style="background:#f9f9f9;">
+	<!-- 顶部上的内容start -->
+    <div class="top-nav">
+
+	    <div class="wrapper">
+	        <ul c-rid="01047">
+	            <!-- 登录前显示 START -->
+	            <li class="view-LoginStatus" data-status="0">
+		            <a class="lv-icon lv1" c-bname="通顶菜单-用户等级图标" clog="" c-emit="click" c-et="event" c-etl="" href="http://i.beibei.com/member/grade.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><a class="striking-link" c-bname="通顶菜单-用户名" clog="" c-emit="click" c-et="event" c-etl="" href="http://i.beibei.com">1731***9580</a> &nbsp;
+		            <a c-bname="通顶菜单-退出" clog="" c-emit="click" c-et="event" c-etl="" href="./8dl.html" rel="nofollow">[退出]</a>
+	            </li>
+	            <li class="seg"></li>
+	            <li><a c-bname="通顶菜单-消息" clog="" c-emit="click" c-et="event" c-etl="" href="http://i.beibei.com/message/index.html">消息</a></li>
+	            <li class="seg"></li>
+	            <li><a c-bname="通顶菜单-我的订单" clog="" c-emit="click" c-et="event" c-etl="" href="http://i.beibei.com/trade/order/lists.html">我的订单</a></li>
+	            <li class="seg"></li>
+	            <li><a c-bname="通顶菜单-我的贝贝" clog="" c-emit="click" c-et="event" c-etl="" href="http://i.beibei.com/">我的贝贝</a></li>
+	            <li class="seg"></li>
+	            <!-- 登录前显示 END -->
+	            <li>
+	            	<a c-bname="商家入驻" clog="" c-emit="click" c-et="event" c-etl="" href="./7sjrz.html" clog-get="true">
+	                商家入驻
+	            	</a>
+	            </li>
+	            <li class="seg"></li>
+	            <li class="small">
+	                <div class="dropdown">
+	                    <span class="dropdown-default">
+	                        <a c-bname="商家中心" clog="" c-emit="click" c-et="event" c-etl="" href="./8dl.html" clog-get="true">贝贝商家中心</a>
+	                        <i class="glyphicon glyphicon-menu-down"></i>
+	                    </span>
+	                    <ul class="dropdown-list" style="border-bottom: none;padding-bottom: 0;left:-8%">
+	                        <li>
+	                            <a c-bname="商家中心" clog="" c-emit="click" c-et="event" c-etl="" href="./8dl.html">贝店商家中心</a>
+	                        </li>
+	                    </ul>
+	                    <ul class="dropdown-list" style="left:-8%">
+	                        <li style="padding-top: 0;">
+	                            <a c-bname="商家中心" clog="" c-emit="click" c-et="event" c-etl="" href="./8dl.html">供应商中心</a>
+	                        </li>
+	                    </ul>
+	                </div>
+	            </li>
+
+	            <li class="seg"></li>
+	            <li class="small1">
+	                <div class="dropdown1">
+	                    <span class="dropdown-default">
+	                        <i class="glyphicon glyphicon-question-sign iconfont-pink1"></i>
+	                        <a c-bname="帮助中心" clog="" c-emit="click" c-et="event" c-etl="" href="./10.1bzzx.html" clog-get="true">帮助中心</a>
+	                        <i class="glyphicon glyphicon-menu-down""></i>
+	                    </span>
+	                    <ul class="dropdown-list1" style="left:-11%;padding: 1px 1px 3px 9px;">
+	                        <li>
+	                            <i class="glyphicon glyphicon-headphones iconfont
+                            		"></i>
+	                            <a target="_blank" c-bname="联系客服" clog="" c-emit="click" c-et="event" c-etl="" href="./10kfzxhtml" >联系客服</a>
+	                        </li>
+	                    </ul>
+	                </div>
+	            </li>
+	            <li class="seg"></li>
+	            <li class="small2">
+	                <div class="dropdown2">
+	                    <span class="dropdown-default">
+	                    关注
+	                        <i class="glyphicon glyphicon-menu-down""></i>
+	                    </span>
+	                    <div class="dropdown-block block-follow" style="display:none;">
+	                        <dl class="wechat">
+	                            <dd>微信号：beibeiclub</dd>
+	                            <dt title="微信扫一扫"><img src="http://b0.hucdn.com/img/common/beibeiclub_90.png" alt="" width="90" height="90"></dt>
+	                            <dd>订阅贝贝官方微信</dd>
+	                        </dl>
+	                        <dl class="social">
+	                            <dd><a target="_blank" c-bname="关注新浪微博" clog="" c-emit="click" c-et="event" c-etl="" href="http://weibo.com/p/1006063963155532/home?from=page_100606&amp;mod=TAB#place" title="关注贝贝新浪微博"><img src="http://b0.hucdn.com/img/common/weibo_45x45.png" alt="关注贝贝新浪微博" width="45" height="45"></a></dd>
+	                            <dd><a target="_blank" c-bname="关注QQ空间" clog="" c-emit="click" c-et="event" c-etl="" href="http://user.qzone.qq.com/2643291899?ptsig=xhap*Fevow5d8Z6q4BQELbvQeVmB17*Jlr6GDifDLTE" title="关注贝贝QQ空间"><img src="http://b0.hucdn.com/img/common/qzone_45x45.png" alt="关注贝贝QQ空间" width="45" height="45"></a></dd>
+	                        </dl>
+	                    </div>
+	                </div>
+	            </li>
+	        </ul>
+	    </div>
+	</div>
+	<!-- 顶部上的内容end -->
+	<!-- ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————++++++++++++++++++++++ -->
+	<!-- 顶部start -->
+	<div id="head">
+		<div class="wrapper">
+			<img style="width:250px;height:50px" class="min-logo" src="../images/1.t1.png" alt="">
+			<a class="min-logo-a" href=""></a>
+		</div>
+		<div class="min-logo-slogan">
+			<a href="./12.1zpbz.html"></a>
+		</div>
+		<!-- 我的购物车start -->
+		<div class="nav-cart">
+			<a class="top-cart" href="" style="text-decoration: none;">
+				<div class="top-cart-icon">
+					<i class="glyphicon glyphicon-shopping-cart
+					"></i>
+				</div>
+				<span>
+				我的购物车
+				<i style="font-size: 13px;    margin-left: 4px;" class="glyphicon glyphicon-chevron-down"></i>
+				</span>
+			</a>
+			<div class="gwc">
+				<div class="k">
+					<ul class="k1">
+						<li>
+							<span>赶快去挑选商品吧！</span>
+							<span class="shopping">
+								<i></i>
+							</span>
+						</li>
+					</ul>
+					<div class="k2">
+						<div class="wg">
+						小计
+							<span>¥0.00</span>
+						</div>
+						<div>
+							<a href="">
+								<i class="glyphicon glyphicon-shopping-cart
+								"></i>
+								去购物车结算
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 我的购物车end -->
+	</div>
+	<!-- 顶部end -->
+	<!-- 中间部分start -->
+	<div id="container11">
+        <div id="content" class="trade-content wrapper11 mt-20">
+            <div class="white-bg box-shadow">
+            	<!-- 我的购物车标题start -->
+    			<div class="cart-process process-step1">
+			        <h1>我的购物车</h1>
+			        <i>&nbsp;</i>
+			    </div>
+				<!-- 我的购物车标题end -->
+				<!-- ——————————————————————————————————————————+++++++++++++++++++++++++++++++++++++++++++++ -->
+				<!-- 内容部分start -->
+			    <div class="cart-list p20">
+			        <form class="pure-form">
+			        	<!-- 商品信息start -->
+			            <table class="pure-table">
+			            	<!-- 全选 -->
+			                <thead>
+			                    <tr>
+			                        <th class="cart-th-check">
+			                            <input type="checkbox" checked="checked" class="J_checkAll"> 全选
+			                        </th>
+			                        <th class="cart-th-item-info">商品</th>
+			                        <th class="cart-th-item-sku">商品信息</th>
+			                        <th class="cart-th-item-price">单价(元)</th>
+			                        <th class="cart-th-number">数量</th>
+			                        <th class="cart-th-subtotal">小计(元)</th>
+			                        <th class="cart-th-ops">操作</th>
+			                    </tr>
+			                </thead>
+							<!-- 全选 -->
+							<!-- ————————————————————————————————————————————————————————————————————————————————————++++++++++++++++++++++++++++++++++++++ -->
+							<!-- 品牌特惠start -->
+			                <tbody class="view-CartList">
+			                	<tr class="seg-entry"></tr>
+			                	<tr class="event-entry J_eventEntry" data-eventid="106800517">
+			                		<td colspan="7">
+			                			<input type="checkbox" class="J_eventCheck" data-eventid="106800517" checked="checked">
+			                			<span class="event-title">
+			                				<a href="http://you.beibei.com/detail/106800517-4458352.html" target="_blank">香梅品牌特惠</a>
+			                			</span>
+			            			</td>
+			        			</tr>
+			        			<tr class="item-entry view-ItemEntry " data-cartid="1457129162">
+			        				<td class="cart-td-check first-for-ie">
+			        					<input class="J_itemCheck" data-eventid="106800517" data-cartid="1457129162" type="checkbox" checked="checked">
+			    					</td>
+			    					<td class="cart-td-item-info clearfix11">
+			    						<a class="image" href="http://you.beibei.com/detail/106800517-4458352.html" target="_blank">
+			    							<img src="../images/59340911302954_736x736.jpg">
+			    						</a>
+			    						<a class="title" href="http://you.beibei.com/detail/106800517-4458352.html" target="_blank">【24款气质头饰】头绳韩国小清新发绳森女系成人简约发圈头饰扎头发橡皮筋发饰套装</a>
+									</td>
+									<td class="cart-td-item-sku"><p>D148-可爱韩粉系8件套</p></td>
+									<td class="cart-td-item-price">
+										<p class="view-ItemEntryPrice">7.90</p>
+										<p class="strike">35.00</p>
+									</td>
+									<td class="cart-td-number">
+										<div>
+											<a href="javascript:;" class="number-op del-num disable view-ReductionItemNumBtn">
+											 	<i class="glyphicon glyphicon-menu-left iconfont"></i>
+											</a>
+											<input readonly="readonly" data-eventid="106796691" data-cartid="1457365323" class="view-ItemEntryNum" type="text" value="1">
+											<a href="javascript:;" class="number-op add-num view-AdditionItemNumBtn">
+												<i class="glyphicon glyphicon-menu-right iconfont"></i>
+											</a>
+										</div>
+										<div class="cart-td-tip">
+											<p class="view-ItemEntryNumTipPurchase tip-purchase">
+												<i class="iconfont">󰅂</i>限购
+												<span>5</span>件
+											</p>
+											<p class="view-ItemEntryNumTipLeftnum tip-leftnum">
+												<i class="iconfont">󰅓</i>即将售罄
+											</p>
+											<p class="view-ItemEntryNumTipStock tip-stock">
+												<i class="iconfont">󰅓</i>仅剩
+												<span>1094</span>件
+											</p>
+										</div>
+									</td>
+									<td class="cart-td-subtotal">
+										<span class="price view-ItemSubtotal">7.90</span>
+									</td>
+									<td class="last-for-ie">
+										<a href="javascript:;" data-eventid="106800517" data-cartid="1457129162" class="view-DelItemBtn">删除</a>
+									</td>
+								</tr>
+								<tr class="footer-entry view-FooterEntry " data-eventid="106800517">
+									<td colspan="7">
+										<div class="subtotal-row" >
+											<span class="price view-EventTaxFee">0.00</span>
+											<span class="title">进口税：</span>
+										</div>
+										<div class="subtotal-row" >
+											<span class="price view-EventDiscountFee">0.00</span>
+											<span class="title">促销优惠：</span>
+										</div>
+										<div class="subtotal-row">
+											<span class="price view-EventTotal">7.90</span>
+											<span class="title">小计：</span>
+										</div>
+										<div class="subtotal-row view-FooterProm hidden" style="display: none;">
+											<span class="price">
+												<em>(满<span></span>)</em> -
+												<span></span>
+											</span>
+											<span class="title">专场满减：</span>
+										</div>
+										<div class="subtotal-row oversea-price-over hidden">
+											<span class="title" style="color: #FF5482"></span>
+										</div>
+										<div class="promotion-notice view-PromotionNotice" style="display: none;">
+											<p>
+												<span></span>
+												<a href="http://you.beibei.com/detail/106800517-4458352.html" target="_blank">去凑凑看&gt;&gt;</a>
+											</p>
+										</div>
+										<div class="subtotal-row view-FooterPacketContainer hidden" style="display: none;">
+											<span class="price">-0.00</span>
+											<select class="view-SelectPacket select-packet" data-eventid="106800517">
+												<option value="-1">选择品牌红包</option>
+												<option value="0">不使用红包</option>
+											</select>
+										</div>
+										<div class="view-EventSubtotal subtotal-row topline" style="display:none;">
+											<span class="price">7.90</span>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+							<!-- 品牌特惠end -->
+			            </table>
+			            <!-- 商品信息end -->
+			            <!-- ————————————————————————————————————————————————————————————————++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+			            <div class="m-activity-tip J_activityTips"></div>
+						<!-- ————————————————————————————————————————————————————————————————++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+			            <!-- 确认订单start -->
+			            <div class="m-pay-bar-cont view-PaybarCont">
+			                <div id="pay-bar" class=" view-TotalBar">
+			                    <a id="pay-btn" class="cart-pay-btn fr view-ConfirmOrder" href="./11.1qrdd.html">确认订单</a>
+			                    <span class="view-TotalBarPrice">
+			                        <!--cart-payment类名不要轻易修改或重复，广点通代码会依赖  -->
+			                        <span class="cart-payment price mr-15 fr" op-value="totalPrice"><b class="u-yen-icon">¥</b>7.90</span>
+			                    </span>
+			                    <div class="cart-summary mr-15 fr view-TotalBarPromoFee">
+			                        已优惠
+			                        <span class="red J_totalFee" op-value="totalFee">0.00</span> 元，
+			                        <span class="J_totalFeeNotice">总计(不含运费)</span>：
+			                    </div>
+			                    <div class="cart-summary fr view-TotalBarNum">
+			                        共有
+			                        <span class="red" op-value="totalNum">1</span> 件商品，
+			                    </div>
+			                    <div class="clearfix11 cart-total-bar">
+			                        <input type="checkbox" id="s-all-f" checked="checked" class="s_all_slave cart_vm J_checkAll" name="s_all">
+			                        <label for="s-all-f">全选</label>
+			                        <a id="cartRemoveChecked" class="ml-15 underline grey view-BatchDelBtn" href="javascript:;">删除</a>
+
+			                        <!-- <a id="cartRemoveUnuse" class="ml-15 underline grey" href="javascript:;">清空失效商品</a> -->
+			                    </div>
+			                </div>
+			            </div>
+			            <!-- 确认订单end -->
+			            <p class="minato-text view-MinatoText"></p>
+			        </form>
+			    </div>
+			</div>
+
+		    <div class="minato-single hidden">
+		        <h3>购买了同样商品的用户还购买了</h3>
+		        <a class="minato-single-more" href="http://www.beibei.com/" target="_blank">查看更多</a>
+		        <ul class="minato-items view-MinatoItems clearfix"></ul>
+		    </div>
+		</div>
+    </div>
+	<!-- 中间部分end -->
+	<!-- ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————++++++++++++++++++++++ -->
+	<!-- 底部start  -->
+	<div>
+		<!-- 邮编地址start -->
+		<div id="footer" style="margin-top:0px;">
+			<div class="footer-nav">
+				<a href="">首页</a>|
+				<a href="">关于贝贝</a>|
+				<a href="">商家入驻</a>|
+				<a href="">正品保证</a>|
+				<a href="">人才招聘</a>|
+				<a href="">联系我们</a>|
+				<a href="">帮助中心</a>|
+				<a href="">友情链接</a>|
+				<a href="">手机客户端</a>|
+				<a href="">客服在线</a>|
+				<a href="">贝贝公益</a>|
+				<a href="">品质健康</a>|
+				<a href="">育儿社区</a>
+			</div>
+			<div class="footer-content">
+				<div class="wrapper">
+					<p>浙ICP备14025287号 |
+                    食品流通许可证：SP3301041510054925 |
+                    出版物经营许可证：新出发零字第00086号</p>
+					<p class="mt-8">
+					© 2014-2018
+						<acolor="" style="" href="">杭州贝购科技有限公司 </a>
+					All Rights Reserved. 客服热线：0571-10107788
+					</p>
+					<div class="mt-20">
+						<a href="">
+							<img src="" alt="">
+						</a>
+						<a href="">
+							<img src="" alt="">
+						</a>
+						<a href="">
+							<img src="" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 邮编地址end -->
+	</div>
+	<!-- 底部end -->
+</body>
+</html>

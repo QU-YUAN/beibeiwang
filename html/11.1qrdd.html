@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>11.1贝贝网首页登录页面</title>
+	<link rel="icon" href="../images/apple_icon.png">
+	<!-- <link rel="stylesheet" type="text/css" media="all" href="../css/db.css"> -->
+    <!-- <script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script> -->
+
+
+    <link rel="stylesheet" href="../css/11.1qrdd.css">
+    <link rel="stylesheet" href="../css/db.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../jquery-ui-1.12.1.custom/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../css/htmleaf-demo.css"> -->
+
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/top.js"></script>
+    <script src="../js/jquery-1.11.0.min.js"></script>
+    <script src="../js/megamenu.js" type="text/javascript"></script>
+    <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="../js/1sy.js"></script>
+</head>
+<body style="background:#f9f9f9;">
+	<!-- 顶部上的内容start -->
+    <div class="top-nav">
+
+	    <div class="wrapper">
+	        <ul c-rid="01047">
+	            <!-- 登录前显示 START -->
+	            <li class="view-LoginStatus" data-status="0">
+		            <a class="lv-icon lv1" c-bname="通顶菜单-用户等级图标" clog="" c-emit="click" c-et="event" c-etl="" href="http://i.beibei.com/member/grade.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><a class="striking-link" c-bname="通顶菜单-用户名" clog="" c-emit="click" c-et="event" c-etl="" href="http://i.beibei.com">1731***9580</a> &nbsp;
+		            <a c-bname="通顶菜单-退出" clog="" c-emit="click" c-et="event" c-etl="" href="./8dl.html" rel="nofollow">[退出]</a>
+	            </li>
+	            <li class="seg"></li>
+	            <li><a c-bname="通顶菜单-消息" clog="" c-emit="click" c-et="event" c-etl="" href="./13wdjy.html">消息</a></li>
+	            <li class="seg"></li>
+	            <li><a c-bname="通顶菜单-我的订单" clog="" c-emit="click" c-et="event" c-etl="" href="./13wdjy.html">我的订单</a></li>
+	            <li class="seg"></li>
+	            <li><a c-bname="通顶菜单-我的贝贝" clog="" c-emit="click" c-et="event" c-etl="" href="./13wdjy.html">我的贝贝</a></li>
+	            <li class="seg"></li>
+	            <!-- 登录前显示 END -->
+	            <li>
+	            	<a c-bname="商家入驻" clog="" c-emit="click" c-et="event" c-etl="" href="./7sjrz.html" clog-get="true">
+	                商家入驻
+	            	</a>
+	            </li>
+	            <li class="seg"></li>
+	            <li class="small">
+	                <div class="dropdown">
+	                    <span class="dropdown-default">
+	                        <a c-bname="商家中心" clog="" c-emit="click" c-et="event" c-etl="" href="./8dl.html" clog-get="true">贝贝商家中心</a>
+	                        <i class="glyphicon glyphicon-menu-down"></i>
+	                    </span>
+	                    <ul class="dropdown-list" style="border-bottom: none;padding-bottom: 0;left:-8%">
+	                        <li>
+	                            <a c-bname="商家中心" clog="" c-emit="click" c-et="event" c-etl="" href="./8dl.html">贝店商家中心</a>
+	                        </li>
+	                    </ul>
+	                    <ul class="dropdown-list" style="left:-8%">
+	                        <li style="padding-top: 0;">
+	                            <a c-bname="商家中心" clog="" c-emit="click" c-et="event" c-etl="" href="./8dl.html">供应商中心</a>
+	                        </li>
+	                    </ul>
+	                </div>
+	            </li>
+
+	            <li class="seg"></li>
+	            <li class="small1">
+	                <div class="dropdown1">
+	                    <span class="dropdown-default">
+	                        <i class="glyphicon glyphicon-question-sign iconfont-pink1"></i>
+	                        <a c-bname="帮助中心" clog="" c-emit="click" c-et="event" c-etl="" href="http://www.beibei.com/support/help/index.html" clog-get="true">帮助中心</a>
+	                        <i class="glyphicon glyphicon-menu-down""></i>
+	                    </span>
+	                    <ul class="dropdown-list1" style="left:-11%;padding: 1px 1px 3px 9px;">
+	                        <li>
+	                            <i class="glyphicon glyphicon-headphones iconfont
+                            		"></i>
+	                            <a target="_blank" c-bname="联系客服" clog="" c-emit="click" c-et="event" c-etl="" href="./10kfzx.html" >联系客服</a>
+	                        </li>
+	                    </ul>
+	                </div>
+	            </li>
+	            <li class="seg"></li>
+	            <li class="small2">
+	                <div class="dropdown2">
+	                    <span class="dropdown-default">
+	                    关注
+	                        <i class="glyphicon glyphicon-menu-down""></i>
+	                    </span>
+	                    <div class="dropdown-block block-follow" style="display:none;">
+	                        <dl class="wechat">
+	                            <dd>微信号：beibeiclub</dd>
+	                            <dt title="微信扫一扫"><img src="http://b0.hucdn.com/img/common/beibeiclub_90.png" alt="" width="90" height="90"></dt>
+	                            <dd>订阅贝贝官方微信</dd>
+	                        </dl>
+	                        <dl class="social">
+	                            <dd><a target="_blank" c-bname="关注新浪微博" clog="" c-emit="click" c-et="event" c-etl="" href="http://weibo.com/p/1006063963155532/home?from=page_100606&amp;mod=TAB#place" title="关注贝贝新浪微博"><img src="http://b0.hucdn.com/img/common/weibo_45x45.png" alt="关注贝贝新浪微博" width="45" height="45"></a></dd>
+	                            <dd><a target="_blank" c-bname="关注QQ空间" clog="" c-emit="click" c-et="event" c-etl="" href="http://user.qzone.qq.com/2643291899?ptsig=xhap*Fevow5d8Z6q4BQELbvQeVmB17*Jlr6GDifDLTE" title="关注贝贝QQ空间"><img src="http://b0.hucdn.com/img/common/qzone_45x45.png" alt="关注贝贝QQ空间" width="45" height="45"></a></dd>
+	                        </dl>
+	                    </div>
+	                </div>
+	            </li>
+	        </ul>
+	    </div>
+	</div>
+	<!-- 顶部上的内容end -->
+<!-- ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————++++++++++++++++++++++ -->
+	<!-- 顶部start -->
+	<div id="head">
+		<div class="wrapper">
+			<img style="width:250px;height:50px" class="min-logo" src="../images/1.t1.png" alt="">
+			<a class="min-logo-a" href=""></a>
+		</div>
+		<div class="min-logo-slogan">
+			<a href="./12.1zpbz.html"></a>
+		</div>
+		<!-- 我的购物车start -->
+		<div class="nav-cart">
+			<a class="top-cart" href="" style="text-decoration: none;">
+				<div class="top-cart-icon">
+					<i class="glyphicon glyphicon-shopping-cart
+					"></i>
+				</div>
+				<span>
+				我的购物车
+				<i style="font-size: 13px;    margin-left: 4px;" class="glyphicon glyphicon-chevron-down"></i>
+				</span>
+			</a>
+			<div class="gwc">
+				<div class="k">
+					<ul class="k1">
+						<li>
+							<span>赶快去挑选商品吧！</span>
+							<span class="shopping">
+								<i></i>
+							</span>
+						</li>
+					</ul>
+					<div class="k2">
+						<div class="wg">
+						小计
+							<span>¥0.00</span>
+						</div>
+						<div>
+							<a href="">
+								<i class="glyphicon glyphicon-shopping-cart
+								"></i>
+								去购物车结算
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 我的购物车end -->
+	</div>
+	<!-- 顶部end -->
+<!-- ————————————————————————————————————————————————————————————————————————————————————————————————++++++++++++++++++++++++++++++++++++++++++++ -->
+	<!-- 中间部分start -->
+    <div id="container11">
+        <div id="content" class="trade-content wrapper11q mt-20 white-bg box-shadow">
+        	<!-- 确认订单标题start -->
+            <div class="cart-process process-step2">
+			    <h1>确认订单</h1>
+			    <i>&nbsp;</i>
+			</div>
+			<!-- 确认订单end -->
+			<!-- ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————++++++++++++++++++++++ -->
+			<!-- 选择收获地址start -->
+			<h3>
+				选择收货地址
+				<a href="http://i.beibei.com/account/delivery_address.html" target="_blank" class="ml-15 f-12 c-999 management-address">管理收货地址</a>
+			</h3>
+			<!-- 选择收获地址end -->
+			<!-- ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————++++++++++++++++++++++ -->
+			<!-- 添加地址start -->
+			<div class="address-list view-Address">
+			    <ul class="view-AddressList" op-each="address" op-each-item="addressListItem"><li style="display: inline-block;" op-value="classText,id" op-attr="class,data-aid" class="clearfix11q view-AddressListItem checked" data-aid="90778472">
+			        <div class="letter-bg">
+			            <div class="blue first"></div>
+			            <div class="red"></div>
+			            <div class="blue"></div>
+			            <div class="red"></div>
+			            <div class="blue"></div>
+			            <div class="red"></div>
+			            <div class="blue"></div>
+			            <div class="red"></div>
+			            <div class="blue"></div>
+			            <div class="red"></div>
+			            <div class="blue"></div>
+			            <div class="red"></div>
+			            <div class="blue"></div>
+			            <div class="red"></div>
+			            <div class="blue"></div>
+			            <div class="red"></div>
+			            <div class="blue"></div>
+			            <div class="red"></div>
+			            <div class="blue"></div>
+			            <div class="red"></div>
+			            <div class="blue"></div>
+			            <div class="red"></div>
+			            <div class="blue"></div>
+			            <div class="red"></div>
+			            <div class="blue"></div>
+			            <div class="red"></div>
+			        </div>
+			        <div>
+			            <div class="addressee">
+				            <span class="name" op-value="full_name">夙夕</span>
+				            <span class="phone" op-value="mobile">173****9850</span>
+				            <span class="default" op-value="defalutMark" op-attr="style" style="display:inline;">默认</span>
+				        </div>
+			            <div class="address">
+			                <strong>寄送至</strong> <span op-value="province_text">四川省</span> <span op-value="city_text">泸州市</span> <span op-value="area_text">龙马潭区</span> <span op-value="address">泸州市龙马潭区长桥路二号泸州职业技术学院</span>
+			            </div>
+			            <div class="footer">
+			                <a href="javascript:;" class="modify view-ModifyAddressBtn" op-value="id" op-attr="address-id" address-id="90778472">修改</a>
+			            </div>
+			            <div class="check">
+			                <i class="glyphicon glyphicon-plus iconfont"></i>
+			            </div>
+			        </div>
+			    </li><li style="display: inline-block;" class="add-address view-AddAddressBtn">
+			        <a href="javascript:;" class="add-new-address ml-15 blue">
+			        	<i class="glyphicon glyphicon-plus iconfont"></i> 添加新地址
+			        </a>
+			    </li></ul>
+			</div>
+			<!-- 添加地址end -->
+			<!-- ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————++++++++++++++++++++++ -->
+			<!--TODO 海外购 -->
+			<!-- ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————++++++++++++++++++++++ -->
+			<!-- 确认订单信息start -->
+			<h3>确认订单信息</h3>
+			<div class="cart-list p20 pure-form clearfix11q">
+			    <table class="pure-table">
+			    	<!-- 商品 -->
+			        <thead>
+			            <tr>
+			                <th class="cart-th-item-info">商品</th>
+			                <th class="cart-th-item-sku">商品信息</th>
+			                <th class="cart-th-item-price">单价(元)</th>
+			                <th class="cart-th-discount">折扣</th>
+			                <th class="cart-th-number">数量</th>
+			                <th class="cart-th-subtotal">小计(元)</th>
+			            </tr>
+			        </thead>
+			        <!-- 商品 -->
+			        <!-- ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————++++++++++++++++++++++ -->
+					<!-- 商品信息内容部分start -->
+			        <tbody>
+			            <tr class="seg-entry" style="display: table-row;"></tr>
+			            <!-- 由香梅从浙江杭州发货 -->
+			            <tr class="event-entry">
+			                <td colspan="6">
+			                    <div class="event-info">
+			                        由<span class="event-title">香梅</span> 从<span class="event-title">浙江杭州</span> 发货
+			                                                </div>
+			                    <div class="event-remark">
+			                        <span class="c-999">交易备注：</span>
+			                        <input type="text" class="view-RemarkInput pure-u-1-4" data-eid="106800517" value="" placeholder="选填，可告诉商家您的特殊要求">
+			                    </div>
+			                </td>
+			            </tr>
+			            <!-- 由香梅从浙江杭州发货 -->
+			            <!-- ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————++++++++++++++++++++++ -->
+			            <!-- 小商品 -->
+			            <tr class="item-entry">
+			                <td class="cart-td-item-info clearfix11q first-for-ie">
+			                    <a class="image" target="_blank" href="http://you.beibei.com/detail/106800517-4458352.html"><img src="../images/59340911302954_736x736.jpg"></a>
+			                    <a style="overflow: hidden;text-overflow: ellipsis;-webkit-line-clamp: 3;-webkit-box-orient: vertical;display: -webkit-box;" class="title" target="_blank" href="http://you.beibei.com/detail/106800517-4458352.html">【24款气质头饰】头绳韩国小清新发绳森女系成人简约发圈头饰扎头发橡皮筋发饰套装</a>
+			                </td>
+			                <td class="cart-td-item-sku">
+			                    <p>
+			                    颜色：D148-可爱韩粉系8件套<br></p>
+			                </td>
+			                <td class="cart-td-item-price">
+			                    <p>7.90</p>
+			                    <p class="strike">35.00</p>
+			                </td>
+			                <td class="cart-td-discount">
+			                    <span>2.3折特卖</span>
+			                </td>
+			                <td class="cart-td-number">
+			                    <p>1</p>
+			                </td>
+			                <td class="cart-td-subtotal last-for-ie">
+			                    7.90
+			                </td>
+			            </tr>
+			            <!-- 小商品 -->
+			            <!-- ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————++++++++++++++++++++++ -->
+						<!-- 进口税 -->
+			            <tr class="footer-entry view-FooterEntry for-orderconfirm">
+			                <td colspan="6">
+			                    <div class="subtotal-row" style="display: none;">
+			                        <span class="price">7.90</span>
+			                        <span class="title">专场小计：</span>
+			                    </div>
+			                    <div class="subtotal-row">
+			                        <span class="price view-FreightTax" data-event-id="106800517">0.00</span>
+			                        <span class="title">进口税：</span>
+			                    </div>
+			                    <div class="subtotal-row">
+			                        <span class="price view-Freight" data-event-id="106800517">0.00</span>
+			                        <span class="title">运费：</span>
+			                    </div>
+			                   <div class="subtotal-row topline">
+			                        <span class="price view-EventSubTotal " data-event-id="106800517">7.90</span>
+			                        <span class="title">专场小计：</span>
+			                    </div>
+			                </td>
+			            </tr>
+			            <!-- 进口税 -->
+			        </tbody>
+					<!-- 商品信息内容部分end -->
+			    </table>
+				<!-- ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————++++++++++++++++++++++ -->
+				<!-- 使用现金券start -->
+			    <div class="coupon-bar">
+			        <span class="coupon-notice view-CouponNotice">您有可使用的现金券哦～<span class="triangle"></span></span>
+			        <span class="note-text">
+			            使用现金券：
+			        </span>
+			        <span class="coupon-select view-CouponSelectBtn" style="display: none;"><span class="view-CouponSelectBtnText">请选择您的现金券</span> <i class="iconfont">󰆦</i><div class="select-mask view-CouponSelectBtnMask" style="width: 100%;"></div>
+			            <ul class="coupon-selectlist view-CouponList" op-each="this" op-each-item="couponListItem"></ul>
+			        </span>
+			        <span class="coupon-use-name view-CouponName" style="display: none;"></span>
+
+			        <span class="coupon-number view-CouponNumberBox" style="display: none;">
+			            <input type="text" value="" placeholder="输入券码或现金券号">
+			            <a href="javascript:;" style="vertical-align: middle" class="coupon-use view-CouponNumberUseBtn">使用</a>
+			            <a href="javascript:;" class="coupon-reset view-CouponResetBtn">重新选择</a>
+			        </span>
+			        <span class="view-CouponNumberGuide coupon-number-guide">
+			            <span style="display: none;">&nbsp; 或&nbsp;</span>
+			            <a href="javascript:;" class="view-CouponNumberBtn">直接输入券号</a>
+			        </span>
+			        <span class="coupon-useinfo view-UseCouponInfo" style="display: none;">
+			            <span class="coupon-countdown">还有<span op-value="countdown"></span>到期</span>
+			            <a href="javascript:;" class="coupon-reset view-CouponResetBtn">重新选择</a>
+			        </span>
+			        <div class="coupon-subtotal view-CouponTotal" op-value="coupon">- 0.00</div>
+			    </div>
+				<!-- 使用现金券end -->
+				<!-- ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————++++++++++++++++++++++ -->
+				<!-- 使用贝壳start -->
+			    <div class="point-bar">
+			        <div class="note11q">
+			            <span class="note-text">
+			                使用贝壳：
+			            </span>
+			            <select class="use-point view-UsePoint">
+			                <option value="0">请选择</option>
+			                            </select>
+			            <i class="show-notice view-ShowNotice">&nbsp;&nbsp;&nbsp;</i>
+			        </div>
+
+			        <div class="point-notice view-PointNotice">
+			            <i class="triangle"></i>
+			            贝壳与现金兑换比例为100：1，且抵用贝壳数量需为整百，可抵用的贝壳额度不能超过订单金额的20%。
+			            <a href="http://www.beibei.com/support/help/shell.html" target="_blank">查看更多</a>
+			        </div>
+			        <div class="point-subtotal view-PointTotal" op-value="point">- 0.00</div>
+			        <div class="J_useNote use-note">（暂无贝壳）</div>
+			    </div>
+				<!-- 使用贝壳end -->
+				<!-- ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————++++++++++++++++++++++ -->
+				<!-- 运费start -->
+			    <div id="pay-bar" class="confirm-pay-bar">
+			        <div class="cart-result">
+			            <div class="cart-summary mr-10">
+			                运费：<span class="cart-payment view-FreightCount order-total-fright">0.00</span>
+			            </div>
+			        </div>
+			        <div class="cart-result">
+			            <div class="cart-summary mr-10">
+			                活动优惠：<span class="cart-payment order-total-fee">0.00</span>
+			            </div>
+			        </div>
+			                <div class="cart-result">
+			            <div class="cart-summary mr-10">
+			                <span class="order-notice">订单总计：</span>
+			                <span class="cart-payment order-total view-OrderTotal">7.90</span>
+			            </div>
+			        </div>
+			        <div class="cart-result pay-return">
+			            <div class="cart-summary mr-10 view-ShowMfText"></div>
+			        </div>
+			    </div>
+			    <!-- 运费end -->
+			    <!-- ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————++++++++++++++++++++++ -->
+			    <!-- 开发票start -->
+			    <div class="invoice-bar" style="display:none;">
+			    	<!-- #11737【确认订单页】线上索要发票功能暂时下线 -->
+			        <label><input id="invoice-checkbox" class="view-InvoiceCheckbox" type="checkbox">开发票</label>
+			        <span class="invoice-form hidden view-InvoiceForm">
+			            <label><input class="invoice-type ml-10 view-InvoiceRadioPerson" name="invoice-type" value="1" type="radio" checked="checked"> 个人</label>
+			            <label><input class="invoice-type ml-10 view-InvoiceRadioCompany" name="invoice-type" value="2" type="radio"> 公司</label>
+			            <input class="invoice-name ml-10 view-InvoiceTitle" type="text" name="invoice-name" placeholder="发票抬头">
+			        </span>
+			    </div>
+			    <!-- 开发票end -->
+			</div>
+			<!-- ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————++++++++++++++++++++++ -->
+            <!-- 选择支付方式start -->
+			<h3>
+				选择支付方式
+				<span>* 推荐使用支付宝平台支付，安全快捷</span>
+			</h3>
+			<!-- 选择支付方式end -->
+			<!-- ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————++++++++++++++++++++++ -->
+			<!-- 选择支付方式内容start -->
+			<div class="account-list">
+			    <div class="cash-balance">
+			        <div class="pay-type view-PaymentBalance" op-value="hide" op-attr="style" style="display:none;">
+			            <label><input class="view-UsePaymentBalance" type="checkbox" value="" op-value="disabled" op-attr="disabled" disabled=""> 使用账户余额：<em class="price" op-value="balance">0.00</em> <span class="c-666 f-12">元</span></label>
+			            <p class="pay-type-num view-UsePaymentBalanceNum">支付<span op-value="payment">0.00</span>元</p>
+			        </div>
+			    </div>
+			    <div class="pay-online view-PaymentThirdParty">
+			        <div class="pay-type">
+			            <input type="radio" checked="checked" value=""> 选择支付方式支付 <em class="price" op-value="payment">7.90</em> <span class="c-666 f-12">元</span>
+			        </div>
+			        <ul class="tab-bar clearfix11q view-PaymentSelectList">
+			            <li class="current">支付平台</li>
+			        </ul>
+			        <div class="view-PaymentBox">
+			            <div class="tab-panels view-PaymentPlatform">
+			                <div class="tab-panel">
+			                    <div class="bank-list clearfix11q">
+			                        <div class="b">
+			                            <input type="radio" name="bank" id="deposit-1" value="1" data-name="支付宝" data-type="platform"><label for="deposit-1"><img width="130px" height="40px" src="http://b0.hucdn.com/img/bank/alipay.png"></label>
+			                        </div>
+			                        <div class="b">
+			                            <input type="radio" name="bank" id="deposit-2" value="2" data-name="微信支付" data-type="platform"><label for="deposit-2"><img width="130px" height="40px" src="http://b0.hucdn.com/img/bank/wxpay.png"></label>
+			                        </div>
+			                    </div>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			</div>
+			<!-- 选择支付方式内容end -->
+             <!-- ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————++++++++++++++++++++++ -->
+			<!-- 全球购协议确认start -->
+			<div class="confirmation-area view-FooterArea">
+			    <div class="pay-confirm view-FooterPaymentRecheck">
+			        <span class="f-12 c-999 mr-15">使用 <b class="c-666" op-value="type">支付平台(支付宝)</b> <span op-value="common"></span>支付</span>
+			        <span class="price" op-value="payment">¥7.90</span>
+			    </div>
+			    <div class="address-confirm view-FooterAddressRecheck">
+			        <p><span class="c-999"></span><span op-value="address">寄送至：四川省 资阳市 雁江区 朝阳花园4</span></p>
+			        <p op-value="consignee">全运 收 / 173****9850</p>
+			    </div>
+			    <a class="submit-order-btn view-ConfirmOrderBtn" href="./11.2zfym.html">确认并支付</a>
+			</div>
+			<!-- 全球购协议确认end -->
+
+			<!-- 模板 -->
+			<div class="isTemplate" style="display:none">
+
+			<div template="bindPhoneAndMailBox">
+			    <div class="bind-box view-BindBox">
+			        <p>绑定手机及邮箱后才能使用余额支付</p>
+			        <a href="http://i.beibei.com/security/phone_binding.html" class="bind-btn phone" target="_blank">绑定手机</a>
+			        <a href="http://i.beibei.com/security/email_binding.html" class="bind-btn email" target="_blank">验证邮箱</a>
+			    </div>
+			</div>
+
+			<!-- 地址item -->
+			<ul style="display:none">
+			    <li template="addressListItem" template-display="inline-block" style="display:none" op-value="classText,id" op-attr="class,data-aid">
+			        <div class="letter-bg">
+			            <div class="blue first"></div>
+			            <div class="red"></div>
+			            <div class="blue"></div>
+			            <div class="red"></div>
+			            <div class="blue"></div>
+			            <div class="red"></div>
+			            <div class="blue"></div>
+			            <div class="red"></div>
+			            <div class="blue"></div>
+			            <div class="red"></div>
+			            <div class="blue"></div>
+			            <div class="red"></div>
+			            <div class="blue"></div>
+			            <div class="red"></div>
+			            <div class="blue"></div>
+			            <div class="red"></div>
+			            <div class="blue"></div>
+			            <div class="red"></div>
+			            <div class="blue"></div>
+			            <div class="red"></div>
+			            <div class="blue"></div>
+			            <div class="red"></div>
+			            <div class="blue"></div>
+			            <div class="red"></div>
+			            <div class="blue"></div>
+			            <div class="red"></div>
+			        </div>
+			        <div>
+			            <div class="addressee">
+			                <span class="name" op-value="full_name"></span>
+			                <span class="phone" op-value="mobile"></span>
+			                <span class="default" op-value="defalutMark" op-attr="style">默认</span>
+			            </div>
+			            <div class="address">
+			                <strong>寄送至</strong> <span op-value="province_text"></span> <span op-value="city_text"></span> <span op-value="area_text"></span> <span op-value="address"></span>
+			            </div>
+			            <div class="footer">
+			                <a href="javascript:;" class="modify view-ModifyAddressBtn" op-value="id" op-attr="address-id">修改</a>
+			            </div>
+			            <div class="check">
+			                <i class="iconfont">󰂲</i>
+			            </div>
+			        </div>
+			    </li>
+			</ul>
+			<!-- 插入新项目item -->
+			<ul style="display:none">
+			    <li template="addressListAddItem" template-display="inline-block" style="display:none" class="add-address view-AddAddressBtn">
+			        <a href="javascript:;" class="add-new-address ml-15 blue"><i class="iconfont">󰅵</i> 添加新地址</a>
+			    </li>
+			</ul>
+
+			<!-- 添加新地址 -->
+			<div template="addressAddBox" template-display="block" style="display:none">
+			    <div class="address-box view-AddressBox">
+			        <div class="address-tip view-AddressBoxTip" style="display:none;">
+			            <p><i class="iconfont">󰅂</i> 请先添加一个收货地址</p>
+			        </div>
+			        <fieldset>
+			            <div class="pure-control-group">
+			                <label for="province">所在地区</label>
+			                <select id="province" name="province" class="view-AddressBoxProvinceList" op-each="provinceData" op-each-item="addressAddBoxListOption">
+			                    <option value="">
+			                        请选择省市
+			                    </option>
+			                </select>
+			                <select id="city" name="city" class="view-AddressBoxCityList" op-each="cityData" op-each-item="addressAddBoxListOption">
+			                    <option value="">
+			                        请选择城市
+			                    </option>
+			                </select>
+			                <select id="area" name="area" class="view-AddressBoxAreaList" op-each="areaData" op-each-item="addressAddBoxListOption">
+			                    <option value="">
+			                        请选择区/县
+			                    </option>
+			                </select>
+			            </div>
+
+			            <div class="pure-control-group">
+			                <label for="zip">邮政编码</label>
+			                <input id="zip" type="text" name="zip" placeholder="">
+			            </div>
+
+			            <div class="pure-control-group">
+			                <label for="address">详细地址</label>
+			                <textarea id="address" name="address" style="width: 255px;height: 96px;" placeholder="不需要重复填写省市区，必须大于5个字符，小于120个字符"></textarea>
+			            </div>
+
+			            <div class="pure-control-group">
+			                <label for="fullname">收货人姓名</label>
+			                <input id="fullname" type="text" name="fullname" maxlength="12" placeholder="">
+			            </div>
+
+			            <div class="pure-control-group">
+			                <label for="mobile">手机号码</label>
+			                <input id="mobile" type="text" name="mobile" placeholder="">
+			            </div>
+
+			            <div class="pure-controls">
+			                <button type="submit" id="delivery-address-save" class="pink-btn view-AddressBoxConfirmBtn">确定</button>
+			                <button type="button" class="grey-btn view-AddressBoxCancelBtn">取消</button>
+			            </div>
+			        </fieldset>
+			    </div>
+			</div>
+
+			<!-- 地址option -->
+			<select style="display:none">
+				<option value="" template="addressAddBoxListOption" template-display="block" style="display:none" op-value="name,id" op-attr="*,value">
+				</option>
+			</select>
+
+			<!-- 优惠券列表项 -->
+			<ul style="display:none;">
+			    <li template="couponListItem" template-display="list-item" style="display:none" op-value="couponClass,id,type" op-attr="class,data-id,data-type">
+			        <div class="coupon-name">
+			            <p op-value="couponName"></p>
+			            <em op-value="id">dshv88rkwoqweo</em>
+			        </div>
+			        <div class="coupon-note" op-value="couponNote">
+			            还有100天过期
+			        </div>
+			        <div class="coupon-op">
+			            <a href="javascript:;" op-value="couponActionText"></a>
+			        </div>
+			    </li>
+			</ul>
+
+
+			<!-- pop box start-->
+			<div template="orderConfirmNotShipped" template-display="block" style="display:none;" class="notshipped">
+			    <div class="notshipped">
+			        <h6>对不起，由于商家原因，您的以下商品不支持发货到您的收货地址。</h6>
+			        <div class="notshipped-items" op-each="itemImgList" op-each-item="itemImgListItem">
+			        </div>
+			        <div style="margin-top:20px;text-align: center;">您可以返回购物车修改商品，或使用特定地区外的收货地址重新结算。</div>
+			        <div class="notshipped-op">
+			            <a href="http://trade.beibei.com/cart/mine.html">返回购物车调整商品</a>
+			            <a href="javascript:;" class="view-NotShippedClose">修改收货地址</a>
+			        </div>
+			        <p><a href="http://www.beibei.com/support/help/shipment.html#delivery" target="_blank">关于特定地区不发货&gt;&gt;</a></p>
+			    </div>
+			</div>
+			<!-- pop box end -->
+
+			<div class="isTemplate" style="display:none">
+			    <img src="about:blank" alt="" op-value="img" op-attr="src" height="120" width="120" template="itemImgListItem" template-display="inline">
+			</div>
+
+		</div>
+		<!-- 正在创建订单start -->
+		<div class="wait-confirm-wrap view-WaitConfirmWrap">
+		    <div class="wait-confirm">
+		        <img src="http://b0.hucdn.com/img/common/ajax_loading.gif"> <span>正在创建订单，请稍候 ...</span>
+		    </div>
+		</div>
+		<!-- 正在创建订单end -->
+    </div>
+	<!-- 中间部分end -->
+<!-- ————————————————————————————————————————————————————————————————————————————————————————————————++++++++++++++++++++++++++++++++++++++++++++ -->
+	<!-- 底部start  -->
+	<div>
+		<!-- 邮编地址start -->
+		<div id="footer" style="margin-top:0px;">
+			<div class="footer-nav">
+				<a href="">首页</a>|
+				<a href="">关于贝贝</a>|
+				<a href="">商家入驻</a>|
+				<a href="">正品保证</a>|
+				<a href="">人才招聘</a>|
+				<a href="">联系我们</a>|
+				<a href="">帮助中心</a>|
+				<a href="">友情链接</a>|
+				<a href="">手机客户端</a>|
+				<a href="">客服在线</a>|
+				<a href="">贝贝公益</a>|
+				<a href="">品质健康</a>|
+				<a href="">育儿社区</a>
+			</div>
+			<div class="footer-content">
+				<div class="wrapper">
+					<p>浙ICP备14025287号 |
+                    食品流通许可证：SP3301041510054925 |
+                    出版物经营许可证：新出发零字第00086号</p>
+					<p class="mt-8">
+					© 2014-2018
+						<acolor="" style="" href="">杭州贝购科技有限公司 </a>
+					All Rights Reserved. 客服热线：0571-10107788
+					</p>
+					<div class="mt-20">
+						<a href="">
+							<img src="" alt="">
+						</a>
+						<a href="">
+							<img src="" alt="">
+						</a>
+						<a href="">
+							<img src="" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 邮编地址end -->
+	</div>
+	<!-- 底部end -->
+</body>
+
+</html>

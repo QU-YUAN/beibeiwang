@@ -1,0 +1,164 @@
+    body,h1,h2,h3,h4,h5,h6,div,p,dl,dt,dd,ol,ul,li,form,table,th,td,a,img,span,strong,var,em,input,textarea,select,option{margin: 0; padding: 0;}
+html,body{font-family:"微软雅黑","宋体",Arail,Tabhoma; font-size: 16px; text-align: left;}
+ul,ol{list-style: none;}
+img{border: 0;}
+input,select,textarea{outline:0;}
+textarea{resize:none; overflow: auto;}
+table{border-collapse: collapse; border-spacing: 0;}
+th,strong,var,em,b,i{font-weight: normal; font-style: normal;}
+a,u{text-decoration: none;}
+a {
+    color: #3e3e3e;
+    text-decoration: none;
+}
+/*____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*1刘海平start*/
+.header {
+    height: 63px;
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.navbar {
+    margin: 0 auto;
+    width: 840px;
+    height: 63px;
+    overflow: hidden;
+}
+/*logo*/
+.logo {
+    float: left;
+    width: 140px;
+    height: 63px;
+    background: url(../images/b143892b72e70ac4_400x180.png) no-repeat;
+    background-size: 100% 100%;
+}
+.logo_img {
+    display: none;
+}
+/*首页*/
+.anchor {
+    height: 100%;
+    font-size: 0;
+    float: right;
+}
+.anchor a.active {
+    color: #e31436;
+}
+.anchor a {
+    display: inline-block;
+    height: 100%;
+    line-height: 63px;
+    color: #fff;
+    font-size: 16.8px;
+    padding: 0 16.8px;
+}
+.anchor a {
+    text-decoration: none;
+}
+/*1刘海平end*/
+ /*————————————————————————————————————————————————————————————————————————————————————————————————————————== */
+/*1爱心助农start*/
+.soc-header {
+    width: 100%;
+    height: 480px;
+    background-image: url(../images/cfd678e4ea3119e4_2688x840.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+    background-size: cover;
+}
+/*1爱心助农end*/
+ /*————————————————————————————————————————————————————————————————————————————————————————————————————————== */
+ /*2精准扶贫，践行社会责任start */
+.fp-header, .fp-header .desc {
+    text-align: center;
+}
+.title {
+    font-size: 19.6px;
+    margin-top: 84px;
+    width: 100%;
+    text-align: center;
+    color: #e31436;
+}
+.line {
+    background-color: #e31436;
+    width: 51px;
+    height: 3px;
+    margin: 0 auto;
+    margin-top: 32px;
+}
+.fp-header .desc {
+    margin: 56px auto 0;
+    width: 679px;
+    font-size: 11.2px;
+    line-height: 22.4px;
+    letter-spacing: 1px;
+    color: #000;
+}
+.fp-header .map {
+    width: 970px;
+    margin: 28px 0 56px;
+}
+ /*2精准扶贫，践行社会责任end */
+ /*————————————————————————————————————————————————————————————————————————————————————————————————————————== */
+ /*3践行公益爱心助学start */
+.block-section {
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/d7dfe5923ef5635c_1920x600.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+    background-size: cover;
+}
+.help-to-school .desc {
+    margin: 56px auto 0;
+    width: 679px;
+    font-size: 11.2px;
+    line-height: 22.4px;
+    letter-spacing: 1px;
+    color: #000;
+    text-align: center;
+}
+ /*3践行公益爱心助学end */
+ /*————————————————————————————————————————————————————————————————————————————————————————————————————————== */
+ /*4春蕾花开，为爱助力start */
+.help-to-school {
+    text-align: center;
+}
+.help-to-school .img {
+    width: 672px;
+    margin-top: 28px;
+}
+ /*4春蕾花开，为爱助力end */
+ /*————————————————————————————————————————————————————————————————————————————————————————————————————————== */
+
+
+ /*5底部start*/
+ .footer {
+    height: 80px;
+    overflow: hidden;
+}
+.black {
+    background-color: #000;
+}
+.footer p:first-child {
+    margin-top: 8px;
+}
+
+.footer p {
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    text-align: center;
+    color: #ddd;
+}
+.footer p:nth-child(2) {
+    margin-top: -16px;
+}
+
+ /*5底部end*/

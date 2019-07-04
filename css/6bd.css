@@ -1,0 +1,274 @@
+    body,h1,h2,h3,h4,h5,h6,div,p,dl,dt,dd,ol,ul,li,form,table,th,td,a,img,span,strong,var,em,input,textarea,select,option{margin: 0; padding: 0;}
+html,body{font-family:"微软雅黑","宋体",Arail,Tabhoma; font-size: 16px; text-align: left;}
+ul,ol{list-style: none;}
+img{border: 0;}
+input,select,textarea{outline:0;}
+textarea{resize:none; overflow: auto;}
+table{border-collapse: collapse; border-spacing: 0;}
+th,strong,var,em,b,i{font-weight: normal; font-style: normal;}
+a,u{text-decoration: none;}
+a {
+    color: #3e3e3e;
+    text-decoration: none;
+}
+/*____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*刘海平start*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100px;
+    line-height: 80px;
+    background: #fff;
+    border-bottom: 1px solid #e8e8e8;
+    box-sizing: border-box;
+}
+.header .center-box {
+    position: relative;
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 1080px;
+}
+.header .title {
+    position: absolute;
+    left: -10000px;
+    opacity: 0;
+    color: #fff;
+}
+.header .logo {
+    display: inline-block;
+    width: 264px;
+    height: 80px;
+    background: url(../images/2577f0e38927ded4_580x160.png) no-repeat;
+    background-size: cover;
+}
+.header .nav {
+    float: right;
+    font-size: 0;
+}
+.header .nav #nav-item {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    font-size: 16px;
+    color: #3d3d3d;
+    text-decoration: none;
+}
+.header .nav #nav-item.active {
+    font-weight: 700;
+    color: #000;
+}
+/*刘海平end*/
+/*_________________________________________________________________________________________________________________________________________________________________________+++++++++*/
+/*1首页start*/
+/*.step1 {
+    padding-top: 100px;
+}
+*/
+.step {
+    position: relative;
+    width: 100%;
+    min-width: 1080px;
+    font-size: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+.step1 .bg-img {
+    width: 100%;
+    position:relative;
+    margin-top:7%;
+}
+.step1 .code {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 210px;
+    height: 236px;
+    z-index: 99;
+}
+.step .desc {
+    position: absolute;
+    z-index: -10;
+    font-size: 14px;
+    opacity: 0;
+}
+/*1首页end*/
+
+/*_________________________________________________________________________________________________________________________________________________________________________+++++++++*/
+/*2借钱start*/
+#J_step2 {
+    width:100%;
+    height:803px;
+    background: #fff;
+    position:relative;
+}
+.step2 .bg-img {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    width: 500px;
+    -webkit-transform: translate3d(-250px,0,0);
+    transform: translate3d(-250px,0,0);
+    z-index: 0;
+}
+.common-an-start.an-end {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+}
+.step2 .title-img {
+    position: relative;
+    margin-top: 50px;
+    z-index: 22;
+}
+line-an-start.an-end {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+}
+.step2 .list{
+    width:1108px;
+    height:690px;
+    position:absolute;
+    margin-top:-145px;
+    margin-left:9%;
+    -webkit-transform: translate3d(0,150px,0);
+    transform: translate3d(0,150px,0);
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+/*2借钱end*/
+
+/*_________________________________________________________________________________________________________________________________________________________________________+++++++++*/
+/*3分期购start*/
+.banner, .banner .bg {
+    width: 100%;
+}
+.banner {
+    position: relative;
+    margin-top:13%;
+    color: #fff;
+}
+.banner .title1 {
+    position: absolute;
+    top: -90%;
+    left: 38%;
+    width: 25%;
+}
+.banner, .banner .bg {
+    width: 100%;
+}
+.step3 .content .left {
+    display: inline-block;
+    vertical-align: middle;
+}
+.step3 .content .left img {
+    width: 580px;
+    height: 720px;
+}
+.step3 .content .upper {
+    position: absolute;
+    z-index: 1;
+}
+.step3 .content .left img {
+    width: 580px;
+    height: 720px;
+}
+/*3分期购end*/
+/*_________________________________________________________________________________________________________________________________________________________________________+++++++++*/
+/*4合作机构start*/
+.step4 .list {
+    padding: 0px 0;
+    height:728px;
+}
+.step4 .list .list-item{
+    margin-top:-5px;
+}
+.banner .title2 {
+    position: absolute;
+    top: -90%;
+    left: 38%;
+    width: 25%;
+}
+/*4合作机构end*/
+
+/*_________________________________________________________________________________________________________________________________________________________________________+++++++++*/
+/*5口碑见证start*/
+.step5 {
+    background: #081b29;
+    overflow: hidden;
+    /*bottom:50px;*/
+}
+
+.step5 .bg-title {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-top: 50px;
+    width: 500px;
+    -webkit-transform: translate3d(-250px,0,0);
+    transform: translate3d(-250px,0,0);
+}
+.step5 .title3 {
+    position:absolute;
+    top:-23%;
+    left: 38%;
+    padding: 70px 0 50px;
+}
+.common-an-start {
+    opacity: 0;
+    -webkit-transform: translate3d(0,150px,0);
+    transform: translate3d(0,150px,0);
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+.step5 .content {
+    height:700px;
+    position: relative;
+    margin-top:146px;
+}
+.step5 .content .bg {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate3d(-520px,0,0);
+    transform: translate3d(-520px,0,0);
+}
+.step5 .content .text{
+    margin-top:-10%;
+}
+/*5口碑见证end*/
+
+/*_________________________________________________________________________________________________________________________________________________________________________+++++++++*/
+/*6底部start*/
+.footer {
+    width: 100%;
+    height: 60;
+    line-height: 60px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    background: #081b29;
+    border-top: 1px solid #0f334d;
+    box-sizing: border-box;
+}
+/*6底部end*/
+.block {
+        height:62px;
+        background: blue;
+        margin-bottom: 20px;
+    }
+.col-md-3-img{
+     width:320px;
+        height:692px;
+        background: blue;
+        margin-bottom: 20px;
+}
+    html, body, .banner, .container {
+
+        height:100%;
+
+        text-align: center;
+
+    }
